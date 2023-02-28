@@ -23,25 +23,32 @@ const label: CSSProperties = {
   width: "80%"
 }
 
+const info: CSSProperties = {
+  display: "flex", 
+  flexDirection: "column", 
+  alignItems: "center", 
+  justifyContent: "space-evenly"
+}
+
 export default function Contact() {
   return (
     <>
     {/* Business Information */}
     <div style={formCard}>
-      <p style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly" }}>
-        <span>Regular Business Hours:</span>
-        <span>Monday thru Thursday 11am to 7pm</span>
-        <span>Fridays 11am to 6pm</span>
-        <span>Saturdays 9am to 2pm</span>
-        <span>Closed Sundays</span>
-        <span>sales@fermentations.biz</span>
+      <p style={info}>
+        <span><b>Regular Business Hours</b></span>
+        <span>Monday - Thursday: 11am to 7pm</span>
+        <span>Fridays: 11am to 6pm</span>
+        <span>Saturdays: 9am to 2pm</span>
+        <span>Closed On Sundays</span>
       </p>
-      <p style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly" }}>
+      <p style={info}>
         <span>5765 North Academy Blvd.</span>
         <span>Colorado Springs, CO 80918</span>
         <span>(719) 598-1164</span>
         <span>sales@fermentations.biz</span>
       </p>
+      
     </div>
     {/* Contact Form */}
     <div style={formCard}>
