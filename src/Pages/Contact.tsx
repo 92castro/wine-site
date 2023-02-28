@@ -35,12 +35,12 @@ const info: CSSProperties = {
 } 
 
 export default function Contact() {
-  const form = useRef();
+  const form: any = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_997ryp9', 'template_70gydw3', form.current, 'HMsyguFO56ZXH58Ld')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -51,41 +51,47 @@ export default function Contact() {
   return (
     <>
      {/* Contact Form */}
-    <div style={formCard}>
-      <h1>Contact Us!</h1>
-      <TextField
-        id="firstName"
-        label="First Name"
-        variant="filled"
-        size="small"
-        sx={label}
-      />
-      <TextField
-        id="lastName"
-        label="Last Name"
-        variant="filled"
-        size="small"
-        sx={label}
-      />
-      <TextField
-        id="emailAddress"
-        label="Email Address"
-        variant="filled"
-        size="small"
-        sx={label}
-      />
-      <TextField
-          id="commentSection"
-          label="Comment"
-          multiline
-          rows={4}
-          variant="filled"
-          sx={label}
-        />
-        <Button sx={{ backgroundColor: "#602827" }} variant="contained" endIcon={<SendIcon />}>
-        Send
-      </Button>
-    </div>
+      <form ref={form} onSubmit={sendEmail}>
+        <div style={formCard}>
+          <h1>Contact Us!</h1>
+          <TextField
+            id="firstName"
+            name="first_name"
+            label="First Name"
+            variant="filled"
+            size="small"
+            sx={label}
+          />
+          <TextField
+            id="lastName"
+            name="last_name"
+            label="Last Name"
+            variant="filled"
+            size="small"
+            sx={label}
+          />
+          <TextField
+            id="emailAddress"
+            name="email"
+            label="Email Address"
+            variant="filled"
+            size="small"
+            sx={label}
+          />
+          <TextField
+            id="commentSection"
+            name="comment"
+            label="Comment"
+            multiline
+            rows={4}
+            variant="filled"
+            sx={label}
+          />
+          <Button type="submit" sx={{ backgroundColor: "#602827" }} variant="contained" endIcon={<SendIcon />}>
+            Send
+          </Button>
+        </div>
+      </form>
     {/* Business Information */}
     <div style={formCard}>
       <p style={info}>
