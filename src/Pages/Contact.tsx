@@ -1,8 +1,8 @@
-import React, { CSSProperties } from "react";
+import { CSSProperties, useRef } from "react";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import { useTheme } from '@mui/material/styles';
+import emailjs from '@emailjs/browser';
 
 //Form Card Styling
 const formCard: CSSProperties = {
@@ -34,13 +34,19 @@ const info: CSSProperties = {
   justifyContent: "space-evenly"
 } 
 
-// Map Styling
-const mapStyle: any = {
-      width: "300px",
-      height: "225px",
-  }
-
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <>
@@ -48,28 +54,28 @@ export default function Contact() {
     <div style={formCard}>
       <h1>Contact Us!</h1>
       <TextField
-        id="filled-hidden-label-small"
+        id="firstName"
         label="First Name"
         variant="filled"
         size="small"
         sx={label}
       />
       <TextField
-        id="filled-hidden-label-small"
+        id="lastName"
         label="Last Name"
         variant="filled"
         size="small"
         sx={label}
       />
       <TextField
-        id="filled-hidden-label-small"
+        id="emailAddress"
         label="Email Address"
         variant="filled"
         size="small"
         sx={label}
       />
       <TextField
-          id="standard-multiline-static"
+          id="commentSection"
           label="Comment"
           multiline
           rows={4}
