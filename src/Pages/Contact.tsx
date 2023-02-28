@@ -1,7 +1,8 @@
-import React, { CSSProperties } from "react";
+import { CSSProperties, useRef } from "react";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+import emailjs from '@emailjs/browser';
 
 //Form Card Styling
 const formCard: CSSProperties = {
@@ -31,11 +32,67 @@ const info: CSSProperties = {
   flexDirection: "column", 
   alignItems: "center", 
   justifyContent: "space-evenly"
-}
+} 
 
 export default function Contact() {
+  const form: any = useRef();
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_997ryp9', 'template_70gydw3', form.current, 'HMsyguFO56ZXH58Ld')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
+
   return (
     <>
+     {/* Contact Form */}
+      <form ref={form} onSubmit={sendEmail}>
+        <div style={formCard}>
+          <h1>Contact Us!</h1>
+          <TextField
+            id="firstName"
+            name="first_name"
+            label="First Name"
+            variant="filled"
+            size="small"
+            sx={label}
+          />
+          <TextField
+            id="lastName"
+            name="last_name"
+            label="Last Name"
+            variant="filled"
+            size="small"
+            sx={label}
+          />
+          <TextField
+            id="emailAddress"
+            name="email"
+            label="Email Address"
+            variant="filled"
+            size="small"
+            sx={label}
+          />
+          <TextField
+            id="commentSection"
+            name="comment"
+            label="Comment"
+            multiline
+            rows={4}
+            variant="filled"
+            sx={label}
+          />
+          <Button type="submit" sx={{ backgroundColor: "#602827" }} variant="contained" endIcon={<SendIcon />}>
+            Send
+          </Button>
+        </div>
+      </form>
     {/* Business Information */}
     <div style={formCard}>
       <p style={info}>
@@ -52,44 +109,8 @@ export default function Contact() {
         <span>sales@fermentations.biz</span>
       </p>
       <p><b>Come See Us</b></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.428126182952!2d-104.78811748483716!3d38.914190979568055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87134ef4c367b6b3%3A0xcd184256fb212d0!2sFermentations%20Home%20Winemaking%20and%20Homebrew%20Center!5e0!3m2!1sen!2sjp!4v1677554341746!5m2!1sen!2sjp" width="300" height="225" loading="lazy">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.428126182952!2d-104.78811748483716!3d38.914190979568055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87134ef4c367b6b3%3A0xcd184256fb212d0!2sFermentations%20Home%20Winemaking%20and%20Homebrew%20Center!5e0!3m2!1sen!2sjp!4v1677554341746!5m2!1sen!2sjp" className="map" loading="lazy">
       </iframe>
-    </div>
-    {/* Contact Form */}
-    <div style={formCard}>
-      <h1>Contact Us!</h1>
-      <TextField
-        id="filled-hidden-label-small"
-        label="First Name"
-        variant="filled"
-        size="small"
-        sx={label}
-      />
-      <TextField
-        id="filled-hidden-label-small"
-        label="Last Name"
-        variant="filled"
-        size="small"
-        sx={label}
-      />
-      <TextField
-        id="filled-hidden-label-small"
-        label="Email Address"
-        variant="filled"
-        size="small"
-        sx={label}
-      />
-      <TextField
-          id="standard-multiline-static"
-          label="Comment"
-          multiline
-          rows={4}
-          variant="filled"
-          sx={label}
-        />
-        <Button sx={{ backgroundColor: "#602827" }} variant="contained" endIcon={<SendIcon />}>
-        Send
-      </Button>
     </div>
     </>
   )
