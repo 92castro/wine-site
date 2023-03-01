@@ -1,44 +1,15 @@
+:root {
+  --green-color: #a8ad9c;
+  --maroon-color: #602827;
+}
 
+body {
+  background-color: #ffe5dd;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body::-webkit-scrollbar {
+  display: none;
+}
 
 
 
@@ -71,3 +42,5 @@
         font-size: 130%;
     }
 }
+
+

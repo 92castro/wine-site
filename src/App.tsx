@@ -7,12 +7,14 @@ import Contact from './Pages/Contact'
 import Lessons from './Pages/Lessons'
 import Info from './Pages/Info'
 import Photo from './Pages/Photo'
+import Header from './Components/Header/Header';
 
 function App() {
   return (
     <>
     <Router>
-      <Routes>
+      <Header/>
+      <Routes>  
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
