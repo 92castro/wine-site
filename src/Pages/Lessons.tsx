@@ -1,5 +1,10 @@
+import ImageOne from "../Assets/CustomLabelOne.jpg";
+import ImageTwo from "../Assets/CustomLabelTwo.jpg";
+import ImageThree from "../Assets/CustomLabelThree.jpg";
+import ImageFour from "../Assets/CustomLabelFour.jpg";
+
 import React, { CSSProperties } from "react";
-import { Container, Grid, List, ListItem, Paper, Typography } from "@mui/material";
+import { Grid, ImageList, ImageListItem, List, ListItem, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import WineBarIcon from "@mui/icons-material/WineBar";
 import SportsBarIcon from "@mui/icons-material/SportsBar";
@@ -38,8 +43,25 @@ const beerMakingSteps: { step: string }[] = [
     "step": "Prime & bottle your beer, then take it home (60 minutes).",
   },
 ];
+const itemData = [
+  {
+    img: ImageTwo,
+    title: "Danish Devil wine label",
+  },
 
-console.log(wineMakingSteps);
+  {
+    img: ImageThree,
+    title: "Cosmo Kramer's wine label",
+  },
+  {
+    img: ImageOne,
+    title: "Seville Orange wine label",
+  },
+  {
+    img: ImageFour,
+    title: "Badge wine label",
+  },
+];
 
 export default function Lessons() {
   return (
@@ -111,12 +133,8 @@ export default function Lessons() {
         <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
           <Paper style={StyledPaper} sx={{ minHeight: { md: "800px", lg: "650px" } }}>
             <Box style={StyledBox}>
-              <Typography component="p">
-                Fermentations has the Best Selection of Brewing Grains in Colorado Springs! Our professional brewery grade mill is getting terrific
-                customer reviews, too! Check us out!
-              </Typography>
               <Typography component="h3" variant="h6">
-                Beer Brewing in three easy steps:
+                Beer Brewing in three (3) easy steps:
               </Typography>
               <List>
                 {beerMakingSteps.map((step, index) => (
@@ -139,9 +157,66 @@ export default function Lessons() {
             </Box>
           </Paper>
         </Grid>
-        {/* <Grid item style={StyledGridItem} xs={12} md={12} lg={12}>
-          <Box style={StyledBox}>Custom bottle labels</Box>
-        </Grid> */}
+
+        <Typography
+          maxWidth={{ xs: "500px", sm: "600px", lg: "80%" }}
+          component="h1"
+          textAlign="center"
+          sx={{
+            color: "var(--maroon-color)",
+            fontWeight: "700",
+            fontSize: { xs: "28px", sm: "36px", lg: "42px" },
+            marginX: "auto",
+            marginY: { xs: "1rem", md: "2rem" },
+          }}
+        >
+          Personalize your wine and beer bottles with custom labels!
+        </Typography>
+        <Grid item style={StyledGridItem} xs={12} md={12} lg={4}>
+          <Paper style={StyledPaper} sx={{ minHeight: { md: "300px", lg: "1030px" } }}>
+            <Box style={StyledBox}>
+              <Typography component="p" py={1}>
+                We can print any label design you create on high-gloss, white self-adhesive labels. Standard with each winemaking class in our
+                store,we will print your custom label creations to showcase your handmade beverages. Stock label sizes are 3"x4", 3"x3",
+                2-1/2"x3-3/4", 2"x3" & 2"x4" rectangles and 2"x3" ovals. We charge 50-cents per label for customers that purchase classes and
+                ingredients in our store.
+              </Typography>
+              <Typography component="p" py={1}>
+                We can accept your label designs in most graphic formats, but .JPG and .PNG are preferred. Resolution at least 200 dpi, and file sizes
+                at least 100K produce best results. Borders are difficult to align perfectly to the edges of our die-cut label stock. Therefore, we
+                prefer borderless label designs so we can print your image edge-to-edge, for best printed quality.
+              </Typography>
+              <Typography component="p" py={1}>
+                If you design your labels in PowerPoint or MS Publisher, for best printing quality please double the dimensions of the finished label
+                size (i.e. 6:x8" for a 3"x4" label) and "Save As" to a .PNG or .JPG image file before submitting your completed design.
+              </Typography>
+              <Typography component="p" py={1}>
+                Free label design templates are available from the following third-party websites: www.beerlabelizer.com www.jamlabelizer.com Some
+                examples of labels we've used on our personal homemade beverages are shown below. Email your label design(s) to:
+                labels@fermentations.biz Call Tim at (719) 598-1164 with any questions you may have!
+              </Typography>
+            </Box>
+          </Paper>
+        </Grid>
+        <Grid item style={StyledGridItem} xs={12} md={12} lg={8}>
+          <Paper style={StyledPaper} sx={{ minHeight: { md: "300px", lg: "590px" } }}>
+            <Box style={StyledBox}>
+              <ImageList cols={2} gap={8} sx={{ minHeight: { md: "300px", lg: "560px" }, maxHeight: { md: "600px", lg: "1000px" } }}>
+                {itemData.map((item, index) => (
+                  <ImageListItem key={index}>
+                    <img
+                      src={`${item.img}?w=248&fit=crop&auto=format`}
+                      srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                      alt={item.title}
+                      loading="lazy"
+                      style={{ background: "cover" }}
+                    />
+                  </ImageListItem>
+                ))}
+              </ImageList>
+            </Box>
+          </Paper>
+        </Grid>
       </Grid>
     </>
   );
