@@ -1,9 +1,11 @@
 import { CSSProperties, useRef } from "react";
 import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
+
 
 //Form Card Styling
 const formCardLarge: CSSProperties = {
@@ -58,59 +60,70 @@ const info: CSSProperties = {
   justifyContent: "space-evenly",
 } 
 
+type FormData = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  comment: string;
+};
+
 export default function Contact() {
   const width = window.innerWidth;
+  
   const form: any = useRef();
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  
+  const { register, setValue, handleSubmit, formState: { errors } } = useForm<FormData>();
 
   const sendEmail = (e: any) => {
-    e.preventDefault();
-    // handleSubmit((data) => console.log(data));
     emailjs.sendForm('service_997ryp9', 'template_70gydw3', form.current, 'HMsyguFO56ZXH58Ld')
       .then((result) => {
           console.log(result.text);
           alert("Email Sent");
-          // e.target.reset();
+          e.target.reset();
       }, (error) => {
           console.log(error.text);
       });
   };
   
+  const onSubmit = handleSubmit(data => {sendEmail(data)});
       
   if (width < 768) {
     return (
       <>
         {/* Contact Form */}
-        <form ref={form} onSubmit={() => {handleSubmit((data) => console.log(data))}}>
-        <div style={formCard}>
+        <form ref={form} onSubmit={onSubmit}>
+        <div style={formCard} key={"green"}>
           <h1 className="contactText">Contact Us For Inquiries, Or Questions About Wine And Beer Making!</h1>
           <TextField
-            {...register('first_name', { required: true })}
-            {...errors.first_name && <p>First name is required.</p>}
+            {...register("firstName", { required: "First name is required *" })}
             id="firstName"
-            name="first_name"
+            name="firstName"
             label="First Name"
             variant="filled"
             size="small"
             sx={label}
           />
+          <Typography component="small">
+            {errors.firstName?.message}
+          </Typography>
           <TextField
-            {...register('last_name', { required: true })}
-            {...errors.last_name && <p>Last name is required.</p>}
+            {...register("lastName", { required: "Last name is required *" })}
             id="lastName"
-            name="last_name"
+            name="lastName"
             label="Last Name"
             variant="filled"
             size="small"
             sx={label}
           />
+          <Typography component="small">
+            {errors.lastName?.message}
+          </Typography>
           <TextField
-            {...register('email', { required: true })}
-            {...errors.email && <p>Email is required.</p>}
+            {...register(
+              "email",
+              {required: "Email is required", minLength: { value: 4, message: "Minimum length is 4 characters" }, 
+              pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$/i, message: "invalid email address" }}
+            )}
             id="emailAddress"
             name="email"
             label="Email Address"
@@ -118,10 +131,15 @@ export default function Contact() {
             size="small"
             sx={label}
           />
+          <Typography component="small">
+            {errors.email?.message}
+          </Typography>
           <TextField
-            {...register('comment', { required: true })}
-            {...errors.comment && <p>A comment is required.</p>}
-            id="commentSection"
+            {...register("comment", {
+          required: "Comment is required",
+          minLength: { value: 50, message: "Minimum length is 50 characters" },
+          maxLength: { value: 275, message: "Maximum length is 275 characters" },
+        })}
             name="comment"
             label="Comment"
             multiline
@@ -129,6 +147,9 @@ export default function Contact() {
             variant="filled"
             sx={label}
           />
+          <Typography component="small">
+            {errors.comment?.message}
+          </Typography>
           <Button type="submit" sx={{ backgroundColor: "#602827" }} variant="contained" endIcon={<SendIcon />}>
             Send
           </Button>
