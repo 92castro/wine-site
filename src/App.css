@@ -1,55 +1,7 @@
+body {
+  background-color: #ffe5dd;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 768px){
-    .map {
-    width: 600px;
-    height: 337px;
-    }
+body::-webkit-scrollbar {
+  display: none;
 }
