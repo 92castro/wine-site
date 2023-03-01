@@ -3,6 +3,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import emailjs from '@emailjs/browser';
+import { useForm } from 'react-hook-form';
 
 //Form Card Styling
 const formCardLarge: CSSProperties = {
@@ -58,31 +59,38 @@ const info: CSSProperties = {
 } 
 
 export default function Contact() {
+  const width = window.innerWidth;
   const form: any = useRef();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
-
+    // handleSubmit((data) => console.log(data));
     emailjs.sendForm('service_997ryp9', 'template_70gydw3', form.current, 'HMsyguFO56ZXH58Ld')
       .then((result) => {
           console.log(result.text);
-          alert("Email Sent")
+          alert("Email Sent");
+          // e.target.reset();
       }, (error) => {
           console.log(error.text);
       });
-      e.target.reset();
   };
   
-  const width = window.innerWidth;
       
   if (width < 768) {
     return (
       <>
         {/* Contact Form */}
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={() => {handleSubmit((data) => console.log(data))}}>
         <div style={formCard}>
           <h1 className="contactText">Contact Us For Inquiries, Or Questions About Wine And Beer Making!</h1>
           <TextField
+            {...register('first_name', { required: true })}
+            {...errors.first_name && <p>First name is required.</p>}
             id="firstName"
             name="first_name"
             label="First Name"
@@ -91,6 +99,8 @@ export default function Contact() {
             sx={label}
           />
           <TextField
+            {...register('last_name', { required: true })}
+            {...errors.last_name && <p>Last name is required.</p>}
             id="lastName"
             name="last_name"
             label="Last Name"
@@ -99,6 +109,8 @@ export default function Contact() {
             sx={label}
           />
           <TextField
+            {...register('email', { required: true })}
+            {...errors.email && <p>Email is required.</p>}
             id="emailAddress"
             name="email"
             label="Email Address"
@@ -107,6 +119,8 @@ export default function Contact() {
             sx={label}
           />
           <TextField
+            {...register('comment', { required: true })}
+            {...errors.comment && <p>A comment is required.</p>}
             id="commentSection"
             name="comment"
             label="Comment"
