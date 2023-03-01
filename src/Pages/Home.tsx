@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import Divider from "@mui/material/Divider"
-import WineBarIcon from '@mui/icons-material/WineBar';
+import { GiCellarBarrels } from 'react-icons/gi';
 
 const heroImg: CSSProperties = {
   display:"flex",
@@ -31,7 +31,7 @@ export default function Home() {
       </div>
     </div>
     <div >
-    <Divider style={{height:"50px"}}><WineBarIcon style={{height:"90px"}}/></Divider>
+    <Divider style={{height:"50px"}}><GiCellarBarrels style={{height:"100px",fontSize:"60px"}}/></Divider>
     </div>
     </>
   )
