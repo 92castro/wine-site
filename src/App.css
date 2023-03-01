@@ -1,1 +1,7 @@
+body {
+  background-color: #ffe5dd;
+}
 
+body::-webkit-scrollbar {
+  display: none;
+}
