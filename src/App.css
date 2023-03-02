@@ -22,12 +22,12 @@ body::-webkit-scrollbar {
 .contactImage {
     position: relative;
     padding: 0;
-    margin: 0;
+    margin: 0 0 -4px 0;
 }
 
 .contactText {
     position: absolute;
-    top: 2%;
+    bottom: 5%;
     left: 3%;
     color: white;
     font-size: 3rem;
@@ -49,8 +49,8 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 425px) {
     .contactText {
-        font-size: 1.3rem;
-        top: 0;
+        font-size: 1rem;
+        bottom: 5%;
         left: 2%;
     }
 }
