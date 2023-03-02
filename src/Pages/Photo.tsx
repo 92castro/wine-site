@@ -1,205 +1,26 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Grid, Paper } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { CSSProperties } from "react";
 
+import photoGallery from "../Assets/photoGallery";
 
-// import  from "../Assets/WinePhotos/photoOne.jfif";
-
-// import { PhotoOne } from "../Assets/WinePhotos";
-
-// const StyledContainer ()
-
-// const photoGalleryData = [
-//   {
-//     img: ImageTwo,
-//     title: "Danish Devil wine label",
-//   },
-
-//   {
-//     img: ImageThree,
-//     title: "Cosmo Kramer's wine label",
-//   },
-//   {
-//     img: ImageOne,
-//     title: "Seville Orange wine label",
-//   },
-//   {
-//     img: ImageFour,
-//     title: "Badge wine label",
-//   },
-// ];
-const StyledPaper: CSSProperties = {
-  // minHeight: "400px",
-  padding: "2rem",
-  backgroundColor: "var(--green-color)",
-  boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-  minHeight: "200px",
-};
 const StyledBox: CSSProperties = {
   height: "100%",
-  display: "flex",
-  flexDirection: "column",
+  boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
   borderRadius: "8px",
+  border: "1px solid #fff",
+  overflow: "hidden",
 };
 export default function Photo() {
   return (
     <Grid container maxWidth="lg" margin={{ lg: "auto" }} spacing={1}>
-      <Grid item xs={6} sm={6} lg={6}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
+      {photoGallery.map((photo, index) => (
+        <Grid key={index} item xs={photo.gridBreakPoints.sx} sm={6} lg={photo.gridBreakPoints.lg}>
+          <Box style={StyledBox}>
+            <img src={photo.imageSource} style={{ objectFit: "fill", width: "100%", height: "100%" }} />
+          </Box>
+        </Grid>
+      ))}
     </Grid>
   );
-}
-{
-  /* <Grid item xs={6} sm={6} lg={3}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={3}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={4}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={4}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={4}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={3}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={3}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={6}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={8}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={4}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={6}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={3}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={3}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={3}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={3}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={6}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={8}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={4}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={4}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={4}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid>
-      <Grid item xs={6} sm={6} lg={4}>
-        <Box style={StyledBox}>
-          <Paper style={StyledPaper}>
-            <Box>Text</Box>
-          </Paper>
-        </Box>
-      </Grid> */
 }

@@ -27,98 +27,242 @@ const photoGallery = [
   {
     name: "Image of ...",
     imageSource: photoOne,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoTwo,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoThree,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoFour,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 6,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoFive,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 6,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoSix,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoSeven,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoEight,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoNine,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoTen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 8,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoEleven,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 6,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoTwelve,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 3,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoThirteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 3,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoFourteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 3,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoFifteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 3,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoSixteen,
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoSeventeen,
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoEighteen,
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoNineteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 6,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoTwenty,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 8,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoTwentyOne,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
-    imageSource: photoTwentyTwo,
+    imageSource: photoSeventeen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
-    imageSource: photoTwentyThree,
+    imageSource: photoEighteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
   },
   {
     name: "Image of ...",
     imageSource: photoTwentyFour,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoNineteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 3,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoTwentyTwo,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 3,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoTwentyThree,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 6,
+    },
   },
 ];
 export default photoGallery;
