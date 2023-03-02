@@ -4,7 +4,10 @@
 }
 
 body {
-  background-color: #ffe5dd;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffe5dd;
 }
 
 body::-webkit-scrollbar {
@@ -16,31 +19,27 @@ body::-webkit-scrollbar {
 
 
 
+.contactImage {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
 
+.contactText {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    color: white;
+    font-size: 400%;
+    font-style: italic;
+}
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
     .map {
     width: 600px;
     height: 337px;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .info {
-        font-size: 130%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .button {
-        width: 30%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .contactText {
-        font-size: 130%;
-    }
-}
 
 
