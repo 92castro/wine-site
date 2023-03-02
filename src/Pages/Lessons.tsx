@@ -110,7 +110,7 @@ export default function Lessons() {
               <Typography component="h3" variant="h6">
                 Winemaking in five (5) easy steps. Each step is two weeks from the last one.
               </Typography>
-              <List>  
+              <List>
                 {wineMakingSteps.map((step, index) => (
                   <ListItem sx={{ display: "listItem" }} key={index}>
                     <WineBarIcon />
