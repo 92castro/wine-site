@@ -3,7 +3,6 @@ import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import Image from "../Assets/ContactPhoto.jpeg"
@@ -34,6 +33,7 @@ const info: CSSProperties = {
   flexDirection: "column", 
   alignItems: "center", 
   justifyContent: "space-evenly",
+  fontFamily: "Roboto, sans-serif"
 } 
 
 type FormData = {
@@ -46,7 +46,7 @@ type FormData = {
 export default function Contact() {
   const form: any = useRef();
   
-  const { register, setValue, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
 
   const sendEmail = (e: any) => {
     emailjs.sendForm('service_997ryp9', 'template_70gydw3', form.current, 'HMsyguFO56ZXH58Ld')
@@ -73,7 +73,7 @@ export default function Contact() {
       <Grid item sm={12} md={6}>
         <form ref={form} onSubmit={onSubmit} style={{ height: "100%"}}>
         <div style={formCard} key={"green"}>
-          <h1>Contact Us For Inquiries, Or Questions About Wine And Beer Making!</h1>
+          <h1 style={{ fontFamily: "Italiana, serif" }}>Contact Us For Inquiries, Or Questions About Wine And Beer Making!</h1>
           <TextField
             {...register("firstName", { required: "First name is required *" })}
             id="firstName"
@@ -130,7 +130,7 @@ export default function Contact() {
           <Typography component="small">
             {errors.comment?.message}
           </Typography>
-          <Button type="submit" sx={{ backgroundColor: "#4a0d0b", width: "30%", marginTop: "50px", marginBottom: "50px" }} variant="contained">
+          <Button type="submit" sx={{ fontFamily: "Roboto, serif", backgroundColor: "#4a0d0b", width: "30%", marginTop: "50px", marginBottom: "50px" }} variant="contained">
             Submit
           </Button>
         </div>
@@ -139,7 +139,7 @@ export default function Contact() {
       <Grid item xs={12} md={6}>
         <div style={formCard}>
         <p style={info}>
-          <span style={{ color: "#74250e", fontSize: "140%" }}><b>Regular Business Hours</b></span>
+          <span style={{ color: "#74250e", fontSize: "140%", fontFamily: "Italiana, serif" }}><b>Regular Business Hours</b></span>
           <span>Monday - Thursday: 11am to 7pm</span>
           <span>Fridays: 11am to 6pm</span>
           <span>Saturdays: 9am to 2pm</span>

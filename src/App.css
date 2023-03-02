@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
     left: 3%;
     color: white;
     font-size: 3rem;
-    font-style: italic;
+    font-family: 'Italiana', sans-serif;
 }
 
 @media screen and (min-width: 1200px){
