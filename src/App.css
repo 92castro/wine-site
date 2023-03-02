@@ -34,6 +34,11 @@ body::-webkit-scrollbar {
     font-family: 'Italiana', sans-serif;
 }
 
+.socialIcon {
+    transform: scale(3);
+    margin: 0 25px 0 25px;
+}
+
 @media screen and (min-width: 1200px){
     .map {
         width: 600px;

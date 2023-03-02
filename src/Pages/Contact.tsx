@@ -141,8 +141,8 @@ export default function Contact() {
         <Grid item xs={12} md={6}>
           <div style={formCard}>
             <div>
-              <FacebookIcon sx={{ fontSize: "300%", margin: "10px" }}/>
-              <TwitterIcon sx={{ fontSize: "300%", margin: "10px" }}/>
+              <Button startIcon={<FacebookIcon className="socialIcon"/>} href="https://www.facebook.com/Fermentations" target="_blank"/>
+              <Button startIcon={<TwitterIcon className="socialIcon"/>} href="https://twitter.com/fermentationsco" target="_blank"/>
             </div>
             <p style={info}>
               <span style={{ color: "#74250e", fontSize: "140%", fontFamily: "Italiana, serif" }}><b>Regular Business Hours</b></span>
