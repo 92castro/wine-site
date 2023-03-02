@@ -1,6 +1,7 @@
 import logo from "../../Assets/Capture.png";
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Typography } from "@mui/material";
 
 
 export default function Header() {
@@ -8,7 +9,10 @@ export default function Header() {
     <>
     <header style={{display:"flex",justifyContent:"space-around"}}>
       
-      <Link to="/"><img src={logo} alt="" style={{borderRadius:"25px"}} /></Link>
+      <Link to="/"><img src={logo} alt="" style={{borderRadius:"20px"}} /></Link>
+      <Typography component="p" sx={{width:"20%",fontSize:"15px"}}>
+        Enabling Home Winemakers & Homebrewers since 2011
+      </Typography>
       <Link to="/about">About</Link>
       <Link to="/lessons">Lessons</Link>
       <Link to="/photo">Photo</Link>

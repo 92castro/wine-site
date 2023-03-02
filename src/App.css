@@ -1,46 +1,41 @@
 :root {
-  --green-color: #a8ad9c;
+  --green-color: #a8ad9c68;
   --maroon-color: #602827;
 }
 
 body {
-  background-color: #ffe5dd;
+  background: linear-gradient(
+    180deg,
+    rgba(191, 166, 162, 0.5354516806722689) 40%,
+    rgba(97, 38, 33, 0.2805497198879552) 65%
+  );
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-
-
-
-
-
-
-
-@media screen and (min-width: 1440px){
-    .map {
+@media screen and (min-width: 1440px) {
+  .map {
     width: 600px;
     height: 337px;
-    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .info {
-        font-size: 130%;
-    }
+  .info {
+    font-size: 130%;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .button {
-        width: 30%;
-    }
+  .button {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .contactText {
-        font-size: 130%;
-    }
+  .contactText {
+    font-size: 130%;
+  }
 }
-
-
