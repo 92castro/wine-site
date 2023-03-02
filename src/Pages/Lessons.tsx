@@ -23,7 +23,26 @@ const StyledBox: CSSProperties = {
   flexDirection: "column",
   borderRadius: "8px",
 };
-
+const heroImg: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  backgroundImage:
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1491924778227-f225b115dd5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
+  height: "40vh",
+  minHeight: "15em",
+  marginTop: "20px",
+  alignSelf: "center",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  alignItems: "center",
+  justifyContent: "center",
+};
+const heroText: CSSProperties = {
+  textAlign: "center",
+  color: "white",
+  fontSize: "40px",
+};
 const wineMakingSteps: { step: string }[] = [
   { "step": "Mix wine ingredients (premium juice, water & yeast) to begin primary fermentation. Allow 45 minutes for your first lesson." },
   { "step": "Transfer your wine-in-progress to a glass carboy.  It takes about 15 minutes for this step; continue in secondary fermentation." },
@@ -67,20 +86,25 @@ const itemData = [
 export default function Lessons() {
   return (
     <>
-      <Typography
-        maxWidth={{ xs: "400px", sm: "450px", lg: "550px" }}
-        component="h1"
-        textAlign="center"
-        sx={{
-          color: "var(--maroon-color)",
-          fontWeight: "700",
-          fontSize: { xs: "28px", sm: "36px", lg: "42px" },
-          marginX: "auto",
-          marginY: { xs: "1rem", md: "2rem" },
-        }}
-      >
-        Personalized winemaking and home brew lessons
-      </Typography>
+      <div style={heroImg}>
+        <div style={heroText}>
+          <Typography
+            maxWidth={{ xs: "400px", sm: "450px", lg: "550px" }}
+            component="h1"
+            textAlign="center"
+            sx={{
+              color: "#fff",
+              fontWeight: "700",
+              fontSize: { xs: "28px", sm: "36px", lg: "42px" },
+              marginX: "auto",
+              marginY: { xs: "1rem", md: "2rem" },
+            }}
+          >
+            Personalized winemaking and home brew lessons
+          </Typography>
+        </div>
+      </div>
+
       <Grid container maxWidth="lg" minHeight="100vh" rowSpacing={{ xs: 3 }} columnSpacing={{ md: 3 }} margin={{ lg: "auto" }}>
         <Grid item style={StyledGridItem} xs={12} md={12} lg={12}>
           <Box style={StyledBox}>
