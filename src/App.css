@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
     top: 2%;
     left: 3%;
     color: white;
-    font-size: 400%;
+    font-size: 3rem;
     font-style: italic;
 }
 
@@ -41,5 +41,16 @@ body::-webkit-scrollbar {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .contactText {
+        font-size: 2rem;
+    }
+}
 
-
+@media screen and (max-width: 425px) {
+    .contactText {
+        font-size: 1.3rem;
+        top: 0;
+        left: 2%;
+    }
+}
