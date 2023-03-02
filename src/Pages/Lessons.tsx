@@ -43,6 +43,7 @@ const beerMakingSteps: { step: string }[] = [
     "step": "Prime & bottle your beer, then take it home (60 minutes).",
   },
 ];
+
 const itemData = [
   {
     img: ImageTwo,
@@ -109,7 +110,7 @@ export default function Lessons() {
               <Typography component="h3" variant="h6">
                 Winemaking in five (5) easy steps. Each step is two weeks from the last one.
               </Typography>
-              <List>
+              <List>  
                 {wineMakingSteps.map((step, index) => (
                   <ListItem sx={{ display: "listItem" }} key={index}>
                     <WineBarIcon />
@@ -172,6 +173,7 @@ export default function Lessons() {
         >
           Personalize your wine and beer bottles with custom labels!
         </Typography>
+
         <Grid item style={StyledGridItem} xs={12} md={12} lg={4}>
           <Paper style={StyledPaper} sx={{ minHeight: { md: "300px", lg: "1030px" } }}>
             <Box style={StyledBox}>
