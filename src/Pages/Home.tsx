@@ -1,6 +1,6 @@
 import class1 from "../Assets/class1.jpg"
 import grains from "../Assets/grains.jpg"
-import bottles from "../Assets/bottles.jpg"
+import beer from "../Assets/bottles.jpg"
 import wine from "../Assets/winebottles.jpg"
 
 import React, { CSSProperties } from "react";
@@ -43,8 +43,6 @@ const title: CSSProperties = {
 
 const StyledPaper: CSSProperties = {
   padding: "1rem",
-  border:"2px solid",
-  borderColor:"#6028278e",
   backgroundColor: "var(--green-color)",
   boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
   // minHeight:"150px"
@@ -133,7 +131,7 @@ export default function Home() {
       </Typography>
       <Grid item xs={12} sm={6} lg={5}>
         <Box  style={StyledBox}>
-          <img src={bottles} alt="bottles" style={images} />
+          <img src={beer} alt="bottles" style={images} />
         </Box>
       </Grid>
       <Grid item xs={12} sm={6} lg={6}>
