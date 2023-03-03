@@ -1,6 +1,7 @@
 :root {
   --green-color: #a8ad9c68;
   --maroon-color: #602827;
+  --transparent: #ffffff00, 0;
 }
 
 body {

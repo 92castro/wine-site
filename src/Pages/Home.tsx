@@ -8,7 +8,7 @@ import {Link} from "react-router-dom"
 import Divider from "@mui/material/Divider"
 import { GiCellarBarrels } from 'react-icons/gi';
 import { Typography, Box, Paper, Grid } from "@mui/material";
-import { minHeight, width } from "@mui/system";
+import { minHeight, padding, width } from "@mui/system";
 
 const heroImg: CSSProperties = {
   display:"flex",
@@ -16,7 +16,7 @@ const heroImg: CSSProperties = {
   backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1491924778227-f225b115dd5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
   height: "55vh",
   minHeight:"15em",
-  marginTop: "20px",
+  // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -62,7 +62,7 @@ const images: CSSProperties = {
 const paragraphs: CSSProperties = {
   textAlign:"justify",
   fontSize:"20px",
-  color:"var(--maroon-color)"
+  color:"var(--maroon-color)",
 }
 
 export default function Home() {
@@ -74,8 +74,8 @@ export default function Home() {
       </div>
     </div>
     <Divider style={{height:"50px"}}><GiCellarBarrels style={{height:"100px",fontSize:"60px"}}/></Divider>
-    <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} spacing={3}>
-      <Typography style={title}
+    <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} spacing={3} px={2}>
+      <Typography style={title} sx={{fontSize:{xs:"10px"}}}
       >
         Fermentations Education Center
       </Typography>
