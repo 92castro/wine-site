@@ -6,8 +6,8 @@
 body {
   background: linear-gradient(
     180deg,
-    rgba(191, 166, 162, 0.5354516806722689) 40%,
-    rgba(97, 38, 33, 0.2805497198879552) 65%
+    rgba(191, 166, 162, 0.39539565826330536) 10%,
+    rgba(137, 114, 110, 0.4458158263305322) 60%
   );
   margin: 0;
   padding: 0;
@@ -56,5 +56,9 @@ body::-webkit-scrollbar {
     font-size: 1rem;
     bottom: 5%;
     left: 2%;
+  }
+
+  .map {
+    display: none;
   }
 }

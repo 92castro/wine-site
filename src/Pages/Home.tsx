@@ -59,6 +59,12 @@ const images: CSSProperties = {
   borderRadius: "10px",
 }
 
+const paragraphs: CSSProperties = {
+  textAlign:"justify",
+  fontSize:"20px",
+  color:"var(--maroon-color)"
+}
+
 export default function Home() {
   return (
     <>
@@ -75,12 +81,12 @@ export default function Home() {
       </Typography>
       <Grid item xs={12} sm={6} lg={6} >
         <Box style={StyledBox}>
-            <Paper style={StyledPaper} sx={{minHeight:{sm:"200px",md:"245px", lg:"240px"}}}>
-              <Typography>
+            {/* <Paper style={StyledPaper} sx={{minHeight:{sm:"200px",md:"245px", lg:"240px"}}}> */}
+              <Typography style={paragraphs}>
                 In order to serve our clients better, we have created a new Classroom/Education Center within Fermentations Home Winemaking Center. We have always valued the educational aspects of making wine and beer, so now we have a room dedicated to the learning environment. In the near future, we'll feature wine and beer education events.
               </Typography>
               <Link style={{fontWeight:"550"}} to="/contact">Contact us for arrangements to use this presentation space for your special event. </Link>
-            </Paper>
+            {/* </Paper> */}
           </Box>
       </Grid>
       <Grid item xs={12} sm={6} lg={5}>
@@ -99,11 +105,11 @@ export default function Home() {
       </Grid>
       <Grid item xs={12} sm={6} lg={6}>
           <Box style={StyledBox}>
-            <Paper style={StyledPaper} sx={{minHeight:{sm:"200px",md:"245px", lg:"235px"}}}>
-              <Typography>
+            {/* <Paper style={StyledPaper} sx={{minHeight:{sm:"200px",md:"245px", lg:"235px"}}}> */}
+              <Typography style={paragraphs}>
                 To serve our all-grain brewing community better, we've expanded and added a full-service grain room, complete with 15 Base Malts, 60 Specialty Malts, and two mills (one Barley Crusher and one Brewery Series Professional mill).  Check out our selection - we intend to have the best selection and service in this Region!
               </Typography>
-            </Paper>
+            {/* </Paper> */}
           </Box>
       </Grid>
       <Typography style={title}
@@ -112,12 +118,11 @@ export default function Home() {
       </Typography>
       <Grid item xs={12} sm={6} lg={6} >
         <Box style={StyledBox}>
-            <Paper style={StyledPaper} sx={{minHeight:{sm:"200px",md:"245px", lg:"240px"}}}>
-              <Typography>
-                In order to serve our clients better, we have created a new Classroom/Education Center within Fermentations Home Winemaking Center. We have always valued the educational aspects of making wine and beer, so now we have a room dedicated to the learning environment. In the near future, we'll feature wine and beer education events.
+            {/* <Paper style={StyledPaper} sx={{minHeight:{sm:"200px",md:"245px", lg:"240px"}}}> */}
+              <Typography style={paragraphs}>
+                Are you a wine enthusiast? A wine starter kit is the perfect way to get started on your winemaking journey, providing you with all the essential equipment and ingredients you need to create your first batch of wine. And the best part, you don't need any prior winemaking experience to get started!
               </Typography>
-              <Link style={{fontWeight:"550"}} to="/contact">Contact us for arrangements to use this presentation space for your special event. </Link>
-            </Paper>
+            {/* </Paper> */}
           </Box>
       </Grid>
       <Grid item xs={12} sm={6} lg={5}>
@@ -136,11 +141,11 @@ export default function Home() {
       </Grid>
       <Grid item xs={12} sm={6} lg={6}>
           <Box style={StyledBox}>
-            <Paper style={StyledPaper} sx={{minHeight:{sm:"200px",md:"245px", lg:"235px"}}}>
-              <Typography>
-                To serve our all-grain brewing community better, we've expanded and added a full-service grain room, complete with 15 Base Malts, 60 Specialty Malts, and two mills (one Barley Crusher and one Brewery Series Professional mill).  Check out our selection - we intend to have the best selection and service in this Region!
+            {/* <Paper style={StyledPaper} sx={{minHeight:{sm:"200px",md:"245px", lg:"235px"}}}> */}
+              <Typography style={paragraphs}>
+                Are you a beer lover? Imagine the satisfaction of creating your own unique brew, perfectly tailored to your personal taste. With a beer starter kit, you can do just that! Brewing your own beer at home is not only a fun and rewarding hobby, but it also allows you to experiment with different ingredients and styles to create your own signature brew.
               </Typography>
-            </Paper>
+            {/* </Paper> */}
           </Box>
       </Grid>
     </Grid>
