@@ -9,33 +9,52 @@ body {
     rgba(191, 166, 162, 0.5354516806722689) 40%,
     rgba(97, 38, 33, 0.2805497198879552) 65%
   );
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-@media screen and (min-width: 1440px) {
+.contactImage {
+  position: relative;
+  padding: 0;
+  margin: 0 0 -4px 0;
+}
+
+.contactText {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  color: white;
+  font-size: 3rem;
+  font-family: "Italiana", sans-serif;
+}
+
+.socialIcon {
+  transform: scale(3);
+  margin: 0 25px 0 25px;
+}
+
+@media screen and (min-width: 1200px) {
   .map {
     width: 600px;
     height: 337px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .info {
-    font-size: 130%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .button {
-    width: 30%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .contactText {
-    font-size: 130%;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contactText {
+    font-size: 1rem;
+    bottom: 5%;
+    left: 2%;
   }
 }
