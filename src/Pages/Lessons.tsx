@@ -14,8 +14,9 @@ const StyledGridItem: CSSProperties = {
 const StyledPaper: CSSProperties = {
   // minHeight: "400px",
   padding: "2rem",
-  backgroundColor: "var(--green-color)",
-  boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+  // backgroundColor: "var(--green-color)",
+  backgroundColor: "none",
+  // boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
 };
 const StyledBox: CSSProperties = {
   height: "100%",
@@ -27,7 +28,7 @@ const heroImg: CSSProperties = {
   display: "flex",
   flexDirection: "column",
   backgroundImage:
-    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1491924778227-f225b115dd5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1573812808311-43b8a5ea358f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx3aW5lJTIwbWFraW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')",
   height: "40vh",
   minHeight: "15em",
   marginTop: "20px",
@@ -63,7 +64,7 @@ const beerMakingSteps: { step: string }[] = [
   },
 ];
 
-const itemData = [
+const itemData: { img: string; title: string }[] = [
   {
     img: ImageTwo,
     title: "Danish Devil wine label",
@@ -109,18 +110,24 @@ export default function Lessons() {
         <Grid item style={StyledGridItem} xs={12} md={12} lg={12}>
           <Box style={StyledBox}>
             <Paper style={StyledPaper}>
-              <Typography component="p" py={1}>
+              <Typography component="p" py={1} sx={{ maxWidth: "700px", margin: "auto" }}>
                 Winemaking lessons are available Mondays through Saturdays during regular store hours.
-                <Typography component="span" sx={{ fontWeight: "700" }}>
+                <Typography component="span" sx={{ fontWeight: "700", display: "block" }}>
                   Appointments will be scheduled after payment is received for your lesson fees and ingredient kit.
                 </Typography>
                 Beermaking lessons require 3 hours on the first day, by appointment only.
               </Typography>
-              <Typography component="p" py={1}>
-                Winemaking and beer brewing is an adult hobby, for participants over the age of 21. Due to space limitations in our center we ask that
-                children not be brought along during your appointments, to permit your full attention during the winemaking process.
+
+              <Typography component="p" py={1} sx={{ maxWidth: "700px", margin: "auto" }}>
+                Winemaking and beer brewing is an adult hobby, &nbsp;
+                <Typography component="span" sx={{ fontWeight: "700" }}>
+                  for participants over the age of 21 years old.
+                </Typography>
+                <br />
+                Due to space limitations in our center we ask that children not be brought along during your appointments, to permit your full
+                attention during the winemaking process.
               </Typography>
-              <Typography component="p" py={1}>
+              <Typography component="p" py={1} sx={{ maxWidth: "700px", margin: "auto" }}>
                 Winemaking centers like Fermentations are considered extensions of your home. The wine is your property from start to finish, and you
                 make it yourself. We will help you through each step to make your wine with our equipment in our store, then take home the wine you
                 bottle and label personally, approximately 7 to 8 weeks later.
@@ -131,8 +138,11 @@ export default function Lessons() {
         <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
           <Box style={StyledBox}>
             <Paper style={StyledPaper} sx={{ minHeight: { md: "800px", lg: "650px" } }}>
-              <Typography component="h3" variant="h6">
-                Winemaking in five (5) easy steps. Each step is two weeks from the last one.
+              <Typography component="h3" variant="h6" textAlign="center" fontSize={{ sm: "16px", md: "18px", lg: "22px" }}>
+                Winemaking in five (5) easy steps.
+                {/* <Typography component="small" sx={{ fontSize: "12px", display: "block" }}>
+                  Each step is two weeks from the last one.
+                </Typography> */}
               </Typography>
               <List>
                 {wineMakingSteps.map((step, index) => (
@@ -142,15 +152,30 @@ export default function Lessons() {
                   </ListItem>
                 ))}
               </List>
-              <Typography component="h3" variant="h6">
+              <Typography component="h3" variant="h6" sx={{ fontWeight: "700", fontSize: { sm: "18px", md: "22px", lg: "26px" } }}>
                 What will this cost?
               </Typography>
               <Typography component="p">
-                We currently charge $99.75 + tax to make wine in our store (includes bottles, corks, labels, shrink capsules, use of equipment &
-                lesson fee), plus the wine ingredient kit of your choice. Wine ingredient kits make approx. 30 bottles, and range from $75 for Island
-                Mist (fruit-flavored wine-based beverages) to about $211 for our highest end Cabernet Sauvignon ingredient kits. Typical total cost is
-                around $250 to $300 for 30 bottles of great quality wine, or about $8 to $10 per bottle for wine that rivals premium varietal wine
-                brands in liquor stores.
+                We currently charge{" "}
+                <Typography component="span" sx={{ fontWeight: "700" }}>
+                  $99.75 + tax to make wine in our store.
+                </Typography>
+                <br />
+                Which includes bottles, corks, labels, shrink capsules, use of equipment & lesson fee, plus the wine ingredient kit of your choice.
+                Wine ingredient kits{" "}
+                <Typography component="span" sx={{ fontWeight: "700" }}>
+                  make approximately 30 bottles
+                </Typography>
+                , and range from $75 for Island Mist (fruit-flavored wine-based beverages) to about $211 for our highest end Cabernet Sauvignon
+                ingredient kits. Typical{" "}
+                <Typography component="span" sx={{ fontWeight: "700" }}>
+                  total cost is around $250 to $300 for 30 bottles of great quality wine
+                </Typography>{" "}
+                , or about{" "}
+                <Typography component="span" sx={{ fontWeight: "700" }}>
+                  $8 to $10 per bottle
+                </Typography>{" "}
+                for wine that rivals premium varietal wine brands in liquor stores.
               </Typography>
             </Paper>
           </Box>
@@ -158,10 +183,10 @@ export default function Lessons() {
         <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
           <Paper style={StyledPaper} sx={{ minHeight: { md: "800px", lg: "650px" } }}>
             <Box style={StyledBox}>
-              <Typography component="h3" variant="h6">
+              <Typography component="h3" variant="h6" textAlign="center" fontSize={{ sm: "16px", md: "18px", lg: "22px" }}>
                 Beer Brewing in three (3) easy steps:
               </Typography>
-              <List>
+              <List sx={{ minHeight: "302px" }}>
                 {beerMakingSteps.map((step, index) => (
                   <ListItem sx={{ display: "listItem" }} key={index}>
                     <SportsBarIcon />
@@ -169,15 +194,29 @@ export default function Lessons() {
                   </ListItem>
                 ))}
               </List>
-              <Typography component="h3" variant="h6">
+              <Typography component="h3" variant="h6" sx={{ fontWeight: "700", fontSize: { sm: "18px", md: "22px", lg: "26px" } }}>
                 What will this cost?
               </Typography>
               <Typography component="p">
-                We currently charge $56.50 plus ingredients to make beer in our store. Includes 3 hour brewing session, 48 to 52 bottles, use of our
-                equipment & lesson fee, plus the beer ingredient kit of your choice. Beer ingredient kits make approx. 5 gallons (48-52 bottles), and
-                range from $35 to $60 depending upon the kit you choose. Typical total cost is around $100 to $120 for two cases of great quality
-                beer, or about $2 per bottle for beer that rivals premium brands in liquor stores. Three weeks from start to bottling in 3
-                appointments, plus approximately four weeks for bottle conditioning
+                We currently charge{" "}
+                <Typography component="span" sx={{ fontWeight: "700" }}>
+                  $56.50 plus ingredients to make beer in our store.
+                </Typography>{" "}
+                Includes 3 hour brewing session, 48 to 52 bottles, use of our equipment & lesson fee, plus the beer ingredient kit of your choice.
+                Beer ingredient kits{" "}
+                <Typography component="span" sx={{ fontWeight: "700" }}>
+                  make approximately 5 gallons (48-52 bottles)
+                </Typography>
+                , and range from $35 to $60 depending upon the kit you choose.Typical{" "}
+                <Typography component="span" sx={{ fontWeight: 700 }}>
+                  total cost is around $100 to $120 for two cases of great quality beer
+                </Typography>
+                , or about{" "}
+                <Typography component="span" sx={{ fontWeight: 700 }}>
+                  $2 per bottle
+                </Typography>{" "}
+                for beer that rivals premium brands in liquor stores. Three weeks from start to bottling in 3 appointments, plus approximately four
+                weeks for bottle conditioning
               </Typography>
             </Box>
           </Paper>
