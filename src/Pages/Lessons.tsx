@@ -142,7 +142,7 @@ export default function Lessons() {
           </Grid>
           {/* winemaking steps grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
-            <Box style={StyledBox}>
+            <Box p={{ xs: 1, md: 2 }}>
               <Typography component="h3" variant="h6" sx={{ fontSize: { xs: "22px", md: "24px", lg: "32px" }, textAlign: "center", mt: 5 }}>
                 Winemaking in five (5) easy steps.
                 {/* <Typography component="small" sx={{ fontSize: "12px", display: "block" }}>
@@ -186,7 +186,7 @@ export default function Lessons() {
           </Grid>
           {/* beer brewing steps grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
-            <Box style={StyledBox}>
+            <Box p={{ xs: 1, md: 2 }}>
               <Typography component="h3" variant="h6" sx={{ fontSize: { xs: "22px", md: "24px", lg: "32px" }, textAlign: "center", mt: 5 }}>
                 Beer Brewing in three (3) easy steps:
               </Typography>
@@ -240,34 +240,36 @@ export default function Lessons() {
             Personalize your wine and beer bottles with custom labels!
           </Typography>
           {/* Custom labels grid item*/}
-          <Grid item style={StyledGridItem} xs={12} md={12} lg={4}>
-            <Box style={StyledBox}>
-              <Typography component="p">
-                We can print any label design you create on high-gloss, white self-adhesive labels. Standard with each winemaking class in our
-                store,we will print your custom label creations to showcase your handmade beverages. Stock label sizes are 3"x4", 3"x3",
-                2-1/2"x3-3/4", 2"x3" & 2"x4" rectangles and 2"x3" ovals. We charge 50-cents per label for customers that purchase classes and
-                ingredients in our store.
-              </Typography>
-              <Typography component="p">
-                We can accept your label designs in most graphic formats, but .JPG and .PNG are preferred. Resolution at least 200 dpi, and file sizes
-                at least 100K produce best results. Borders are difficult to align perfectly to the edges of our die-cut label stock. Therefore, we
-                prefer borderless label designs so we can print your image edge-to-edge, for best printed quality.
-              </Typography>
-              <Typography component="p">
-                If you design your labels in PowerPoint or MS Publisher, for best printing quality please double the dimensions of the finished label
-                size (i.e. 6:x8" for a 3"x4" label) and "Save As" to a .PNG or .JPG image file before submitting your completed design.
-              </Typography>
-              <Typography component="p">
-                Free label design templates are available from the following third-party websites: www.beerlabelizer.com www.jamlabelizer.com Some
-                examples of labels we've used on our personal homemade beverages are shown below. Email your label design(s) to:
-                labels@fermentations.biz Call Tim at (719) 598-1164 with any questions you may have!
-              </Typography>
-            </Box>
+          <Grid item style={StyledGridItem} xs={12} md={12} lg={8}>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: "100%" }}>
+              <Box style={StyledBox}>
+                <Typography component="p" py={{ sm: 1, lg: 2 }} px={{ sm: 3, lg: 2 }}>
+                  We can print any label design you create on high-gloss, white self-adhesive labels. Standard with each winemaking class in our
+                  store,we will print your custom label creations to showcase your handmade beverages. Stock label sizes are 3"x4", 3"x3",
+                  2-1/2"x3-3/4", 2"x3" & 2"x4" rectangles and 2"x3" ovals. We charge 50-cents per label for customers that purchase classes and
+                  ingredients in our store.
+                </Typography>
+                <Typography component="p" py={{ sm: 1, lg: 2 }} px={{ sm: 3, lg: 2 }}>
+                  We can accept your label designs in most graphic formats, but .JPG and .PNG are preferred. Resolution at least 200 dpi, and file
+                  sizes at least 100K produce best results. Borders are difficult to align perfectly to the edges of our die-cut label stock.
+                  Therefore, we prefer borderless label designs so we can print your image edge-to-edge, for best printed quality.
+                </Typography>
+                <Typography component="p" py={{ sm: 1, lg: 2 }} px={{ sm: 3, lg: 2 }}>
+                  If you design your labels in PowerPoint or MS Publisher, for best printing quality please double the dimensions of the finished
+                  label size (i.e. 6:x8" for a 3"x4" label) and "Save As" to a .PNG or .JPG image file before submitting your completed design.
+                </Typography>
+                <Typography component="p" py={{ sm: 1, lg: 2 }} px={{ sm: 3, lg: 2 }}>
+                  Free label design templates are available from the following third-party websites: www.beerlabelizer.com www.jamlabelizer.com Some
+                  examples of labels we've used on our personal homemade beverages are shown below. Email your label design(s) to:
+                  labels@fermentations.biz Call Tim at (719) 598-1164 with any questions you may have!
+                </Typography>
+              </Box>
+            </div>
           </Grid>
           {/* Photos grid item*/}
-          <Grid item style={StyledGridItem} xs={12} md={12} lg={8}>
-            <Box style={StyledBox}>
-              <ImageList cols={2} gap={8} sx={{ minHeight: { md: "300px", lg: "560px" }, maxHeight: { md: "600px", lg: "1000px" } }}>
+          <Grid item style={StyledGridItem} xs={12} md={12} lg={4}>
+            <Box p={{ xs: 1, md: 2 }}>
+              <ImageList cols={2} gap={8}>
                 {itemData.map((item, index) => (
                   <ImageListItem key={index}>
                     <img
@@ -275,7 +277,7 @@ export default function Lessons() {
                       srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       alt={item.title}
                       loading="lazy"
-                      style={{ background: "cover" }}
+                      style={{ background: "cover", height: 185 }}
                     />
                   </ImageListItem>
                 ))}
