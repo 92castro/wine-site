@@ -6,7 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 const footer: CSSProperties={
   background:"linear-gradient(180deg, rgba(137,114,110,0.2967872191011236) 45%, rgba(191,166,162,0.4962254213483146) 80%)",
-  marginTop: "10px",
+  marginTop: "18px",
 }
 
 const store: CSSProperties={
