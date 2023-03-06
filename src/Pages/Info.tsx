@@ -6,14 +6,11 @@ import Box from '@mui/material/Box';
 const formCard: CSSProperties = {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    width: "100%",
     minHeight: "50vh",
     textAlign: "center",
     backgroundColor: "white",
-    // padding: "10px",
     margin: "0",
+    padding: "10px"
 }
 
 
@@ -23,13 +20,13 @@ export default function Info() {
       <div className="contactImage">
           <img src={Image} style={{ maxWidth: "100%", height: "auto" }} />
           <h3 className="contactText">
-            Information and Legality of Homebrew
+            Tips, Tricks, and Legality
           </h3>
       </div>
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <div style={formCard}>
-            <h1 style={{ fontFamily: "Italiana, sans-serif"}}>Hints & Tricks</h1>
-            <p style={{ fontFamily: "Roboto, sans-serif"}}>At Fermentations, we offer premium quality wine kits from Winexpert and RJ Spagnols, and beer ingredient kits from Brewers Best & True Brew. The links provided below will take you to helpful hints from our manufacturers to make sure your winemaking & brewing experience is successful.</p>
+            <h1 style={{ fontFamily: "Italiana, sans-serif", color: "#74250e", margin: "0" }}>Hints & Tricks</h1>
+            <span style={{ fontFamily: "Roboto, sans-serif"}}>At Fermentations, we offer premium quality wine kits from Winexpert and RJ Spagnols, and beer ingredient kits from Brewers Best & True Brew. The links provided below will take you to helpful hints from our manufacturers to make sure your winemaking & brewing experience is successful.</span>
             <p style={{ fontFamily: "Roboto, sans-serif"}}>Want to know more about Winemaking?  Visit these helpful industry links:</p>
           <p style={{ fontFamily: "Roboto, sans-serif"}}>
             <a href="https://www.brewersbestkits.com/faqs.html" target="_blank">Brewer's Best Beermaking Tips</a>
@@ -46,7 +43,7 @@ export default function Info() {
           <h3 style={{ fontFamily: "Roboto, sans-serif"}}>Enjoy your winemaking hobby responsibly!</h3>
           </div>
           <div style={formCard}>
-            <h1 style={{ fontFamily: "Italiana, sans-serif"}}>Legal Information</h1>
+            <h1 style={{ fontFamily: "Italiana, sans-serif", color: "#74250e" }}>Legal Information</h1>
             <h3>Here is what the Federal Law says about making beer and wine:</h3>
             <p>The Alcohol and Tobacco Tax and Trade Bureau (TTB) has been asked if there are any Federal requirements covering operation of a Home Winemakers' Center. Home Winemakers' Centers are places where an individual pays a fee to use space and equipment to make wine for personal or family use.</p>
             <p>Although we refer to the individual making wine for personal or family use as a "home winemaker," the wine may be made somewhere other than the individual's residence, including a Home Winemakers' Center.</p>
@@ -64,8 +61,8 @@ export default function Info() {
             <p>In August 2011, the Colorado Department of Revenue provided a written determination that winemaking ingredient kits and beermaking ingredient kits are considered food products for home consumption, and therefore are not subject to sales taxes.  Non-consumable items such as equipment, bottles, corks, labels, etc. are subject to sales taxes, just as they have always been.</p>
             <h3>For more information about homebrewing and winemaking, visit these helpful industry websites:</h3>
             <h4>American Homebrewer's Association:</h4>
-            <a href="http://www.homebrewersassociation.org/pages/government-affairs/talking-points">http://www.homebrewersassociation.org/pages/government-affairs/talking-points</a>
-            <a href="http://www.homebrewersassociation.org/pages/government-affairs/statutes/colorado">http://www.homebrewersassociation.org/pages/government-affairs/statutes/colorado</a>
+            <a style={{ fontSize: "90%" }} href="http://www.homebrewersassociation.org/pages/government-affairs/talking-points">http://www.homebrewersassociation.org/pages/government-affairs/talking-points</a>
+            <a style={{ fontSize: "90%" }} href="http://www.homebrewersassociation.org/pages/government-affairs/statutes/colorado">http://www.homebrewersassociation.org/pages/government-affairs/statutes/colorado</a>
             <p>On November 13, 2015 the Colorado Liquor Enforcement Division published a document titled "Homebrew Use and Limitations" to clarify how Homebrewers and Homebrew Supply Stores (i.e. Fermentations Home Winemaking Center) are permitted to handle the production, tasting and use of homebrew by patrons.  The American Homebrewers Association (AHA) has made this document available via its website.  See the following link for the entire document:</p>
             <a href="http://www.homebrewersassociation.org/wp-content/uploads/2015/11/Colorado-LED-BULLETIN-15-04-Home-Brew.pdf">http://www.homebrewersassociation.org/wp-content/uploads/2015/11/Colorado-LED-BULLETIN-15-04-Home-Brew.pdf</a>
           </div>
