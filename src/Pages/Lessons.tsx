@@ -2,6 +2,7 @@ import ImageOne from "../Assets/CustomLabelOne.jpg";
 import ImageTwo from "../Assets/CustomLabelTwo.jpg";
 import ImageThree from "../Assets/CustomLabelThree.jpg";
 import ImageFour from "../Assets/CustomLabelFour.jpg";
+import HeroImage from "../Assets/vineYardImage.jpg";
 
 import React, { CSSProperties } from "react";
 import { Grid, ImageList, ImageListItem, List, ListItem, Paper, Typography } from "@mui/material";
@@ -33,8 +34,7 @@ const StyledBox: CSSProperties = {
 const heroImg: CSSProperties = {
   display: "flex",
   flexDirection: "column",
-  backgroundImage:
-    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1573812808311-43b8a5ea358f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx3aW5lJTIwbWFraW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')",
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage})`,
   height: "40vh",
   minHeight: "15em",
   marginTop: "20px",
@@ -90,22 +90,7 @@ const itemData: { img: string; title: string }[] = [
 export default function Lessons() {
   return (
     <>
-      <Box style={heroImg}>
-        <Typography
-          maxWidth={{ xs: "400px", sm: "450px", lg: "550px" }}
-          component="h1"
-          textAlign="center"
-          sx={{
-            color: "#fff",
-            fontWeight: "700",
-            fontSize: { xs: "28px", sm: "36px", lg: "42px" },
-            marginX: "auto",
-            marginY: { xs: "1rem", md: "2rem" },
-          }}
-        >
-          Personalized winemaking and home brew lessons
-        </Typography>
-      </Box>
+      <Box style={heroImg}></Box>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="xl" minHeight="100vh" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3, xl: 6 }}>
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6} sx={{ display: { xs: "none", md: "block" } }}>
@@ -114,16 +99,38 @@ export default function Lessons() {
           {/* Lesson info grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: "100%" }}>
-              <Box sx={{}}>
-                <Typography component="p" py={{ sm: 1, lg: 2 }} px={{ sm: 3, lg: 2 }}>
+              <Box sx={{ border: "1px solid red" }}>
+                <Typography
+                  maxWidth={{ xs: "400px", sm: "470px", lg: "600px" }}
+                  component="h1"
+                  sx={{
+                    fontWeight: "500",
+                    fontSize: { xs: "35px", sm: "40px", lg: "50px" },
+                    marginY: { xs: "1rem", md: "2rem" },
+                    px: { xs: 2, sm: 3, md: 3, lg: 2 },
+                    fontFamily: "League Spartan",
+                  }}
+                >
+                  Personalized winemaking and home brew lessons
+                </Typography>
+                <Typography
+                  component="p"
+                  py={{ xs: 1, lg: 2 }}
+                  px={{ xs: 2, sm: 3, md: 3, lg: 2 }}
+                  sx={{ fontSize: { sm: "16px", md: "18px", lg: "20px" } }}
+                >
                   Winemaking lessons are available Mondays through Saturdays during regular store hours.
                   <Typography component="span" sx={{ fontWeight: "700", display: "block" }}>
                     Appointments will be scheduled after payment is received for your lesson fees and ingredient kit.
                   </Typography>
                   Beermaking lessons require 3 hours on the first day, by appointment only.
                 </Typography>
-
-                <Typography component="p" py={{ sm: 1, lg: 2 }} px={{ sm: 3, lg: 2 }} sx={{ margin: { sm: "auto" } }}>
+                <Typography
+                  component="p"
+                  py={{ xs: 1, lg: 2 }}
+                  px={{ xs: 2, sm: 3, md: 3, lg: 2 }}
+                  sx={{ margin: { sm: "auto" }, fontSize: { sm: "16px", md: "18px", lg: "20px" } }}
+                >
                   Winemaking and beer brewing is an adult hobby, &nbsp;
                   <Typography component="span" sx={{ fontWeight: "700" }}>
                     for participants over the age of 21 years old.
@@ -132,7 +139,12 @@ export default function Lessons() {
                   Due to space limitations in our center we ask that children not be brought along during your appointments, to permit your full
                   attention during the winemaking process.
                 </Typography>
-                <Typography component="p" py={{ sm: 1, lg: 2 }} px={{ sm: 3, lg: 2 }} sx={{ margin: { sm: "auto" } }}>
+                <Typography
+                  component="p"
+                  py={{ xs: 1, lg: 2 }}
+                  px={{ xs: 2, sm: 3, md: 3, lg: 2 }}
+                  sx={{ margin: { sm: "auto" }, fontSize: { sm: "16px", md: "18px", lg: "20px" } }}
+                >
                   Winemaking centers like Fermentations are considered extensions of your home. The wine is your property from start to finish, and
                   you make it yourself. We will help you through each step to make your wine with our equipment in our store, then take home the wine
                   you bottle and label personally, approximately 7 to 8 weeks later.
