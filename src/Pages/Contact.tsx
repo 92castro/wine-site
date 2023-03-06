@@ -65,13 +65,16 @@ export default function Contact() {
       
   return (
     <>
+      {/* Hero Image */}
       <div className="contactImage">
-          <img src={Image} style={{ width: "100%" }} />
+          <img src={Image} style={{ maxWidth: "100%", height: "auto" }} />
           <h3 className="contactText">
             Let's Talk Wine and Beer!
           </h3>
       </div>
+      {/* Form and Business Info */}
       <Grid container sx={{ display: "flex", alignItems: "center" }}>
+        {/* Contact Form */}
         <Grid item sm={12} md={6}>
           <form ref={form} onSubmit={onSubmit} style={{ height: "100%"}}>
             <div style={formCard} key={"green"}>
@@ -138,6 +141,7 @@ export default function Contact() {
             </div>
           </form>
         </Grid>
+        {/* Business Information */}
         <Grid item xs={12} md={6}>
           <div style={formCard}>
             <div>
