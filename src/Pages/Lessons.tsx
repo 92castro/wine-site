@@ -99,7 +99,7 @@ export default function Lessons() {
           {/* Lesson info grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: "100%" }}>
-              <Box sx={{ border: "1px solid red" }}>
+              <Box>
                 <Typography
                   maxWidth={{ xs: "400px", sm: "470px", lg: "600px" }}
                   component="h1"
@@ -154,18 +154,29 @@ export default function Lessons() {
           </Grid>
           {/* winemaking steps grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
-            <Box p={{ xs: 1, md: 2 }}>
-              <Typography component="h3" variant="h6" sx={{ fontSize: { xs: "22px", md: "24px", lg: "32px" }, textAlign: "center", mt: 5 }}>
+            <Box
+              p={{ xs: 1, md: 2 }}
+              sx={{ display: "flex", flexDirection: "column", minHeight: { md: "550px", lg: "650px" }, justifyContent: "space-between" }}
+            >
+              <Typography
+                component="h3"
+                variant="h6"
+                sx={{ fontSize: { xs: "32px", lg: "40px" }, textAlign: "center", mt: 5, fontFamily: "League Spartan" }}
+              >
                 Winemaking in five (5) easy steps.
                 {/* <Typography component="small" sx={{ fontSize: "12px", display: "block" }}>
                   Each step is two weeks from the last one.
                 </Typography> */}
               </Typography>
-              <List>
+              <List sx={{ minHeight: "360px" }}>
                 {wineMakingSteps.map((step, index) => (
                   <ListItem sx={{ display: "listItem" }} key={index}>
-                    <WineBarIcon />
-                    {step.step}
+                    <Box sx={{ display: "flex", flexDirection: "row" }}>
+                      <WineBarIcon sx={{ alignSelf: "center" }} />
+                      <Typography component="p" sx={{ marginLeft: 2, fontSize: { sm: "16px", md: "18px" } }}>
+                        {step.step}
+                      </Typography>
+                    </Box>
                   </ListItem>
                 ))}
               </List>
@@ -198,15 +209,26 @@ export default function Lessons() {
           </Grid>
           {/* beer brewing steps grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
-            <Box p={{ xs: 1, md: 2 }}>
-              <Typography component="h3" variant="h6" sx={{ fontSize: { xs: "22px", md: "24px", lg: "32px" }, textAlign: "center", mt: 5 }}>
+            <Box
+              p={{ xs: 1, md: 2 }}
+              sx={{ display: "flex", flexDirection: "column", minHeight: { md: "550px", lg: "650px" }, justifyContent: "space-between" }}
+            >
+              <Typography
+                component="h3"
+                variant="h6"
+                sx={{ fontSize: { xs: "32px", lg: "40px" }, textAlign: "center", mt: 5, fontFamily: "League Spartan" }}
+              >
                 Beer Brewing in three (3) easy steps:
               </Typography>
-              <List sx={{ minHeight: "302px" }}>
+              <List sx={{ minHeight: "360px" }}>
                 {beerMakingSteps.map((step, index) => (
                   <ListItem sx={{ display: "listItem" }} key={index}>
-                    <SportsBarIcon />
-                    {step.step}
+                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+                      <SportsBarIcon />
+                      <Typography component="p" sx={{ marginLeft: 2, fontSize: { sm: "16px", md: "18px" } }}>
+                        {step.step}
+                      </Typography>
+                    </Box>
                   </ListItem>
                 ))}
               </List>
@@ -236,7 +258,6 @@ export default function Lessons() {
               </Typography>
             </Box>
           </Grid>
-
           <Typography
             maxWidth={{ xs: "500px", sm: "600px", lg: "100%" }}
             component="h1"
