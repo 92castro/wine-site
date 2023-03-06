@@ -1,24 +1,23 @@
 import logo from "../../Assets/Capture.png";
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <>
-    <header style={{display:"flex",justifyContent:"space-around"}}>
-      
-      <Link to="/"><img src={logo} alt="" style={{borderRadius:"25px"}} /></Link>
-      <Link to="/about">About</Link>
-      <Link to="/lessons">Lessons</Link>
-      <Link to="/photo">Photo</Link>
-      <Link to="/info">Info</Link>
-      <Link to="/contact">Contact</Link>
-    </header>
+      <header style={{ display: "flex", justifyContent: "space-around", width: "100%" }}>
+        <Link to="/">
+          <img src={logo} alt="" style={{ borderRadius: "25px" }} />
+        </Link>
+        <Link to="/about">About</Link>
+        <Link to="/lessons">Lessons</Link>
+        <Link to="/photo">Photo</Link>
+        <Link to="/info">Info</Link>
+        <Link to="/contact">Contact</Link>
+      </header>
     </>
-  )
+  );
 }
-
 
 // import * as React from 'react';
 // import { Link } from 'react-router-dom'
@@ -27,7 +26,6 @@ export default function Header() {
 // import MenuItem from '@mui/material/MenuItem';
 // import MenuIcon from '@mui/icons-material/Menu';
 // import { Toolbar } from '@mui/material';
-
 
 // export default function BasicMenu() {
 //   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -51,7 +49,7 @@ export default function Header() {
 //         aria-expanded={open ? 'true' : undefined}
 //         onClick={handleClick}
 //       >
-//       <MenuIcon/> 
+//       <MenuIcon/>
 //       </IconButton>
 //       <Menu
 //         id="basic-menu"
