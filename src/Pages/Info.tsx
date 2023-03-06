@@ -17,31 +17,35 @@ const formCard: CSSProperties = {
 export default function Info() {
   return (
     <>
+      {/* Hero Image */}
       <div className="contactImage">
           <img src={Image} style={{ maxWidth: "100%", height: "auto" }} />
           <h3 className="contactText">
             Tips, Tricks, and Legality
           </h3>
       </div>
+      {/* Hints and Legal Info */}
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          {/* Hints and Tricks */}
           <div style={formCard}>
             <h1 style={{ fontFamily: "Italiana, sans-serif", color: "#74250e", margin: "0" }}>Hints & Tricks</h1>
             <span style={{ fontFamily: "Roboto, sans-serif"}}>At Fermentations, we offer premium quality wine kits from Winexpert and RJ Spagnols, and beer ingredient kits from Brewers Best & True Brew. The links provided below will take you to helpful hints from our manufacturers to make sure your winemaking & brewing experience is successful.</span>
             <p style={{ fontFamily: "Roboto, sans-serif"}}>Want to know more about Winemaking?  Visit these helpful industry links:</p>
-          <p style={{ fontFamily: "Roboto, sans-serif"}}>
-            <a href="https://www.brewersbestkits.com/faqs.html" target="_blank">Brewer's Best Beermaking Tips</a>
-          </p>
-          <p style={{ fontFamily: "Roboto, sans-serif"}}>
-            <a href="https://winexpert.com/winemaking-process/" target="_blank">Winexpert Helpful Winemaking Tips</a>
-          </p>
-          <p style={{ fontFamily: "Roboto, sans-serif"}}>
-            <a href="http://winemakermag.com/" target="_blank">Winemaker Magazine</a>
-          </p>
-          <p style={{ fontFamily: "Roboto, sans-serif"}}>
-            <a href="http://www.byo.com/" target="_blank">Brew Your Own Magazine</a>
-          </p>
-          <h3 style={{ fontFamily: "Roboto, sans-serif"}}>Enjoy your winemaking hobby responsibly!</h3>
+            <p style={{ fontFamily: "Roboto, sans-serif"}}>
+              <a href="https://www.brewersbestkits.com/faqs.html" target="_blank">Brewer's Best Beermaking Tips</a>
+            </p>
+            <p style={{ fontFamily: "Roboto, sans-serif"}}>
+              <a href="https://winexpert.com/winemaking-process/" target="_blank">Winexpert Helpful Winemaking Tips</a>
+            </p>
+            <p style={{ fontFamily: "Roboto, sans-serif"}}>
+              <a href="http://winemakermag.com/" target="_blank">Winemaker Magazine</a>
+            </p>
+            <p style={{ fontFamily: "Roboto, sans-serif"}}>
+              <a href="http://www.byo.com/" target="_blank">Brew Your Own Magazine</a>
+            </p>
+            <h3 style={{ fontFamily: "Roboto, sans-serif"}}>Enjoy your winemaking hobby responsibly!</h3>
           </div>
+          {/* Legal Information */}
           <div style={formCard}>
             <h1 style={{ fontFamily: "Italiana, sans-serif", color: "#74250e" }}>Legal Information</h1>
             <h3>Here is what the Federal Law says about making beer and wine:</h3>
