@@ -22,17 +22,17 @@ const heroImg: CSSProperties = {
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   alignItems: "center",
-  justifyContent: "center"
-}
+  justifyContent: "center",
+};
 
 const heroText: CSSProperties = {
   textAlign: "center",
   color: "white",
-  fontSize:"40px"
-}
+  fontSize: "40px",
+};
 
 const title: CSSProperties = {
-  textAlign:"center",
+  textAlign: "center",
   color: "var(--maroon-color)",
   fontWeight: "700",
   fontSize: "30px",
@@ -68,11 +68,11 @@ const paragraphs: CSSProperties = {
 export default function Home() {
   return (
     <>
-    <div style={heroImg}>
-      <div style={heroText}>
-        <p>Enjoy your winemaking hobby responsibly!</p>
+      <div style={heroImg}>
+        <div style={heroText}>
+          <p>Enjoy your winemaking hobby responsibly!</p>
+        </div>
       </div>
-    </div>
     <Divider style={{height:"50px"}}><GiCellarBarrels style={{height:"100px",fontSize:"60px"}}/></Divider>
     <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} spacing={3} px={2}>
       <Typography style={title} sx={{fontSize:{xs:"10px"}}}
@@ -150,5 +150,5 @@ export default function Home() {
       </Grid>
     </Grid>
     </>
-  )
+  );
 }
