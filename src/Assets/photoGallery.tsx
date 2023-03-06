@@ -23,7 +23,7 @@ import photoTwentyTwo from "../Assets/WinePhotos/photoTwentyTwo.png";
 import photoTwentyThree from "../Assets/WinePhotos/photoTwentyThree.png";
 import photoTwentyFour from "../Assets/WinePhotos/photoTwentyFour.png";
 
-const photoGallery = [
+const photoGalleryOne = [
   {
     name: "Image of ...",
     imageSource: photoOne,
@@ -64,6 +64,8 @@ const photoGallery = [
       lg: 6,
     },
   },
+];
+const photoGalleryTwo = [
   {
     name: "Image of ...",
     imageSource: photoFive,
@@ -104,6 +106,8 @@ const photoGallery = [
       lg: 4,
     },
   },
+];
+const photoGalleryThree = [
   {
     name: "Image of ...",
     imageSource: photoNine,
@@ -144,6 +148,8 @@ const photoGallery = [
       lg: 3,
     },
   },
+];
+const photoGalleryFour = [
   {
     name: "Image of ...",
     imageSource: photoThirteen,
@@ -184,6 +190,8 @@ const photoGallery = [
       lg: 6,
     },
   },
+];
+const photoGalleryFive = [
   {
     name: "Image of ...",
     imageSource: photoTwenty,
@@ -224,6 +232,8 @@ const photoGallery = [
       lg: 4,
     },
   },
+];
+const photoGallerySix = [
   {
     name: "Image of ...",
     imageSource: photoTwentyFour,
@@ -265,4 +275,5 @@ const photoGallery = [
     },
   },
 ];
-export default photoGallery;
+
+export default { photoGalleryOne, photoGalleryTwo, photoGalleryThree, photoGalleryFour, photoGalleryFive, photoGallerySix };
