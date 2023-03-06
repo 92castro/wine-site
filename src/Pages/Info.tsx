@@ -7,6 +7,7 @@ const formCard: CSSProperties = {
     display: "flex",
     flexDirection: "column",
     minHeight: "50vh",
+    maxWidth: "1200px",
     textAlign: "center",
     backgroundColor: "white",
     margin: "0",
