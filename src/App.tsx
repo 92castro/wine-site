@@ -8,6 +8,7 @@ import Lessons from './Pages/Lessons'
 import Info from './Pages/Info'
 import Photo from './Pages/Photo'
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/info' element={<Info/>}></Route>
         <Route path='/photo' element={<Photo/>}></Route>
       </Routes>
+      <Footer/>
     </Router>
     </>
   );
