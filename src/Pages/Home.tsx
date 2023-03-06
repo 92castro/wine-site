@@ -34,11 +34,11 @@ const heroText: CSSProperties = {
 const title: CSSProperties = {
   textAlign: "center",
   color: "var(--maroon-color)",
-  fontWeight: "700",
-  fontSize: "30px",
+  fontWeight: "600",
+  fontSize: "40px",
   marginTop:"50px",
   marginBottom:"10px",
-  width:"100%"
+  width:"100%",
 }
 
 const StyledPaper: CSSProperties = {
@@ -62,7 +62,7 @@ const images: CSSProperties = {
 const paragraphs: CSSProperties = {
   textAlign:"justify",
   fontSize:"20px",
-  color:"var(--maroon-color)",
+  color:"var(--maroon-color)"
 }
 
 export default function Home() {
