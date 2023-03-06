@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
 import Image from "../Assets/infoPicture.jpg";
-import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 
 //Form Card Styling
 const formCard: CSSProperties = {
@@ -21,12 +21,12 @@ export default function Info() {
   return (
     <>
       <div className="contactImage">
-          <img src={Image} style={{ width: "100vw", height: "55vh" }} />
+          <img src={Image} style={{ maxWidth: "100%", height: "auto" }} />
           <h3 className="contactText">
             Information and Legality of Homebrew
           </h3>
       </div>
-      <Grid container sx={{ display: "flex", alignItems: "center" }}>
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <div style={formCard}>
             <h1 style={{ fontFamily: "Italiana, sans-serif"}}>Hints & Tricks</h1>
             <p style={{ fontFamily: "Roboto, sans-serif"}}>At Fermentations, we offer premium quality wine kits from Winexpert and RJ Spagnols, and beer ingredient kits from Brewers Best & True Brew. The links provided below will take you to helpful hints from our manufacturers to make sure your winemaking & brewing experience is successful.</p>
@@ -63,13 +63,13 @@ export default function Info() {
             <h3>Are Sales Taxes In Colorado charged on wine and beer ingredients?</h3>
             <p>In August 2011, the Colorado Department of Revenue provided a written determination that winemaking ingredient kits and beermaking ingredient kits are considered food products for home consumption, and therefore are not subject to sales taxes.  Non-consumable items such as equipment, bottles, corks, labels, etc. are subject to sales taxes, just as they have always been.</p>
             <h3>For more information about homebrewing and winemaking, visit these helpful industry websites:</h3>
-            <p>American Homebrewer's Association:</p>
+            <h4>American Homebrewer's Association:</h4>
             <a href="http://www.homebrewersassociation.org/pages/government-affairs/talking-points">http://www.homebrewersassociation.org/pages/government-affairs/talking-points</a>
             <a href="http://www.homebrewersassociation.org/pages/government-affairs/statutes/colorado">http://www.homebrewersassociation.org/pages/government-affairs/statutes/colorado</a>
             <p>On November 13, 2015 the Colorado Liquor Enforcement Division published a document titled "Homebrew Use and Limitations" to clarify how Homebrewers and Homebrew Supply Stores (i.e. Fermentations Home Winemaking Center) are permitted to handle the production, tasting and use of homebrew by patrons.  The American Homebrewers Association (AHA) has made this document available via its website.  See the following link for the entire document:</p>
             <a href="http://www.homebrewersassociation.org/wp-content/uploads/2015/11/Colorado-LED-BULLETIN-15-04-Home-Brew.pdf">http://www.homebrewersassociation.org/wp-content/uploads/2015/11/Colorado-LED-BULLETIN-15-04-Home-Brew.pdf</a>
           </div>
-      </Grid>
+      </Box>
     </>
   )
 }

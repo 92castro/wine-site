@@ -66,7 +66,7 @@ export default function Contact() {
   return (
     <>
       <div className="contactImage">
-          <img src={Image} style={{ width: "100%", height: "55vh" }} />
+          <img src={Image} style={{ maxWidth: "100%", height: "auto" }} />
           <h3 className="contactText">
             Let's Talk Wine and Beer!
           </h3>
