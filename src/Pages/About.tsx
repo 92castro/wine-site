@@ -52,11 +52,11 @@ export default function About() {
         <Typography style={title}>
           Who we are
         </Typography>
-        <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
+        <Box>
           <Typography style={paragraphs}>
-          Since 2011, our wine making and homebrewing store has been serving Colorado Springs, CO with a wide selection of brewing products, equipment, and supplies for both beginners and advanced brewers. We also offer classes and workshops taught by 
-          Tim, who's very passionate about the craft of brewing and enjoys covering topics from beer brewing to wine making. Our store is dedicated to creating a community of brewing enthusiasts who share our love for the art and providing everything needed to create unique and delicious brews. Visit us to experience the joy of brewing for yourself!
+          Since 2011, Fermentation has been serving Colorado Springs, CO with a wide selection of brewing products, equipment, and supplies for both beginners and advanced brewers. We also offer classes and workshops where we will teach you how to make wine & beer you can share with pride. We began our winemaking hobby as a social event for couples, and have continued to enjoy creating exceptional wines with our friends. Our store is dedicated to creating a community of brewing enthusiasts who share our love for the art and providing everything needed to create unique and delicious brews. Visit us to experience the joy of fermentation for yourself!
         </Typography>
+        <img src="https://www.aws-cos.com/x/cdn/?https://storage.googleapis.com/production-sitelio-v1-0-5/085/213085/jsB24WCV/979969d26bd24a40b5f501ac221ab0cf" alt="Tim & Brenda" style={{width:"450px", height:"500px"}} />
         </Box>
     </>
   )
