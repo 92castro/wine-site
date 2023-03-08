@@ -153,7 +153,7 @@ function Header() {
             <Link to="/about">About Us</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
-            <Link to="/lesson">Lesson</Link>
+            <Link to="/lessons">Lesson</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
             <Link to="/photo">Photo</Link>
@@ -211,7 +211,7 @@ function Header() {
         <Link onClick={exitMenu} to="/about">
           <StyledMenuItem>About</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/lesson">
+        <Link onClick={exitMenu} to="/lessons">
           <StyledMenuItem>Lesson</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/photo">
