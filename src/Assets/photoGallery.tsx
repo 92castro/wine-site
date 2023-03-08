@@ -24,89 +24,10 @@ import photoTwentyThree from "../Assets/WinePhotos/photoTwentyThree.png";
 import photoTwentyFour from "../Assets/WinePhotos/photoTwentyFour.png";
 
 const photoGallery = [
-  {
-    name: "Image of ...",
-    imageSource: photoOne,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoTwo,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoThree,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoFour,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 6,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoFive,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 6,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoSix,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoSeven,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
+  // Gallery One
   {
     name: "Image of ...",
     imageSource: photoEight,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoNine,
     gridBreakPoints: {
       sx: 6,
       sm: 6,
@@ -121,12 +42,96 @@ const photoGallery = [
       sx: 6,
       sm: 6,
       md: 0,
-      lg: 8,
+      lg: 4,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoFifteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoThirteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 6,
+    },
+  },
+
+  // Gallery Two
+  {
+    name: "Image of ...",
+    imageSource: photoSeventeen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 6,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoSeven,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoFourteen,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
     },
   },
   {
     name: "Image of ...",
     imageSource: photoEleven,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
+  },
+
+  // Gallery Three
+  {
+    name: "Image of ...",
+    imageSource: photoNine,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoTwenty,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 8,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoEighteen,
     gridBreakPoints: {
       sx: 6,
       sm: 6,
@@ -144,9 +149,12 @@ const photoGallery = [
       lg: 3,
     },
   },
+
+  // Gallery Four
+
   {
     name: "Image of ...",
-    imageSource: photoThirteen,
+    imageSource: photoFour,
     gridBreakPoints: {
       sx: 6,
       sm: 6,
@@ -156,7 +164,7 @@ const photoGallery = [
   },
   {
     name: "Image of ...",
-    imageSource: photoFourteen,
+    imageSource: photoFive,
     gridBreakPoints: {
       sx: 6,
       sm: 6,
@@ -166,7 +174,7 @@ const photoGallery = [
   },
   {
     name: "Image of ...",
-    imageSource: photoFifteen,
+    imageSource: photoSix,
     gridBreakPoints: {
       sx: 6,
       sm: 6,
@@ -176,7 +184,7 @@ const photoGallery = [
   },
   {
     name: "Image of ...",
-    imageSource: photoSixteen,
+    imageSource: photoNineteen,
     gridBreakPoints: {
       sx: 6,
       sm: 6,
@@ -184,14 +192,36 @@ const photoGallery = [
       lg: 6,
     },
   },
+
+  // Gallery Five
   {
     name: "Image of ...",
-    imageSource: photoTwenty,
+    imageSource: photoTwo,
     gridBreakPoints: {
       sx: 6,
       sm: 6,
       md: 0,
       lg: 8,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoTwentyTwo,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
+    },
+  },
+  {
+    name: "Image of ...",
+    imageSource: photoOne,
+    gridBreakPoints: {
+      sx: 6,
+      sm: 6,
+      md: 0,
+      lg: 4,
     },
   },
   {
@@ -204,65 +234,6 @@ const photoGallery = [
       lg: 4,
     },
   },
-  {
-    name: "Image of ...",
-    imageSource: photoSeventeen,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoEighteen,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoTwentyFour,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 4,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoNineteen,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 3,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoTwentyTwo,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 3,
-    },
-  },
-  {
-    name: "Image of ...",
-    imageSource: photoTwentyThree,
-    gridBreakPoints: {
-      sx: 6,
-      sm: 6,
-      md: 0,
-      lg: 6,
-    },
-  },
 ];
+
 export default photoGallery;
