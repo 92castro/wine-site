@@ -95,11 +95,11 @@ export default function Lessons() {
                   sx={{
                     fontWeight: "500",
                     fontSize: { xs: "35px", sm: "40px", lg: "50px" },
-                    marginY: { xs: "1rem", md: "2rem" },
+                    marginY: { xs: "1rem" },
                     px: { xs: 2, sm: 3, md: 3, lg: 2 },
                     fontFamily: "League Spartan",
                     maxWidth: { xs: "400px", sm: "470px", lg: "600px" },
-                    textShadow: "2px 2px 5px #333",
+                    textShadow: "2px 2px 5px #667",
                   }}
                 >
                   Personalized winemaking and home brew lessons
@@ -152,7 +152,7 @@ export default function Lessons() {
                   textAlign: "center",
                   mt: 5,
                   fontFamily: "League Spartan",
-                  textShadow: "2px 2px 5px #333",
+                  textShadow: "2px 2px 5px #667",
                 }}
               >
                 Winemaking in five (5) easy steps.
@@ -172,7 +172,7 @@ export default function Lessons() {
                   </ListItem>
                 ))}
               </List>
-              <Typography component="h3" variant="h6" sx={{ fontSize: { sm: "18px", md: "22px", lg: "26px" }, textShadow: "2px 2px 10px #666" }}>
+              <Typography component="h3" variant="h6" sx={{ fontSize: { sm: "18px", md: "22px", lg: "24px" } }}>
                 What will this cost?
               </Typography>
               <Typography component="p">
@@ -201,10 +201,7 @@ export default function Lessons() {
           </Grid>
           {/* beer brewing steps grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
-            <Box
-              p={{ xs: 2, md: 2 }}
-              sx={{ display: "flex", flexDirection: "column", minHeight: { md: "550px", lg: "650px" }, justifyContent: "space-between" }}
-            >
+            <Box p={{ xs: 2, md: 2 }} sx={{ display: "flex", flexDirection: "column", minHeight: { md: "550px", lg: "650px" } }}>
               <Typography
                 component="h3"
                 variant="h6"
@@ -213,12 +210,12 @@ export default function Lessons() {
                   textAlign: "center",
                   mt: 5,
                   fontFamily: "League Spartan",
-                  textShadow: "2px 2px 5px #333",
+                  textShadow: "2px 2px 5px #667",
                 }}
               >
                 Beer Brewing in three (3) easy steps:
               </Typography>
-              <List sx={{ minHeight: { xs: 0 }, position: "relative" }}>
+              <List sx={{ minHeight: { xs: 100 } }}>
                 {beerMakingSteps.map((step, index) => (
                   <ListItem sx={{ display: "listItem", paddingX: 0 }} key={index}>
                     <Box sx={{ display: "flex", flexDirection: "row" }}>
@@ -231,7 +228,7 @@ export default function Lessons() {
                 ))}
               </List>
 
-              <Typography component="h3" variant="h6" sx={{ fontSize: { sm: "18px", md: "22px", lg: "26px" }, textShadow: "2px 2px 10px #666" }}>
+              <Typography component="h3" variant="h6" sx={{ fontSize: { sm: "18px", md: "22px", lg: "24px" } }}>
                 What will this cost?
               </Typography>
               <Typography component="p">
@@ -271,7 +268,7 @@ export default function Lessons() {
               fontFamily: "League Spartan",
               maxWidth: { xs: "400px", sm: "470px", lg: "650px" },
 
-              textShadow: "2px 2px 5px #333",
+              textShadow: "2px 2px 5px #667",
             }}
           >
             Personalize your wine and beer bottles with custom labels!
