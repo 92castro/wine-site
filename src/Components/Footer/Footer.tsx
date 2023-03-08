@@ -30,7 +30,7 @@ export default function Footer() {
       </Grid>
       <Grid item sm={4} md={4}> 
       <p style={store}>
-        <a href="https://www.google.com/maps/place/Fermentations+Home+Winemaking+and+Homebrew+Center,+5765+N+Academy+Blvd,+Colorado+Springs,+CO+80918,+United+States/@38.914191,-104.785929,15z/data=!4m6!3m5!1s0x87134ef4c367b6b3:0xcd184256fb212d0!8m2!3d38.914191!4d-104.7859288!16s%2Fg%2F1tdf1thn?hl=en&gl=JP" style={{color:"black"}}>
+        <a href="https://www.google.com/maps/place/Fermentations+Home+Winemaking+and+Homebrew+Center,+5765+N+Academy+Blvd,+Colorado+Springs,+CO+80918,+United+States/@38.914191,-104.785929,15z/data=!4m6!3m5!1s0x87134ef4c367b6b3:0xcd184256fb212d0!8m2!3d38.914191!4d-104.7859288!16s%2Fg%2F1tdf1thn?hl=en&gl=JP" target="_blank" style={{color:"black"}}>
         <span>5765 North Academy Blvd.</span>
         <br />
         <span>Colorado Springs, CO 80918</span>
