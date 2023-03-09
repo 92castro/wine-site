@@ -40,12 +40,6 @@ const title: CSSProperties = {
   width:"100%",
 }
 
-const StyledPaper: CSSProperties = {
-  padding: "1rem",
-  backgroundColor: "var(--green-color)",
-  boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-  // minHeight:"150px"
-};
 const StyledBox: CSSProperties = {
   // height: "100px",
   display: "flex",
@@ -59,7 +53,7 @@ const images: CSSProperties = {
 }
 
 const paragraphs: CSSProperties = {
-  textAlign:"justify",
+  textAlign:"center",
   fontSize:"20px",
   color:"var(--maroon-color)"
 }
@@ -73,9 +67,8 @@ export default function Home() {
         </div>
       </div>
     <Divider style={{height:"50px"}}><GiCellarBarrels style={{height:"100px",fontSize:"60px"}}/></Divider>
-    <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} spacing={5} px={2}>
-      
-      <Grid item xs={12} sm={6} lg={6} >
+    <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} marginTop={"25px"} spacing={5} px={2}>
+      <Grid item xs={12} md={6} lg={6}  >
         <Box style={StyledBox}>
           <Typography style={title}
       >
@@ -87,18 +80,18 @@ export default function Home() {
               <Link style={{fontWeight:"550"}} to="/contact">Contact us for arrangements to use this presentation space for your special event. </Link>
           </Box>
       </Grid>
-      <Grid item xs={12} sm={6} lg={5}>
+      <Grid item xs={12} md={6} lg={5}>
         <Box  style={StyledBox}>
           <img src={class1} alt="classroom" style={images} />
         </Box>
       </Grid>
      
-      <Grid item xs={12} sm={6} lg={5}>
+      <Grid item xs={12} md={6} lg={5} order={{xs:"2", md:"1"}}>
         <Box  style={StyledBox}>
           <img src={grains} alt="grainroom" style={images} />
         </Box>
       </Grid>
-      <Grid item xs={12} sm={6} lg={6}>
+      <Grid item xs={12} md={6} lg={6} order={{xs:"1",md:"2"}}>
           <Box style={StyledBox}>
             <Typography style={title}
       >
@@ -110,7 +103,7 @@ export default function Home() {
           </Box>
       </Grid>
       
-      <Grid item xs={12} sm={6} lg={6} >
+      <Grid item xs={12} md={6} lg={6} order={{xs:"3",md:"3"}}>
         <Box style={StyledBox}>
           <Typography style={title}
       >
@@ -121,18 +114,18 @@ export default function Home() {
               </Typography>
           </Box>
       </Grid>
-      <Grid item xs={12} sm={6} lg={5}>
+      <Grid item xs={12} md={6} lg={5} order={{xs:"4",md:"5"}}>
         <Box  style={StyledBox}>
           <img src={wine} alt="classroom" style={images} />
         </Box>
       </Grid>
       
-      <Grid item xs={12} sm={6} lg={5}>
+      <Grid item xs={12} md={6} lg={5} order={{xs:"6",md:"5"}}>
         <Box  style={StyledBox}>
           <img src={beer} alt="bottles" style={images} />
         </Box>
       </Grid>
-      <Grid item xs={12} sm={6} lg={6}>
+      <Grid item xs={12} md={6} lg={6} order={{xs:"5",md:"6"}}>
           <Box style={StyledBox}>
             <Typography style={title}
       >
@@ -142,6 +135,23 @@ export default function Home() {
                 Are you a beer lover? Imagine the satisfaction of creating your own unique brew, perfectly tailored to your personal taste. With a beer starter kit, you can do just that! Brewing your own beer at home is not only a fun and rewarding hobby, but it also allows you to experiment with different ingredients and styles to create your own signature brew.
               </Typography>
           </Box>
+      </Grid>
+      <Grid item xs={12} md={6} lg={6} order={{xs:"7",md:"7"}}>
+        <Box style={StyledBox}>
+          <Typography style={title}
+      >
+        Gift Cards
+      </Typography>
+              <Typography style={paragraphs}>
+                Are you a wine enthusiast? A wine starter kit is the perfect way to get started on your winemaking journey, providing you with all the essential equipment and ingredients you need to create your first batch of wine. And the best part, you don't need any prior winemaking experience to get started!
+              </Typography>
+          </Box>
+      </Grid>
+      <Grid item xs={12} md={6} lg={5} order={{xs:"8",md:"8"}}>
+        <Box  style={StyledBox}>
+          <img src="http://www.fermentations.biz/mediac/450_0/media/2e7de5b7368af662ffff805cffffe904.JPG" alt="classroom" style={{maxWidth:"400px", maxHeight:"auto",boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+  borderRadius: "10px",}} />
+        </Box>
       </Grid>
     </Grid>
     </>
