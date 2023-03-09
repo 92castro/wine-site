@@ -7,7 +7,7 @@ import React, { CSSProperties } from "react";
 import {Link} from "react-router-dom"
 import Divider from "@mui/material/Divider"
 import { GiCellarBarrels } from 'react-icons/gi';
-import { Typography, Box, Paper, Grid } from "@mui/material";
+import { Typography, Box, Grid } from "@mui/material";
 
 const heroImg: CSSProperties = {
   display:"flex",
@@ -56,6 +56,11 @@ const paragraphs: CSSProperties = {
   textAlign:"center",
   fontSize:"20px",
   color:"var(--maroon-color)"
+}
+
+const brands: CSSProperties = {
+  display:"flex",
+  justifyContent:"space-around"
 }
 
 export default function Home() {
@@ -143,15 +148,28 @@ export default function Home() {
         Gift Cards
       </Typography>
               <Typography style={paragraphs}>
-                Are you a wine enthusiast? A wine starter kit is the perfect way to get started on your winemaking journey, providing you with all the essential equipment and ingredients you need to create your first batch of wine. And the best part, you don't need any prior winemaking experience to get started!
+                Gift Cards from Fermentations are perfect for family and friends! We have the best selection of winemaking and beer kits in Colorado Springs with over 130 types of kits from popular brands like Winexpert, Vineco, RJ Spagnols, and Brewers Best.
               </Typography>
+              
           </Box>
       </Grid>
-      <Grid item xs={12} md={6} lg={5} order={{xs:"8",md:"8"}}>
+      <Grid item xs={12} md={6} lg={5} order={{xs:"8", md:"8"}} >
         <Box  style={StyledBox}>
-          <img src="http://www.fermentations.biz/mediac/450_0/media/2e7de5b7368af662ffff805cffffe904.JPG" alt="classroom" style={{maxWidth:"400px", maxHeight:"auto",boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+          <img src="http://www.fermentations.biz/mediac/450_0/media/2e7de5b7368af662ffff805cffffe904.JPG" alt="giftcard" style={{maxWidth:"400px", maxHeight:"auto",boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
   borderRadius: "10px",}} />
         </Box>
+      </Grid>
+      <Grid item xs={12} order={{xs:"9",md:"9"}}>
+        <Typography style={{textAlign:"center", fontSize:"21px",color:"var(--maroon-color)"}}>
+                We proudly feature quality products from the following manufacturers:
+              </Typography>
+              <br />
+              <Box style={brands}>
+                <a href="https://winexpert.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8013ffffe904.gif" alt="" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
+                <a href="https://vinecowine.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/e9dfa4ece6dbaaefffff800affffe906.JPG" alt="" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
+                <a href="https://www.rjscraftwinemaking.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8011ffffe904.gif" alt="" style={{minWidth:"200px",maxHeight:"70px"}}/></a>
+                <a href="https://brewersbestkits.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8012ffffe904.jpg" alt="" style={{minWidth:"200px",maxHeight:"70px"}}/></a>
+            </Box>
       </Grid>
     </Grid>
     </>
