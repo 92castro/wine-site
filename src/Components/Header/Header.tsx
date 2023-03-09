@@ -145,19 +145,19 @@ function Header() {
           <StyledMenuItem>About Me</StyledMenuItem>
         </Link> */}
         <Link onClick={exitMenu} to="/about">
-          <StyledMenuItem><FaGlassCheers/>About</StyledMenuItem>
+          <StyledMenuItem><FaGlassCheers style={{padding:"10px"}} />About</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/lessons">
-          <StyledMenuItem><GiBarrel/>Lesson</StyledMenuItem>
+          <StyledMenuItem><GiBarrel style={{padding:"10px"}}/>Lesson</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/photo">
-          <StyledMenuItem><PhotoOutlinedIcon/>Photo</StyledMenuItem>
+          <StyledMenuItem><PhotoOutlinedIcon style={{padding:"10px"}}/>Photo</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/info">
-          <StyledMenuItem><InfoOutlinedIcon/>Info</StyledMenuItem>
+          <StyledMenuItem><InfoOutlinedIcon style={{padding:"10px"}}/>Info</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/contact">
-          <StyledMenuItem><EmailOutlinedIcon/>Contact</StyledMenuItem>
+          <StyledMenuItem><EmailOutlinedIcon style={{padding:"10px"}}/>Contact</StyledMenuItem>
         </Link>
       </Menu>
     </AppBar>

@@ -164,7 +164,7 @@ export default function Home() {
         </Box>
       </Grid>
       <Grid item xs={12} order={{xs:"9",md:"9"}}>
-        <Typography style={{textAlign:"center", fontSize:"21px",color:"var(--maroon-color)"}}>
+        <Typography style={{textAlign:"center", fontSize:"21px",color:"var(--maroon-color)", marginTop:"20px"}}>
                 We proudly feature quality products from the following manufacturers:
               </Typography>
               <br />

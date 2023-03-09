@@ -31,10 +31,11 @@ const title: CSSProperties = {
   textAlign: "center",
   color: "var(--maroon-color)",
   fontWeight: "700",
-  fontSize: "50px",
+  fontSize: "45px",
   marginTop:"40px",
   marginBottom:"10px",
   width:"100%",
+  fontFamily: "Italiana, serif"
 }
 
 const paragraphs: CSSProperties = {
@@ -60,7 +61,7 @@ export default function About() {
     </div>
     <div style={{padding:"20px"}}>
     <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} rowSpacing={{xs:"2",md:"20"}} columnSpacing={{xs:"2",md:"3rem"}}>
-          <Typography style={title}>
+          <Typography style={{textAlign:"center",width:"100%",fontFamily: "Italiana, serif",color: "var(--maroon-color)",fontSize:"65px",fontWeight:"bold"}}>
           Who we are
         </Typography>
           <Grid item xs={12} sm={12} md={12}>
