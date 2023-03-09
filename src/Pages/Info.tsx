@@ -1,5 +1,5 @@
 import { CSSProperties } from "react";
-import Image from "../Assets/infoPicture.jpg";
+import Image from "../Assets/resizedImages/info_4500x1800.jpeg";
 import Box from '@mui/material/Box';
 
 //Form Card Styling
@@ -7,12 +7,25 @@ const formCard: CSSProperties = {
     display: "flex",
     flexDirection: "column",
     minHeight: "50vh",
+    maxWidth: "1200px",
     textAlign: "center",
     backgroundColor: "white",
     margin: "0",
     padding: "10px"
 }
 
+//Header Text Styling
+const headerText: CSSProperties = {
+  fontFamily: "Italiana, sans-serif", 
+  color: "#74250e", 
+  margin: "0", 
+  textShadow: "2px 2px 5px #667",
+}
+
+//Text Info Styling
+const infoText: CSSProperties = {
+  fontFamily: "Roboto, sans-serif"
+}
 
 export default function Info() {
   return (
@@ -28,26 +41,26 @@ export default function Info() {
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           {/* Hints and Tricks */}
           <div style={formCard}>
-            <h1 style={{ fontFamily: "Italiana, sans-serif", color: "#74250e", margin: "0" }}>Hints & Tricks</h1>
-            <span style={{ fontFamily: "Roboto, sans-serif"}}>At Fermentations, we offer premium quality wine kits from Winexpert and RJ Spagnols, and beer ingredient kits from Brewers Best & True Brew. The links provided below will take you to helpful hints from our manufacturers to make sure your winemaking & brewing experience is successful.</span>
-            <p style={{ fontFamily: "Roboto, sans-serif"}}>Want to know more about Winemaking?  Visit these helpful industry links:</p>
-            <p style={{ fontFamily: "Roboto, sans-serif"}}>
+            <h1 style={headerText}>Tips & Tricks</h1>
+            <span style={infoText}>At Fermentations, we offer premium quality wine kits from Winexpert and RJ Spagnols, and beer ingredient kits from Brewers Best & True Brew. The links provided below will take you to helpful hints from our manufacturers to make sure your winemaking & brewing experience is successful.</span>
+            <p style={infoText}>Want to know more about Winemaking?  Visit these helpful industry links:</p>
+            <p style={infoText}>
               <a href="https://www.brewersbestkits.com/faqs.html" target="_blank">Brewer's Best Beermaking Tips</a>
             </p>
-            <p style={{ fontFamily: "Roboto, sans-serif"}}>
+            <p style={infoText}>
               <a href="https://winexpert.com/winemaking-process/" target="_blank">Winexpert Helpful Winemaking Tips</a>
             </p>
-            <p style={{ fontFamily: "Roboto, sans-serif"}}>
+            <p style={infoText}>
               <a href="http://winemakermag.com/" target="_blank">Winemaker Magazine</a>
             </p>
-            <p style={{ fontFamily: "Roboto, sans-serif"}}>
+            <p style={infoText}>
               <a href="http://www.byo.com/" target="_blank">Brew Your Own Magazine</a>
             </p>
-            <h3 style={{ fontFamily: "Roboto, sans-serif"}}>Enjoy your winemaking hobby responsibly!</h3>
+            <h3 style={infoText}>Enjoy your winemaking hobby responsibly!</h3>
           </div>
           {/* Legal Information */}
           <div style={formCard}>
-            <h1 style={{ fontFamily: "Italiana, sans-serif", color: "#74250e" }}>Legal Information</h1>
+            <h1 style={headerText}>Legal Information</h1>
             <h3>Here is what the Federal Law says about making beer and wine:</h3>
             <p>The Alcohol and Tobacco Tax and Trade Bureau (TTB) has been asked if there are any Federal requirements covering operation of a Home Winemakers' Center. Home Winemakers' Centers are places where an individual pays a fee to use space and equipment to make wine for personal or family use.</p>
             <p>Although we refer to the individual making wine for personal or family use as a "home winemaker," the wine may be made somewhere other than the individual's residence, including a Home Winemakers' Center.</p>

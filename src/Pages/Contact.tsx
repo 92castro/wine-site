@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
-import Image from "../Assets/sunset.jpg"
+import Image from "../Assets/resizedImages/sunset_4500x1800.jpg"
 
 //Form Card Styling
 const formCard: CSSProperties = {
@@ -67,7 +67,7 @@ export default function Contact() {
     <>
       {/* Hero Image */}
       <div className="contactImage">
-          <img src={Image} style={{ maxWidth: "100%", height: "auto" }} />
+          <img src={Image} style={{ maxWidth: "100%", height: "auto" }}/>
           <h3 className="contactText">
             Let's Talk Wine and Beer!
           </h3>
@@ -78,7 +78,7 @@ export default function Contact() {
         <Grid item sm={12} md={6}>
           <form ref={form} onSubmit={onSubmit} style={{ height: "100%"}}>
             <div style={formCard} key={"green"}>
-              <h1 style={{ fontFamily: "Italiana, serif" }}>Drop Us A Line With Inquiries, Or Questions About Wine And Beer Making!</h1>
+              <h1 style={{ fontFamily: "Italiana, serif", textShadow: "2px 2px 5px #667", color: "#4a0d0b" }}>Drop Us A Line With Inquiries, Or Questions About Wine And Beer Making!</h1>
               <TextField
                 {...register("firstName", { required: "First name is required *" })}
                 id="firstName"
