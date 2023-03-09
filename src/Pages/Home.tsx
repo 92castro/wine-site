@@ -28,6 +28,8 @@ const heroText: CSSProperties = {
   textAlign: "center",
   color: "white",
   fontSize: "40px",
+  fontWeight:"600",
+  fontFamily: "Italiana, serif" 
 };
 
 const title: CSSProperties = {
@@ -38,6 +40,7 @@ const title: CSSProperties = {
   // marginTop:"50px",
   marginBottom:"10px",
   width:"100%",
+  fontFamily: "Italiana, serif" 
 }
 
 const StyledBox: CSSProperties = {
@@ -60,6 +63,7 @@ const paragraphs: CSSProperties = {
 
 const brands: CSSProperties = {
   display:"flex",
+  flexWrap:"wrap",
   justifyContent:"space-around"
 }
 
@@ -72,7 +76,7 @@ export default function Home() {
         </div>
       </div>
     <Divider style={{height:"50px"}}><GiCellarBarrels style={{height:"100px",fontSize:"60px"}}/></Divider>
-    <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} marginTop={"25px"} spacing={5} px={2}>
+    <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} marginTop={"25px"} spacing={5} px={2} justifyContent="center">
       <Grid item xs={12} md={6} lg={6}  >
         <Box style={StyledBox}>
           <Typography style={title}
@@ -153,9 +157,9 @@ export default function Home() {
               
           </Box>
       </Grid>
-      <Grid item xs={12} md={6} lg={5} order={{xs:"8", md:"8"}} >
+      <Grid item xs={12} sm={8} md={6} lg={5} order={{xs:"8", md:"8"}} >
         <Box  style={StyledBox}>
-          <img src="http://www.fermentations.biz/mediac/450_0/media/2e7de5b7368af662ffff805cffffe904.JPG" alt="giftcard" style={{maxWidth:"400px", maxHeight:"auto",boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+          <img src="http://www.fermentations.biz/mediac/450_0/media/2e7de5b7368af662ffff805cffffe904.JPG" alt="giftcard" style={{ maxHeight:"auto",boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
   borderRadius: "10px",}} />
         </Box>
       </Grid>
@@ -168,7 +172,7 @@ export default function Home() {
                 <a href="https://winexpert.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8013ffffe904.gif" alt="" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
                 <a href="https://vinecowine.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/e9dfa4ece6dbaaefffff800affffe906.JPG" alt="" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
                 <a href="https://www.rjscraftwinemaking.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8011ffffe904.gif" alt="" style={{minWidth:"200px",maxHeight:"70px"}}/></a>
-                <a href="https://brewersbestkits.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8012ffffe904.jpg" alt="" style={{minWidth:"200px",maxHeight:"70px"}}/></a>
+                <a href="https://brewersbestkits.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8012ffffe904.jpg" alt="" style={{minWidth:"150px",maxHeight:"70px"}}/></a>
             </Box>
       </Grid>
     </Grid>

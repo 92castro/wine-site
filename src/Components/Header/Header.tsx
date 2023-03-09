@@ -1,85 +1,16 @@
 import logo from "../../Assets/Capture.png";
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-// import { Typography } from "@mui/material";
-
-
-// export default function Header() {
-//   return (
-//     <>
-//     <header style={{display:"flex",justifyContent:"space-around"}}>
-      
-//       <Link to="/"><img src={logo} alt="" style={{borderRadius:"20px"}} /></Link>
-//       <Typography component="p" sx={{width:"20%",fontSize:"15px"}}>
-//         Enabling Home Winemakers & Homebrewers since 2011
-//       </Typography>
-//       <Link to="/about">About</Link>
-//       <Link to="/lessons">Lessons</Link>
-//       <Link to="/photo">Photo</Link>
-//       <Link to="/info">Info</Link>
-//       <Link to="/contact">Contact</Link>
-//     </header>
-//     </>
-//   )
-// }
-
-// import * as React from 'react';
-// import { Link } from 'react-router-dom'
-// import IconButton from '@mui/material/IconButton';
-// import Menu from '@mui/material/Menu';
-// import MenuItem from '@mui/material/MenuItem';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import { Toolbar } from '@mui/material';
-
-// export default function BasicMenu() {
-//   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-//   const open = Boolean(anchorEl);
-//   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-//     setAnchorEl(event.currentTarget);
-//   };
-//   const handleClose = () => {
-//     setAnchorEl(null);
-//   };
-
-//   return (
-//     <Toolbar>
-//       <img src={logo} alt="" />
-//       <IconButton
-//         size="large"
-//         edge="start"
-//         id="basic-button"
-//         aria-controls={open ? 'basic-menu' : undefined}
-//         aria-haspopup="true"
-//         aria-expanded={open ? 'true' : undefined}
-//         onClick={handleClick}
-//       >
-//       <MenuIcon/>
-//       </IconButton>
-//       <Menu
-//         id="basic-menu"
-//         anchorEl={anchorEl}
-//         open={open}
-//         onClose={handleClose}
-//         MenuListProps={{
-//           'aria-labelledby': 'basic-button',
-//         }}
-//       >
-//         <MenuItem onClick={handleClose}><Link to="/">Home</Link></MenuItem>
-//         <MenuItem onClick={handleClose}><Link to="/about">About</Link></MenuItem>
-//         <MenuItem onClick={handleClose}><Link to="/lessons">Lessons</Link></MenuItem>
-//         <MenuItem onClick={handleClose}><Link to="/photo">Photo</Link></MenuItem>
-//         <MenuItem onClick={handleClose}><Link to="/info">Info</Link></MenuItem>
-//         <MenuItem onClick={handleClose}><Link to="/contact">Contact</Link></MenuItem>
-//       </Menu>
-//     </Toolbar>
-//   );
-// }
 
 import React, { useEffect, useState } from "react";
 import { AppBar, Toolbar, styled, Typography, Box, MenuItem, Menu } from "@mui/material";
 import { IconContext } from "react-icons";
-import { AiOutlineArrowLeft } from "react-icons/ai";
-import { MdMenu } from "react-icons/md";
+import { FaGlassCheers } from 'react-icons/fa';
+import { GiBarrel } from 'react-icons/gi';
+import CloseIcon from '@mui/icons-material/Close';
+import PhotoOutlinedIcon from '@mui/icons-material/PhotoOutlined';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+
 import { Link } from "react-router-dom";
 
 const StyledToolbar = styled(Toolbar)({
@@ -87,31 +18,35 @@ const StyledToolbar = styled(Toolbar)({
   justifyContent: "space-between",
 });
 const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
-  color: "#fff",
+  color: "#f5f5f5",
   minHeight: "65px",
-  fontSize: "175%",
+  fontSize: "180%",
   textAlign: "center",
   position: "relative",
+  fontFamily: "Italiana, serif",
+  fontWeight:"bold",
 
   "&:hover": {
-    backgroundColor: "transparent",
-    textDecorationLine: "underline",
-    textShadow: "0 0 .2em #cacedd, 0 0 0.4em #cacedd",
+    // backgroundColor: "transparent",
+    // textDecorationLine: "underline",
+    // textShadow: "0 0 .2em #cacedd, 0 0 0.4em #cacedd",
     transform: "scale(1.1)",
     transition: ".2s",
   },
 }));
 const StyledDesktopMenuItem = styled(MenuItem)(({ theme }) => ({
-  color: "#fff",
+  color: "var(--maroon-color)",
   minHeight: "65px",
   fontSize: "125%",
   textAlign: "center",
   position: "relative",
+  fontFamily: "Italiana, serif",
+  fontWeight:"bold",
 
   "&:hover": {
-    backgroundColor: "transparent",
-    textDecorationLine: "underline",
-    textShadow: "0 0 .2em #cacedd, 0 0 0.4em #cacedd",
+    // backgroundColor: "transparent",
+    // textDecorationLine: "underline",
+    // textShadow: "0 0 .2em #cacedd, 0 0 0.4em #cacedd",
     transform: "scale(1.1)",
     transition: ".2s",
   },
@@ -142,10 +77,11 @@ function Header() {
 
   
   return (
-    <AppBar position="relative" sx={{ background:"var(--transparent)", padding:"5px" }}>
+    <AppBar position="relative" sx={{ background:"linear-gradient(180deg, rgba(191,166,162,0.19931722689075626) 75%, rgba(184,148,148,0.3029586834733894) 100%)", padding:"5px" }}>
       <StyledToolbar>
-        <Link to="/"><img src={logo} alt="logo" style={{borderRadius:"20px",height:"55px"}} /></Link>
-        <Typography component="p" sx={{fontSize:"15px",color:"var(--maroon-color)"}}>
+        <Link to="/"><img src={logo} alt="logo" style={{borderRadius:"20px",height:"70px"}} /></Link>
+        <Typography  sx={{fontSize:{xs:"12px", sm:"20px"},color:"var(--maroon-color)",fontFamily: "Italiana, serif",
+  fontWeight:"bold",}}>
           Enabling Home Winemakers & Homebrewers since 2011     
           </Typography>
         <DesktopMenu>
@@ -169,7 +105,7 @@ function Header() {
           {/* <IconContext.Provider value={{ size: "1.8rem", padding: "0", margin: "0", color: "white" }}>
             
           </IconContext.Provider> */}
-          <MdMenu />
+          <MenuRoundedIcon sx={{color:"black"}} fontSize="large" />
         </MobileMenu>
       </StyledToolbar>
       <Menu
@@ -188,10 +124,10 @@ function Header() {
         PaperProps={{
           style: {
             marginBlock: "1rem",
-            background: "var(--drop-down-menu-bg)",
+            background: "linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.5))",
             width: "100%",
             minHeight: "80vh",
-            backdropFilter: "var(--header-blur-filter)",
+            // backdropFilter: "var(--header-blur-filter)",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -201,7 +137,7 @@ function Header() {
         <Link to="" onClick={exitMenu}>
           <StyledMenuItem>
             <IconContext.Provider value={{ size: "2rem" }}>
-              <AiOutlineArrowLeft />
+              <CloseIcon sx={{fontSize:"45px"}} />
             </IconContext.Provider>
           </StyledMenuItem>
         </Link>
@@ -209,19 +145,19 @@ function Header() {
           <StyledMenuItem>About Me</StyledMenuItem>
         </Link> */}
         <Link onClick={exitMenu} to="/about">
-          <StyledMenuItem>About</StyledMenuItem>
+          <StyledMenuItem><FaGlassCheers/>About</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/lessons">
-          <StyledMenuItem>Lesson</StyledMenuItem>
+          <StyledMenuItem><GiBarrel/>Lesson</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/photo">
-          <StyledMenuItem>Photo</StyledMenuItem>
+          <StyledMenuItem><PhotoOutlinedIcon/>Photo</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/info">
-          <StyledMenuItem>Info</StyledMenuItem>
+          <StyledMenuItem><InfoOutlinedIcon/>Info</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/contact">
-          <StyledMenuItem>Contact</StyledMenuItem>
+          <StyledMenuItem><EmailOutlinedIcon/>Contact</StyledMenuItem>
         </Link>
       </Menu>
     </AppBar>

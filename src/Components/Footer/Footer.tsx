@@ -5,7 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 
 const footer: CSSProperties={
-  background:"linear-gradient(180deg, rgba(137,114,110,0.2967872191011236) 45%, rgba(191,166,162,0.4962254213483146) 80%)",
+  background:"linear-gradient(180deg, rgba(191,166,162,0.19931722689075626) 75%, rgba(184,148,148,0.3029586834733894) 100%)",
   marginTop: "18px",
 }
 
