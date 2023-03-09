@@ -50,6 +50,7 @@ export default function Photo() {
               color: "#fff",
               fontWeight: "700",
               fontSize: { xs: "28px", sm: "36px", lg: "42px" },
+              fontFamily: "Italiana, sans-serif",
               marginX: "auto",
               marginY: { xs: "1rem", md: "2rem" },
             }}
@@ -81,7 +82,17 @@ export default function Photo() {
           {/* Text Box #1 Grid item */}
           <Grid item xs={12} md={8} lg={8} order={{ xs: 1, sm: 1, md: 2 }}>
             <Box style={StyledBox}>
-              <Typography component="h3" variant="h6" textAlign="center" sx={{ mb: "1rem", fontSize: { xs: "35px", sm: "40px", lg: "50px" } }}>
+              <Typography
+                component="h3"
+                variant="h6"
+                textAlign="center"
+                sx={{
+                  fontFamily: "Italiana, sans-serif",
+                  fontWeight: "700",
+                  mb: "1rem",
+                  fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
+                }}
+              >
                 Title
               </Typography>
               <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
@@ -93,7 +104,17 @@ export default function Photo() {
           {/* Text Box #2 Grid item */}
           <Grid item xs={12} md={4} lg={4} order={{ xs: 4, sm: 4, md: 3 }}>
             <Box style={StyledBox}>
-              <Typography component="h3" variant="h6" textAlign="center" sx={{ mb: "1rem", fontSize: { xs: "35px", sm: "40px", lg: "50px" } }}>
+              <Typography
+                component="h3"
+                variant="h6"
+                textAlign="center"
+                sx={{
+                  fontFamily: "Italiana, sans-serif",
+                  fontWeight: "700",
+                  mb: "1rem",
+                  fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
+                }}
+              >
                 Title
               </Typography>
               <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
@@ -177,7 +198,17 @@ export default function Photo() {
           {/* Text Box #3 Grid item */}
           <Grid item xs={12} md={4} lg={4} order={{ xs: 6, sm: 8, md: 8 }}>
             <Box style={StyledBox}>
-              <Typography component="h3" variant="h6" textAlign="center" sx={{ mb: "1rem", fontSize: { xs: "35px", sm: "40px", lg: "50px" } }}>
+              <Typography
+                component="h3"
+                variant="h6"
+                textAlign="center"
+                sx={{
+                  fontFamily: "Italiana, sans-serif",
+                  fontWeight: "700",
+                  mb: "1rem",
+                  fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
+                }}
+              >
                 Title
               </Typography>
               <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
