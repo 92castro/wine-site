@@ -5,7 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 
 const footer: CSSProperties={
-  background:"linear-gradient(180deg, rgba(137,114,110,0.2967872191011236) 45%, rgba(191,166,162,0.4962254213483146) 80%)",
+  background:"linear-gradient(180deg, rgba(191,166,162,0.19931722689075626) 75%, rgba(184,148,148,0.3029586834733894) 100%)",
   marginTop: "18px",
 }
 
@@ -36,8 +36,9 @@ export default function Footer() {
         <span>Colorado Springs, CO 80918</span>
         </a>
       </p>
+      <br />
       <p style={store}>
-        <span><b style={{ color: "#74250e"}}>Phone: </b>(719) 598-1164</span>
+        <span><b style={{ color: "#74250e"}}>Phone: </b><a href="tel:+17195981164" style={{color:"black"}}>(719) 598-1164</a></span>
         <span><b style={{ color: "#74250e"}}>Email: </b>sales@fermentations.biz</span>
       </p>
       </Grid>
