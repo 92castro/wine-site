@@ -5,6 +5,15 @@
   --transparent: #ffffff00, 0;
 }
 
+a.desktop {
+  text-decoration: none;
+  color: #602827;
+}
+
+a.info {
+  color: #602827;
+}
+
 body {
   background: linear-gradient(
     180deg,
@@ -60,7 +69,7 @@ body::-webkit-scrollbar {
     left: 2%;
   }
 
-  .map {
+  /* .map {
     display: none;
-  }
+  } */
 }

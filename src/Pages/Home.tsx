@@ -94,7 +94,6 @@ export default function Home() {
           <img src={class1} alt="classroom" style={images} />
         </Box>
       </Grid>
-     
       <Grid item xs={12} md={6} lg={5} order={{xs:"2", md:"1"}}>
         <Box  style={StyledBox}>
           <img src={grains} alt="grainroom" style={images} />
@@ -111,7 +110,6 @@ export default function Home() {
               </Typography>
           </Box>
       </Grid>
-      
       <Grid item xs={12} md={6} lg={6} order={{xs:"3",md:"3"}}>
         <Box style={StyledBox}>
           <Typography style={title}
@@ -128,7 +126,6 @@ export default function Home() {
           <img src={wine} alt="classroom" style={images} />
         </Box>
       </Grid>
-      
       <Grid item xs={12} md={6} lg={5} order={{xs:"6",md:"5"}}>
         <Box  style={StyledBox}>
           <img src={beer} alt="bottles" style={images} />
@@ -153,8 +150,7 @@ export default function Home() {
       </Typography>
               <Typography style={paragraphs}>
                 Gift Cards from Fermentations are perfect for family and friends! We have the best selection of winemaking and beer kits in Colorado Springs with over 130 types of kits from popular brands like Winexpert, Vineco, RJ Spagnols, and Brewers Best.
-              </Typography>
-              
+              </Typography> 
           </Box>
       </Grid>
       <Grid item xs={12} sm={8} md={6} lg={5} order={{xs:"8", md:"8"}} >

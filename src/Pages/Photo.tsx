@@ -53,16 +53,16 @@ export default function Photo() {
                 textAlign="center"
                 sx={{
                   fontFamily: "Italiana, sans-serif",
+                  color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
                   fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
                 }}
               >
-                Title
+                It's Wine O'Clock Somewehere 
               </Typography>
-              <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
-                urna id volutpat lacus laoreet non curabitur gravida.
+              <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{color: "var(--maroon-color)", fontSize: { sm: "16px", md: "18px" } }}>
+                We have a great time helping new friends make, bottle, label and take home their personalized wines.  Please give us a call or stop by our store to schedule your winemaking sessions.
               </Typography>
             </Box>
           </Grid>
@@ -75,17 +75,18 @@ export default function Photo() {
                 textAlign="center"
                 sx={{
                   fontFamily: "Italiana, sans-serif",
+                  color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
                   fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
                 }}
               >
-                Title
+                Wine a little, laugh a lot.
               </Typography>
-              <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
+              {/* <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
                 urna id volutpat lacus laoreet non curabitur gravida.
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
           {/* Photo Gallery #2 Grid item */}
@@ -161,7 +162,7 @@ export default function Photo() {
             </Box>
           </Grid>
           {/* Text Box #3 Grid item */}
-          <Grid item xs={12} md={4} lg={4} order={{ xs: 6, sm: 8, md: 8 }}>
+          <Grid item xs={12} md={4} lg={4} order={{ xs: 6, sm: 6, md: 8 }}>
             <Box style={StyledBox}>
               <Typography
                 component="h3"
@@ -169,17 +170,18 @@ export default function Photo() {
                 textAlign="center"
                 sx={{
                   fontFamily: "Italiana, sans-serif",
+                  color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
                   fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
                 }}
               >
-                Title
+                I'm not a wine snob, I'm a wine enthusiast.
               </Typography>
-              <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
+              {/* <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
                 urna id volutpat lacus laoreet non curabitur gravida.
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Grid>
