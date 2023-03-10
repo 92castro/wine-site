@@ -23,21 +23,6 @@ const StyledBox: CSSProperties = {
   backgroundColor: "none",
   // padding: "1rem",
 };
-// const heroImg: CSSProperties = {
-//   display: "flex",
-//   flexDirection: "column",
-//   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage})`,
-//   // minHeight: "15em",
-//   alignSelf: "center",
-//   backgroundPosition: "center",
-//   backgroundRepeat: "no-repeat",
-//   backgroundSize: "cover",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   maxWidth: "100%",
-//   height: "auto",
-//   marginBottom: "2rem",
-// };
 
 const wineMakingSteps: { step: string }[] = [
   { "step": "Mix wine ingredients (premium juice, water & yeast) to begin primary fermentation. Allow 45 minutes for your first lesson." },
