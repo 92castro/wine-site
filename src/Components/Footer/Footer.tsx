@@ -36,8 +36,9 @@ export default function Footer() {
         <span>Colorado Springs, CO 80918</span>
         </a>
       </p>
+      <br />
       <p style={store}>
-        <span><b style={{ color: "#74250e"}}>Phone: </b>(719) 598-1164</span>
+        <span><b style={{ color: "#74250e"}}>Phone: </b><a href="tel:+17195981164" style={{color:"black"}}>(719) 598-1164</a></span>
         <span><b style={{ color: "#74250e"}}>Email: </b>sales@fermentations.biz</span>
       </p>
       </Grid>

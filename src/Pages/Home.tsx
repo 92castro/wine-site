@@ -172,7 +172,7 @@ export default function Home() {
                 <a href="https://winexpert.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8013ffffe904.gif" alt="" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
                 <a href="https://vinecowine.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/e9dfa4ece6dbaaefffff800affffe906.JPG" alt="" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
                 <a href="https://www.rjscraftwinemaking.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8011ffffe904.gif" alt="" style={{minWidth:"200px",maxHeight:"70px"}}/></a>
-                <a href="https://brewersbestkits.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8012ffffe904.jpg" alt="" style={{minWidth:"150px",maxHeight:"70px"}}/></a>
+                <a href="https://brewersbestkits.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8012ffffe904.jpg" alt="" style={{maxWidth:"150px",maxHeight:"70px"}}/></a>
             </Box>
       </Grid>
     </Grid>

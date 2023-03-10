@@ -60,7 +60,7 @@ export default function About() {
         </div>
     </div>
     <div style={{padding:"20px"}}>
-    <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} rowSpacing={{xs:"2",md:"20"}} columnSpacing={{xs:"2",md:"3rem"}}>
+    <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} rowSpacing={{xs:"2",md:"20"}} columnSpacing={{xs:"2",md:"3rem"}} justifyContent="center">
           <Typography style={{textAlign:"center",width:"100%",fontFamily: "Italiana, serif",color: "var(--maroon-color)",fontSize:"65px",fontWeight:"bold"}}>
           Who we are
         </Typography>
@@ -71,9 +71,12 @@ export default function About() {
               </Typography> 
               </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12} sm={8} md={6}>
             <Box sx={{height:"100%"}}>
             <img src="https://www.aws-cos.com/x/cdn/?https://storage.googleapis.com/production-sitelio-v1-0-5/085/213085/jsB24WCV/979969d26bd24a40b5f501ac221ab0cf" alt="Tim & Brenda" style={{width:"100%",height:"100%",marginInline:"auto",boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",borderRadius:"100px" }} />
+            <Typography textAlign={"center"}>
+              (Tim & Brenda)
+            </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
@@ -89,7 +92,7 @@ export default function About() {
           Wine Exploration Groups
         </Typography>
               <Typography style={paragraphs}>
-                Contact Brenda to join in the fun, for more details and future announcements. Winemaking is a great way to meet new friends and get together with existing ones. Visit Tim or Brenda for more details on costs, schedules and to Join the Fermentations Wine Explorations! Let's travel the winemaking world together! 
+                 Join in on the fun! Contact Brenda for more details and future announcements. Winemaking is a great way to meet new friends and get together with existing ones. Visit Tim or Brenda for more details on costs, schedules, and to join the Fermentations Wine Explorations! Let's travel the winemaking world together. 
               </Typography> 
               </Box>
           </Grid>

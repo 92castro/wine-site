@@ -89,10 +89,10 @@ function Header() {
             <Link to="/about">About Us</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
-            <Link to="/lessons">Lesson</Link>
+            <Link to="/lessons">Lessons</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
-            <Link to="/photo">Photo</Link>
+            <Link to="/photos">Photos</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
             <Link to="/info">Info</Link>
@@ -124,7 +124,7 @@ function Header() {
         PaperProps={{
           style: {
             marginBlock: "1rem",
-            background: "linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.5))",
+            background: "linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8))",
             width: "100%",
             minHeight: "80vh",
             // backdropFilter: "var(--header-blur-filter)",
@@ -148,10 +148,10 @@ function Header() {
           <StyledMenuItem><FaGlassCheers style={{padding:"10px"}} />About</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/lessons">
-          <StyledMenuItem><GiBarrel style={{padding:"10px"}}/>Lesson</StyledMenuItem>
+          <StyledMenuItem><GiBarrel style={{padding:"10px"}}/>Lessons</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/photo">
-          <StyledMenuItem><PhotoOutlinedIcon style={{padding:"10px"}}/>Photo</StyledMenuItem>
+        <Link onClick={exitMenu} to="/photos">
+          <StyledMenuItem><PhotoOutlinedIcon style={{padding:"10px"}}/>Photos</StyledMenuItem>
         </Link>
         <Link onClick={exitMenu} to="/info">
           <StyledMenuItem><InfoOutlinedIcon style={{padding:"10px"}}/>Info</StyledMenuItem>
