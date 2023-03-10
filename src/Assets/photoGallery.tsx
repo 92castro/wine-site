@@ -1,6 +1,5 @@
 import photoOne from "../Assets/WinePhotos/photoOne.png";
 import photoTwo from "../Assets/WinePhotos/photoTwo.png";
-import photoThree from "../Assets/WinePhotos/photoThree.png";
 import photoFour from "../Assets/WinePhotos/photoFour.png";
 import photoFive from "../Assets/WinePhotos/photoFive.png";
 import photoSix from "../Assets/WinePhotos/photoSix.png";
@@ -13,15 +12,13 @@ import photoTwelve from "../Assets/WinePhotos/photoTwelve.png";
 import photoThirteen from "../Assets/WinePhotos/photoThirteen.png";
 import photoFourteen from "../Assets/WinePhotos/photoFourteen.png";
 import photoFifteen from "../Assets/WinePhotos/photoFifteen.png";
-import photoSixteen from "../Assets/WinePhotos/photoSixteen.png";
 import photoSeventeen from "../Assets/WinePhotos/photoSeventeen.png";
 import photoEighteen from "../Assets/WinePhotos/photoEighteen.png";
 import photoNineteen from "../Assets/WinePhotos/photoNineteen.png";
 import photoTwenty from "../Assets/WinePhotos/photoTwenty.png";
 import photoTwentyOne from "../Assets/WinePhotos/photoTwentyOne.png";
 import photoTwentyTwo from "../Assets/WinePhotos/photoTwentyTwo.png";
-import photoTwentyThree from "../Assets/WinePhotos/photoTwentyThree.png";
-import photoTwentyFour from "../Assets/WinePhotos/photoTwentyFour.png";
+
 
 const photoGallery = [
   // Gallery One

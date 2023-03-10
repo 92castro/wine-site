@@ -67,7 +67,7 @@ export default function Contact() {
     <>
       {/* Hero Image */}
       <div className="contactImage">
-          <img src={Image} style={{ maxWidth: "100%", height: "auto" }}/>
+          <img src={Image} alt="field" style={{ maxWidth: "100%", height: "auto" }}/>
           <h3 className="contactText">
             Let's Talk Wine and Beer!
           </h3>
@@ -161,7 +161,7 @@ export default function Contact() {
               <span><b style={{ color: "#74250e"}}>Phone: </b><a href="tel:+17195981164" style={{color:"black"}}>(719) 598-1164</a></span>
               <span><b style={{ color: "#74250e"}}>Email: </b>sales@fermentations.biz</span>
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.428126182952!2d-104.78811748483716!3d38.914190979568055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87134ef4c367b6b3%3A0xcd184256fb212d0!2sFermentations%20Home%20Winemaking%20and%20Homebrew%20Center!5e0!3m2!1sen!2sjp!4v1677554341746!5m2!1sen!2sjp" className="map" loading="lazy">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.428126182952!2d-104.78811748483716!3d38.914190979568055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87134ef4c367b6b3%3A0xcd184256fb212d0!2sFermentations%20Home%20Winemaking%20and%20Homebrew%20Center!5e0!3m2!1sen!2sjp!4v1677554341746!5m2!1sen!2sjp" title="map" className="map" loading="lazy">
             </iframe>
           </div>
         </Grid>

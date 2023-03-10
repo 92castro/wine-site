@@ -22,7 +22,7 @@ export default function Photo() {
   return (
     <>
       <div>
-        <img src={HeroImage} style={{ maxWidth: "100%", height: "auto" }} />
+        <img src={HeroImage} alt="cheers" style={{ maxWidth: "100%", height: "auto" }} />
       </div>
       <div style={{ display: "flex", justifyContent: "center", padding: "1rem" }}>
         <Grid container maxWidth="lg" rowSpacing={2} columnSpacing={2}>
