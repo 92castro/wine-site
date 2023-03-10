@@ -1,6 +1,6 @@
 import logo from "../../Assets/Capture.png";
 
-import React, { useEffect, useState } from "react";
+import {useState } from "react";
 import { AppBar, Toolbar, styled, Typography, Box, MenuItem, Menu } from "@mui/material";
 import { IconContext } from "react-icons";
 import { FaGlassCheers } from 'react-icons/fa';

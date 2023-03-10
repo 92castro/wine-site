@@ -1,6 +1,5 @@
 
-import React, { CSSProperties } from "react";
-import {Link} from "react-router-dom"
+import { CSSProperties } from "react";
 import { Grid, Typography, Box, List, ListItem } from "@mui/material";
 import FeedIcon from '@mui/icons-material/Feed';
 
@@ -87,8 +86,7 @@ export default function About() {
           American Wine Society
         </Typography>
               <Typography style={paragraphs}>
-                Fermentations is a proud member and sponsor of the Colorado Springs Chapter of American Wine Society. After 36 months, the Colorado Springs Chapter of American Wine Society has grown to 70+ members! Meetings are held on the 1st Tuesday of each month at various locations around town. Visit the AWS website: <a href="https://www.aws-cos.com/" target="_blank" style={{color:"black"}}>www.aws-cos.com</a> Or you can contact Tim or Brenda for more information. 
-                
+                Fermentations is a proud member and sponsor of the Colorado Springs Chapter of American Wine Society. After 36 months, the Colorado Springs Chapter of American Wine Society has grown to 70+ members! Meetings are held on the 1st Tuesday of each month at various locations around town. Visit the AWS website: <a href="https://www.aws-cos.com/" rel="noopener noreferrer" target="_blank" style={{color:"black"}}>www.aws-cos.com</a> Or you can contact Tim or Brenda for more information. 
               </Typography>
               <Typography style={title}>
           Wine Exploration Groups
@@ -109,21 +107,21 @@ export default function About() {
                   <FeedIcon/>
               <Typography style={paragraphs} sx={{marginLeft: 2, fontSize: { sm: "16px", md: "18px" } }}>
                 Fermentations was featured live on television Sunday morning 2/19/2017 for National Drink Wine Day!  Follow this link to view both segments: 
-                <a href="https://www.fox21news.com/mornings/in-studio-interviews/food-and-wine-pairings-for-national-drink-wine-day/" style={{color:"black"}} target="_blank">Fox 21 News</a> 
+                <a href="https://www.fox21news.com/mornings/in-studio-interviews/food-and-wine-pairings-for-national-drink-wine-day/" style={{color:"black"}} rel="noopener noreferrer" target="_blank">Fox 21 News</a> 
                 </Typography>
                 </ListItem>
                 <ListItem>
                   <FeedIcon/>
               <Typography style={paragraphs} sx={{marginLeft: 2, fontSize: { sm: "16px", md: "18px" } }}>
                 Fermentations was proudly featured in the online Gazette March 31,2016: 
-                <a href="https://gazette.com/news/wine-lover-this-may-be-your-new-favorite-hobby/article_c1cd9e91-6030-56b5-9566-fe66c3dc2f74.html" style={{color:"black"}} target="_blank"> Click Here to see the article.</a>
+                <a href="https://gazette.com/news/wine-lover-this-may-be-your-new-favorite-hobby/article_c1cd9e91-6030-56b5-9566-fe66c3dc2f74.html" style={{color:"black"}} rel="noopener noreferrer" target="_blank"> Click Here to see the article.</a>
                 </Typography>
                 </ListItem>
                 <ListItem>
                   <FeedIcon/>
               <Typography style={paragraphs} sx={{marginLeft: 2, fontSize: { sm: "16px", md: "18px" } }}>
                 On Thursday May 7th, Fermentations was featured during the morning news segment of Fox21 News by John Martin. Click the link below to watch the video clip that's posted on Youtube.
-                <a href="https://www.youtube.com/watch?v=hAvWNWhwN3k" style={{color:"black"}} target="_blank">Fox21 News Clip 5/07/2015</a>
+                <a href="https://www.youtube.com/watch?v=hAvWNWhwN3k" style={{color:"black"}} rel="noopener noreferrer" target="_blank">Fox21 News Clip 5/07/2015</a>
               </Typography>
               </ListItem>
               </List>
