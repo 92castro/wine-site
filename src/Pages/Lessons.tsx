@@ -3,13 +3,14 @@ import ImageTwo from "../Assets/CustomLabelTwo.jpg";
 import ImageThree from "../Assets/CustomLabelThree.jpg";
 import ImageFour from "../Assets/CustomLabelFour.jpg";
 import HeroImage from "../Assets/resizedImages/beer_4500x1800.jpeg";
+import glasses from "../Assets/glasses.jpg"
 
 import { CSSProperties } from "react";
 import { Grid, ImageList, ImageListItem, List, ListItem, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import WineBarIcon from "@mui/icons-material/WineBar";
 import SportsBarIcon from "@mui/icons-material/SportsBar";
-import LessonsGridPhoto from "../Assets/WineBottlesOnWineBarrel.png";
+
 const StyledGridItem: CSSProperties = {
   // padding: "2rem",
   // minHeight: "400px",
@@ -72,7 +73,7 @@ export default function Lessons() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="xl" minHeight="100vh" rowSpacing={1} columnSpacing={{ xs: 2, sm: 2, md: 3, xl: 6 }}>
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6} sx={{ display: { xs: "none", md: "block" } }}>
-            <img src={LessonsGridPhoto} alt="glasses" style={{ width: "100%", height: "100%" }} />
+            <img src={glasses} alt="glasses" style={{ width: "100%", height: "100%" }} />
           </Grid>
           {/* Lesson info grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>

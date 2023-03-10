@@ -1,3 +1,4 @@
+import storefront from "../Assets/storefront.jpg"
 
 import { CSSProperties } from "react";
 import { Grid, Typography, Box, List, ListItem } from "@mui/material";
@@ -8,7 +9,7 @@ import FeedIcon from '@mui/icons-material/Feed';
 const heroImg: CSSProperties = {
   display:"flex",
   flexDirection: "column",  
-  backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.fermentations.biz/mediac/450_0/media/f7989aefdfb9dbc8ffff8378ffffe904.jpg')",
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${storefront})`,
   // height: "45vh",
   minHeight:"15em",
   // marginTop: "20px",

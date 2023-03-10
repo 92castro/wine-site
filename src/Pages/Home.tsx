@@ -2,6 +2,12 @@ import class1 from "../Assets/class1.jpg"
 import grains from "../Assets/grains.jpg"
 import beer from "../Assets/bottles.jpg"
 import wine from "../Assets/winebottles.jpg"
+import giftcard from "../Assets/giftcard.jpg"
+import winexpert from "../Assets/winexpert.png"
+import rjs from "../Assets/rjs.png"
+import brewers from "../Assets/brewers.jpg"
+import vineco from "../Assets/vineco.jpg"
+
 
 import React, { CSSProperties } from "react";
 import {Link} from "react-router-dom"
@@ -86,7 +92,7 @@ export default function Home() {
               <Typography style={paragraphs}>
                 In order to serve our clients better, we have created a new Classroom/Education Center within Fermentations Home Winemaking Center. We have always valued the educational aspects of making wine and beer, so now we have a room dedicated to the learning environment. In the near future, we'll feature wine and beer education events.
               </Typography>
-              <Link style={{fontWeight:"550"}} to="/contact">Contact us for arrangements to use this presentation space for your special event. </Link>
+              <Link style={{fontWeight:"550", color:"black"}} to="/contact">Contact us for arrangements to use this presentation space for your special event. </Link>
           </Box>
       </Grid>
       <Grid item xs={12} md={6} lg={5}>
@@ -155,7 +161,7 @@ export default function Home() {
       </Grid>
       <Grid item xs={12} sm={8} md={6} lg={5} order={{xs:"8", md:"8"}} >
         <Box  style={StyledBox}>
-          <img src="http://www.fermentations.biz/mediac/450_0/media/2e7de5b7368af662ffff805cffffe904.JPG" alt="giftcard" style={{ maxHeight:"auto",boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+          <img src={giftcard} alt="giftcard" style={{ maxHeight:"auto",boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
   borderRadius: "10px",}} />
         </Box>
       </Grid>
@@ -165,10 +171,10 @@ export default function Home() {
               </Typography>
               <br />
               <Box style={brands}>
-                <a href="https://winexpert.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8013ffffe904.gif" alt="" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
-                <a href="https://vinecowine.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/e9dfa4ece6dbaaefffff800affffe906.JPG" alt="" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
-                <a href="https://www.rjscraftwinemaking.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8011ffffe904.gif" alt="" style={{minWidth:"200px",maxHeight:"70px"}}/></a>
-                <a href="https://brewersbestkits.com/"><img src="http://www.fermentations.biz/mediac/450_0/media/DIR_104/4dc3d1d7c2c3c2deffff8012ffffe904.jpg" alt="" style={{maxWidth:"150px",maxHeight:"70px"}}/></a>
+                <a href="https://winexpert.com/"target="_blank" rel="noopener noreferrer"><img src={winexpert} alt="winexpert" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
+                <a href="https://vinecowine.com/" target="_blank" rel="noopener noreferrer"><img src={vineco} alt="vineco" style={{minWidth:"100px",maxHeight:"70px"}}/></a>
+                <a href="https://www.rjscraftwinemaking.com/" target="_blank" rel="noopener noreferrer"><img src={rjs} alt="rjswine" style={{minWidth:"200px",maxHeight:"70px"}}/></a>
+                <a href="https://brewersbestkits.com/" target="_blank" rel="noopener noreferrer"><img src={brewers} alt="brewersbest" style={{maxWidth:"150px",maxHeight:"70px"}}/></a>
             </Box>
       </Grid>
     </Grid>
