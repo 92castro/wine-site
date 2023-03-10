@@ -2,7 +2,7 @@ import ImageOne from "../Assets/CustomLabelOne.jpg";
 import ImageTwo from "../Assets/CustomLabelTwo.jpg";
 import ImageThree from "../Assets/CustomLabelThree.jpg";
 import ImageFour from "../Assets/CustomLabelFour.jpg";
-import HeroImage from "../Assets/vineYardImage.jpg";
+import HeroImage from "../Assets/resizedImages/beer_4500x1800.jpeg";
 
 import React, { CSSProperties } from "react";
 import { Grid, ImageList, ImageListItem, List, ListItem, Paper, Typography } from "@mui/material";
@@ -23,24 +23,21 @@ const StyledBox: CSSProperties = {
   backgroundColor: "none",
   // padding: "1rem",
 };
-const heroImg: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage})`,
-  // height: "",
-  minHeight: "310px",
-  maxHeight: "590px",
-  width: "100%",
-  alignSelf: "center",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  // backgroundSize: "cover",
-
-  objectFit: "contain",
-  alignItems: "center",
-  justifyContent: "center",
-  marginBottom: "1rem",
-};
+// const heroImg: CSSProperties = {
+//   display: "flex",
+//   flexDirection: "column",
+//   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage})`,
+//   // minHeight: "15em",
+//   alignSelf: "center",
+//   backgroundPosition: "center",
+//   backgroundRepeat: "no-repeat",
+//   backgroundSize: "cover",
+//   alignItems: "center",
+//   justifyContent: "center",
+//   maxWidth: "100%",
+//   height: "auto",
+//   marginBottom: "2rem",
+// };
 
 const wineMakingSteps: { step: string }[] = [
   { "step": "Mix wine ingredients (premium juice, water & yeast) to begin primary fermentation. Allow 45 minutes for your first lesson." },
@@ -84,7 +81,9 @@ const itemData: { img: string; title: string }[] = [
 export default function Lessons() {
   return (
     <>
-      <Box style={heroImg} sx={{ height: { xs: "310px", md: "590px" } }}></Box>
+      <div>
+        <img src={HeroImage} style={{ maxWidth: "100%", height: "auto" }} />
+      </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="xl" minHeight="100vh" rowSpacing={1} columnSpacing={{ xs: 2, sm: 2, md: 3, xl: 6 }}>
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6} sx={{ display: { xs: "none", md: "block" } }}>

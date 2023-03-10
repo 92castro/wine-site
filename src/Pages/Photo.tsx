@@ -1,7 +1,7 @@
 import { Grid, ImageList, ImageListItem, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { CSSProperties } from "react";
-// import HeroImage from "../Assets/photoGallery";
+import HeroImage from "../Assets/resizedImages/cheers_4500x1800.jpeg";
 
 import photoGallery from "../Assets/photoGallery";
 
@@ -21,8 +21,8 @@ const heroImg: CSSProperties = {
   flexDirection: "column",
   backgroundImage:
     "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
-  height: "40vh",
-  minHeight: "15em",
+  // height: "40vh",
+  // minHeight: "15em",
   // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
@@ -30,6 +30,8 @@ const heroImg: CSSProperties = {
   backgroundSize: "cover",
   alignItems: "center",
   justifyContent: "center",
+  maxWidth: "100%",
+  height: "auto",
 };
 const heroText: CSSProperties = {
   textAlign: "center",
@@ -40,7 +42,7 @@ const heroText: CSSProperties = {
 export default function Photo() {
   return (
     <>
-      <div style={heroImg}>
+      {/* <div style={heroImg}>
         <div style={heroText}>
           <Typography
             maxWidth={{ xs: "400px", sm: "450px", lg: "550px" }}
@@ -58,6 +60,9 @@ export default function Photo() {
             Create memory's and build a family at Fermentations
           </Typography>
         </div>
+      </div> */}
+      <div>
+        <img src={HeroImage} style={{ maxWidth: "100%", height: "auto" }} />
       </div>
       <div style={{ display: "flex", justifyContent: "center", padding: "1rem" }}>
         <Grid container maxWidth="lg" rowSpacing={2} columnSpacing={2}>
