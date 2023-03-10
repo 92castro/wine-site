@@ -37,7 +37,7 @@ const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
 const StyledDesktopMenuItem = styled(MenuItem)(({ theme }) => ({
   color: "var(--maroon-color)",
   minHeight: "65px",
-  fontSize: "125%",
+  fontSize: "130%",
   textAlign: "center",
   position: "relative",
   fontFamily: "Italiana, serif",
@@ -86,19 +86,19 @@ function Header() {
           </Typography>
         <DesktopMenu>
           <StyledDesktopMenuItem>
-            <Link to="/about">About Us</Link>
+            <Link className="desktop" to="/about">About Us</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
-            <Link to="/lessons">Lessons</Link>
+            <Link className="desktop" to="/lessons">Lessons</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
-            <Link to="/photos">Photos</Link>
+            <Link className="desktop" to="/photos">Photos</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
-            <Link to="/info">Info</Link>
+            <Link className="desktop" to="/info">Info</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
-            <Link to="/contact">Contact</Link>
+            <Link className="desktop" to="/contact">Contact</Link>
           </StyledDesktopMenuItem>
         </DesktopMenu>
         <MobileMenu onClick={(e) => setOpen(true)}>
