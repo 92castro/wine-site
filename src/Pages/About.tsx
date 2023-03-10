@@ -10,7 +10,7 @@ const heroImg: CSSProperties = {
   display:"flex",
   flexDirection: "column",  
   backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.fermentations.biz/mediac/450_0/media/f7989aefdfb9dbc8ffff8378ffffe904.jpg')",
-  height: "45vh",
+  // height: "45vh",
   minHeight:"15em",
   // marginTop: "20px",
   alignSelf: "center",
@@ -19,6 +19,8 @@ const heroImg: CSSProperties = {
   backgroundSize: "cover",
   alignItems: "center",
   justifyContent: "center",
+  maxWidth: "100%", 
+  height: "auto"
 };
 
 const heroText: CSSProperties = {

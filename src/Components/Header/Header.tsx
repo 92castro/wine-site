@@ -102,9 +102,6 @@ function Header() {
           </StyledDesktopMenuItem>
         </DesktopMenu>
         <MobileMenu onClick={(e) => setOpen(true)}>
-          {/* <IconContext.Provider value={{ size: "1.8rem", padding: "0", margin: "0", color: "white" }}>
-            
-          </IconContext.Provider> */}
           <MenuRoundedIcon sx={{color:"black"}} fontSize="large" />
         </MobileMenu>
       </StyledToolbar>
@@ -117,17 +114,12 @@ function Header() {
           vertical: 95,
           horizontal: "right",
         }}
-        // transformOrigin={{
-        //   vertical: "top",
-        //   // horizontal: "bottom",
-        // }}
         PaperProps={{
           style: {
             marginBlock: "1rem",
             background: "linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8))",
             width: "100%",
             minHeight: "80vh",
-            // backdropFilter: "var(--header-blur-filter)",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -141,9 +133,6 @@ function Header() {
             </IconContext.Provider>
           </StyledMenuItem>
         </Link>
-        {/* <Link onClick={exitMenu} to="/">
-          <StyledMenuItem>About Me</StyledMenuItem>
-        </Link> */}
         <Link onClick={exitMenu} to="/about">
           <StyledMenuItem><FaGlassCheers style={{padding:"10px"}} />About</StyledMenuItem>
         </Link>

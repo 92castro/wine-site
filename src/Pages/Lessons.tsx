@@ -82,12 +82,13 @@ export default function Lessons() {
                   component="h1"
                   sx={{
                     fontWeight: "700",
+                    color:"var(--maroon-color)",
                     fontSize: { xs: "35px", sm: "40px", lg: "50px" },
                     marginY: { xs: "1rem" },
                     px: { xs: 2, sm: 3, md: 3, lg: 2 },
                     fontFamily: "Italiana, sans-serif",
                     maxWidth: { xs: "400px", sm: "470px", lg: "600px" },
-                    textShadow: "2px 2px 5px #667",
+                    // textShadow: "2px 2px 5px #667",
                   }}
                 >
                   Personalized winemaking and home brew lessons
@@ -138,10 +139,11 @@ export default function Lessons() {
                 sx={{
                   fontSize: { xs: "32px", lg: "40px" },
                   textAlign: "center",
+                  color:"var(--maroon-color)",
                   mt: 5,
                   fontWeight: "700",
                   fontFamily: "Italiana, sans-serif",
-                  textShadow: "2px 2px 5px #667",
+                  // textShadow: "2px 2px 5px #667",
                 }}
               >
                 Winemaking in five (5) easy steps.
@@ -197,10 +199,11 @@ export default function Lessons() {
                 sx={{
                   fontSize: { xs: "32px", lg: "40px" },
                   textAlign: "center",
+                  color:"var(--maroon-color)",
                   mt: 5,
                   fontWeight: "700",
                   fontFamily: "Italiana, sans-serif",
-                  textShadow: "2px 2px 5px #667",
+                  // textShadow: "2px 2px 5px #667",
                 }}
               >
                 Beer Brewing in three (3) easy steps:
@@ -255,10 +258,11 @@ export default function Lessons() {
               py: { xs: 2, sm: 2, md: 3, xl: 4 },
               ml: { xs: 2, md: 2, xl: 0 },
               fontSize: { xs: "32px", lg: "40px" },
+              color:"var(--maroon-color)",
               fontFamily: "Italiana, sans-serif",
               maxWidth: { xs: "400px", sm: "470px", lg: "650px" },
 
-              textShadow: "2px 2px 5px #667",
+              // textShadow: "2px 2px 5px #667",
             }}
           >
             Personalize your wine and beer bottles with custom labels!

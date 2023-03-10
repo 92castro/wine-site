@@ -10,6 +10,10 @@ a.desktop {
   color: #602827;
 }
 
+a.info {
+  color: #602827;
+}
+
 body {
   background: linear-gradient(
     180deg,
