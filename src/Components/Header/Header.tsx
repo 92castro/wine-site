@@ -79,10 +79,10 @@ function Header() {
   return (
     <AppBar position="relative" sx={{ background:"linear-gradient(180deg, rgba(191,166,162,0.19931722689075626) 75%, rgba(184,148,148,0.3029586834733894) 100%)", padding:"5px" }}>
       <StyledToolbar>
-        <Link to="/"><img src={logo} alt="logo" style={{borderRadius:"20px",height:"70px"}} /></Link>
-        <Typography  sx={{fontSize:{xs:"12px", sm:"20px"},color:"var(--maroon-color)",fontFamily: "Italiana, serif",
+        <Link to="/"><img className="logo" src={logo} alt="logo" style={{borderRadius:"20px",height:"70px", marginRight:"8px"}} /></Link>
+        <Typography className="script" sx={{fontSize:{xs:"12px", sm:"20px"},color:"var(--maroon-color)",fontFamily: "Italiana, serif",
   fontWeight:"bold",}}>
-          Enabling Home Winemakers & Homebrewers since 2011     
+          Inspiring Home Winemakers & Homebrewers since 2011     
           </Typography>
         <DesktopMenu>
           <StyledDesktopMenuItem>
@@ -126,13 +126,16 @@ function Header() {
           },
         }}
       >
-        <Link to="" onClick={exitMenu}>
-          <StyledMenuItem>
+        {/* <Link to=""  */}
+        <Typography style={{textAlign:"center", color:"white",fontFamily: "Italiana, serif", marginBottom:"15px", fontWeight:"bold", fontSize:"27px"}} >
+              Inspiring Home Winemakers & Homebrewers since 2011  
+          </Typography>
+          <StyledMenuItem onClick={exitMenu}>
             <IconContext.Provider value={{ size: "2rem" }}>
               <CloseIcon sx={{fontSize:"45px"}} />
             </IconContext.Provider>
           </StyledMenuItem>
-        </Link>
+        {/* </Link> */}
         <Link onClick={exitMenu} to="/about">
           <StyledMenuItem><FaGlassCheers style={{padding:"10px"}} />About</StyledMenuItem>
         </Link>

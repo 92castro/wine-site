@@ -60,6 +60,10 @@ body::-webkit-scrollbar {
   .contactText {
     font-size: 2rem;
   }
+
+  .script {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 425px) {
