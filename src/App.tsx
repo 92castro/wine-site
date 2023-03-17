@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import './App.css';
+import "./Assets/fonts/NuevaStdBoldCond.ttf"
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
