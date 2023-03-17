@@ -83,10 +83,6 @@ export default function Photo() {
               >
                 Wine a little, laugh a lot.
               </Typography>
-              {/* <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
-                urna id volutpat lacus laoreet non curabitur gravida.
-              </Typography> */}
             </Box>
           </Grid>
           {/* Photo Gallery #2 Grid item */}
@@ -178,10 +174,6 @@ export default function Photo() {
               >
                 I'm not a wine snob, I'm a wine enthusiast.
               </Typography>
-              {/* <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
-                urna id volutpat lacus laoreet non curabitur gravida.
-              </Typography> */}
             </Box>
           </Grid>
         </Grid>

@@ -170,7 +170,7 @@ export default function Lessons() {
               <Typography component="p">
                 We currently charge{" "}
                 <Typography component="span" sx={{ fontWeight: "700" }}>
-                  $155.72 after tax to make wine in our store.
+                  $115.72 after tax to make wine in our store.
                 </Typography>
                 <br />
                 Which includes bottles, corks, labels, shrink capsules, use of equipment & lesson fee, plus the wine ingredient kit of your choice.
