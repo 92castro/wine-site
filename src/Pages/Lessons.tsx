@@ -84,10 +84,10 @@ export default function Lessons() {
                   sx={{
                     fontWeight: "700",
                     color:"var(--maroon-color)",
-                    fontSize: { xs: "35px", sm: "40px", lg: "50px" },
+                    fontSize: { xs: "40px", sm: "45px", lg: "55px" },
                     marginY: { xs: "1rem" },
                     px: { xs: 2, sm: 3, md: 3, lg: 2 },
-                    fontFamily: "Italiana, sans-serif",
+                    fontFamily: "Fermentations",
                     maxWidth: { xs: "400px", sm: "470px", lg: "600px" },
                     // textShadow: "2px 2px 5px #667",
                   }}
@@ -138,12 +138,12 @@ export default function Lessons() {
                 component="h3"
                 variant="h6"
                 sx={{
-                  fontSize: { xs: "32px", lg: "40px" },
+                  fontSize: { xs: "35px", lg: "45px" },
                   textAlign: "center",
                   color:"var(--maroon-color)",
                   mt: 5,
                   fontWeight: "700",
-                  fontFamily: "Italiana, sans-serif",
+                  fontFamily: "Fermentations",
                   // textShadow: "2px 2px 5px #667",
                 }}
               >
@@ -170,7 +170,7 @@ export default function Lessons() {
               <Typography component="p">
                 We currently charge{" "}
                 <Typography component="span" sx={{ fontWeight: "700" }}>
-                  $99.75 + tax to make wine in our store.
+                  $155.72 after tax to make wine in our store.
                 </Typography>
                 <br />
                 Which includes bottles, corks, labels, shrink capsules, use of equipment & lesson fee, plus the wine ingredient kit of your choice.
@@ -198,12 +198,12 @@ export default function Lessons() {
                 component="h3"
                 variant="h6"
                 sx={{
-                  fontSize: { xs: "32px", lg: "40px" },
+                  fontSize: { xs: "35px", lg: "45px" },
                   textAlign: "center",
                   color:"var(--maroon-color)",
                   mt: 5,
                   fontWeight: "700",
-                  fontFamily: "Italiana, sans-serif",
+                  fontFamily: "Fermentations",
                   // textShadow: "2px 2px 5px #667",
                 }}
               >
@@ -258,9 +258,9 @@ export default function Lessons() {
               px: { xs: 2, sm: 2, md: 3, xl: 8 },
               py: { xs: 2, sm: 2, md: 3, xl: 4 },
               ml: { xs: 2, md: 2, xl: 0 },
-              fontSize: { xs: "32px", lg: "40px" },
+              fontSize: { xs: "35px", lg: "45px" },
               color:"var(--maroon-color)",
-              fontFamily: "Italiana, sans-serif",
+              fontFamily: "Fermentations",
               maxWidth: { xs: "400px", sm: "470px", lg: "650px" },
 
               // textShadow: "2px 2px 5px #667",

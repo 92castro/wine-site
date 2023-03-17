@@ -10,8 +10,8 @@ const heroImg: CSSProperties = {
   display:"flex",
   flexDirection: "column",  
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${storefront})`,
-  // height: "45vh",
-  minHeight:"15em",
+  height: "40vh",
+  // minHeight:"15em",
   // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
@@ -20,7 +20,7 @@ const heroImg: CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   maxWidth: "100%", 
-  height: "auto"
+  // height: "auto"
 };
 
 const heroText: CSSProperties = {
@@ -33,11 +33,11 @@ const title: CSSProperties = {
   textAlign: "center",
   color: "var(--maroon-color)",
   fontWeight: "700",
-  fontSize: "45px",
+  fontSize: "50px",
   marginTop:"40px",
   marginBottom:"10px",
   width:"100%",
-  fontFamily: "Italiana, serif"
+  fontFamily: "Fermentations"
 }
 
 const paragraphs: CSSProperties = {
@@ -63,13 +63,13 @@ export default function About() {
     </div>
     <div style={{padding:"20px"}}>
     <Grid container minHeight="30vh" maxWidth="lg" margin={{ lg: "auto" }} rowSpacing={{xs:"2",md:"20"}} columnSpacing={{xs:"2",md:"3rem"}} justifyContent="center">
-          <Typography style={{textAlign:"center",width:"100%",fontFamily: "Italiana, serif",color: "var(--maroon-color)",fontSize:"65px",fontWeight:"bold"}}>
+          <Typography style={{textAlign:"center",width:"100%",fontFamily: "Fermentations",color: "var(--maroon-color)",fontSize:"70px",fontWeight:"bold"}}>
           Who we are
         </Typography>
           <Grid item xs={12} sm={12} md={12}>
             <Box style={StyledBox}>
               <Typography style={paragraphs}>
-                Since 2011, Fermentation has been serving Colorado Springs, CO with a wide selection of brewing products, equipment, and supplies for both beginners and advanced brewers. We also offer classes and workshops where we will teach you how to make wine & beer you can share with pride. We began our winemaking hobby as a social event for couples, and have continued to enjoy creating exceptional wines with our friends. Our store is dedicated to creating a community of brewing enthusiasts who share our love for the art and providing everything needed to create unique and delicious brews. Visit us to experience the joy of fermentation for yourself!
+                Since 2011, Fermentations has been serving Colorado Springs with a wide selection of brewing products, equipment, and supplies for both beginners and advanced brewers. We also offer lessons where we will teach you how to make wine & beer you can share with pride. We began our winemaking hobby as a social event for couples, and have continued to enjoy creating exceptional wines with our friends. Our store is dedicated to creating a community of brewing enthusiasts who share our love for the art and providing everything needed to create unique and delicious brews. Visit us to experience the joy of fermentation for yourself!
               </Typography> 
               </Box>
           </Grid>
@@ -81,20 +81,20 @@ export default function About() {
             </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12} sm={12} md={4}>
             <Box style={StyledBox}>
               <Typography style={title}>
           American Wine Society
         </Typography>
               <Typography style={paragraphs}>
-                Fermentations is a proud member and sponsor of the Colorado Springs Chapter of American Wine Society. After 36 months, the Colorado Springs Chapter of American Wine Society has grown to 70+ members! Meetings are held on the 1st Tuesday of each month at various locations around town. Visit the AWS website: <a href="https://www.aws-cos.com/" rel="noopener noreferrer" target="_blank" style={{color:"black"}}>www.aws-cos.com</a> Or you can contact Tim or Brenda for more information. 
+                Fermentations is a proud member and sponsor of the Colorado Springs Chapter of American Wine Society. After 10 years, the Colorado Springs Chapter of American Wine Society has grown to 100+ members! Meetings are held on the 1st Tuesday of each month at various locations around town. Visit the AWS website: <a href="https://www.aws-cos.com/" rel="noopener noreferrer" target="_blank" style={{color:"black"}}>www.aws-cos.com</a> Or you can contact Tim or Brenda for more information. 
               </Typography>
-              <Typography style={title}>
+              {/* <Typography style={title}>
           Wine Exploration Groups
         </Typography>
               <Typography style={paragraphs}>
                  Join in on the fun! Contact Brenda for more details and future announcements. Winemaking is a great way to meet new friends and get together with existing ones. Visit Tim or Brenda for more details on costs, schedules, and to join the Fermentations Wine Explorations! Let's travel the winemaking world together. 
-              </Typography> 
+              </Typography>  */}
               </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={12}>

@@ -16,9 +16,10 @@ const formCard: CSSProperties = {
 
 //Header Text Styling
 const headerText: CSSProperties = {
-  fontFamily: "Italiana, sans-serif", 
+  fontFamily: "Fermentations", 
   color: "#74250e", 
   margin: "0", 
+  fontSize:"40px"
   // textShadow: "2px 2px 5px #667",
 }
 

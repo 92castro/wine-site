@@ -78,7 +78,7 @@ export default function Contact() {
         <Grid item sm={12} md={6}>
           <form ref={form} onSubmit={onSubmit} style={{ height: "100%"}}>
             <div style={formCard} key={"green"}>
-              <h1 style={{ fontFamily: "Italiana, serif", textShadow: "2px 2px 5px #667", color: "#4a0d0b" }}>Drop Us A Line With Inquiries, Or Questions About Wine And Beer Making!</h1>
+              <h1 style={{ fontFamily: "Fermentations", textShadow: "2px 2px 5px #667", color: "#4a0d0b",fontSize:"40px" }}>Drop Us A Line With Inquiries, Or Questions About Wine And Beer Making!</h1>
               <TextField
                 {...register("firstName", { required: "First name is required *" })}
                 id="firstName"
@@ -135,7 +135,7 @@ export default function Contact() {
               <Typography component="small">
                 {errors.comment?.message}
               </Typography>
-              <Button type="submit" sx={{ fontFamily: "Roboto, serif", backgroundColor: "#4a0d0b", width: "30%", marginTop: "50px", marginBottom: "50px" }} variant="contained">
+              <Button type="submit" sx={{ fontFamily: "Fermentations", backgroundColor: "#4a0d0b", width: "30%", marginTop: "50px", marginBottom: "50px", fontSize:"18px" }} variant="contained">
                 Submit
               </Button>
             </div>
@@ -149,7 +149,7 @@ export default function Contact() {
               <Button startIcon={<TwitterIcon className="socialIcon"/>} href="https://twitter.com/fermentationsco" target="_blank"/>
             </div>
             <p style={info}>
-              <span style={{ color: "#74250e", fontSize: "140%", fontFamily: "Italiana, serif" }}><b>Regular Business Hours</b></span>
+              <span style={{ color: "#74250e", fontSize: "180%", fontFamily: "Fermentations" }}><b>Regular Business Hours</b></span>
               <span>Monday - Thursday: 11am to 7pm</span>
               <span>Fridays: 11am to 6pm</span>
               <span>Saturdays: 9am to 2pm</span>

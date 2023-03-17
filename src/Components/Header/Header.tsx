@@ -20,10 +20,10 @@ const StyledToolbar = styled(Toolbar)({
 const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
   color: "#f5f5f5",
   minHeight: "65px",
-  fontSize: "180%",
+  fontSize: "215%",
   textAlign: "center",
   position: "relative",
-  fontFamily: "Italiana, serif",
+  fontFamily: "Fermentations",
   fontWeight:"bold",
 
   "&:hover": {
@@ -37,10 +37,10 @@ const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
 const StyledDesktopMenuItem = styled(MenuItem)(({ theme }) => ({
   color: "var(--maroon-color)",
   minHeight: "65px",
-  fontSize: "130%",
+  fontSize: "160%",
   textAlign: "center",
   position: "relative",
-  fontFamily: "Italiana, serif",
+  fontFamily: "Fermentations",
   fontWeight:"bold",
 
   "&:hover": {
@@ -80,7 +80,7 @@ function Header() {
     <AppBar position="relative" sx={{ background:"linear-gradient(180deg, rgba(191,166,162,0.19931722689075626) 75%, rgba(184,148,148,0.3029586834733894) 100%)", padding:"5px" }}>
       <StyledToolbar>
         <Link to="/"><img className="logo" src={logo} alt="logo" style={{borderRadius:"20px",height:"70px", marginRight:"8px", mixBlendMode:"multiply"}} /></Link>
-        <Typography className="script" sx={{fontSize:{xs:"12px", sm:"20px"},color:"var(--maroon-color)",fontFamily: "Italiana, serif",
+        <Typography className="script" sx={{fontSize:{xs:"12px", sm:"20px"},color:"var(--maroon-color)",fontFamily: "Fermentations",
   fontWeight:"bold",}}>
           Inspiring Home Winemakers & Homebrewers since 2011     
           </Typography>
@@ -127,7 +127,7 @@ function Header() {
         }}
       >
         {/* <Link to=""  */}
-        <Typography style={{textAlign:"center", color:"white",fontFamily: "Italiana, serif", marginBottom:"15px", fontWeight:"bold", fontSize:"27px"}} >
+        <Typography style={{textAlign:"center", color:"white",fontFamily: "Fermentations", marginBottom:"15px", fontWeight:"bold", fontSize:"30px"}} >
               Inspiring Home Winemakers & Homebrewers since 2011  
           </Typography>
           <StyledMenuItem onClick={exitMenu}>

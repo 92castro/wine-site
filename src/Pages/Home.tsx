@@ -33,20 +33,19 @@ const heroImg: CSSProperties = {
 const heroText: CSSProperties = {
   textAlign: "center",
   color: "white",
-  fontSize: "40px",
-  fontWeight:"600",
-  fontFamily: "Italiana, serif" 
+  fontSize: "55px",
+  fontFamily: "Fermentations" 
 };
 
 const title: CSSProperties = {
   textAlign: "center",
   color: "var(--maroon-color)",
   fontWeight: "600",
-  fontSize: "40px",
+  fontSize: "45px",
   // marginTop:"50px",
   marginBottom:"10px",
   width:"100%",
-  fontFamily: "Italiana, serif" 
+  fontFamily: "Fermentations" 
 }
 
 const StyledBox: CSSProperties = {

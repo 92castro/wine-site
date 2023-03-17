@@ -52,14 +52,14 @@ export default function Photo() {
                 variant="h6"
                 textAlign="center"
                 sx={{
-                  fontFamily: "Italiana, sans-serif",
+                  fontFamily: "Fermentations",
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
                 }}
               >
-                It's Wine O'Clock Somewehere 
+                It's Wine O'Clock Somewhere! 
               </Typography>
               <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{color: "var(--maroon-color)", fontSize: { sm: "16px", md: "18px" } }}>
                 We have a great time helping new friends make, bottle, label and take home their personalized wines.  Please give us a call or stop by our store to schedule your winemaking sessions.
@@ -74,11 +74,11 @@ export default function Photo() {
                 variant="h6"
                 textAlign="center"
                 sx={{
-                  fontFamily: "Italiana, sans-serif",
+                  fontFamily: "Fermentations",
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
                 }}
               >
                 Wine a little, laugh a lot.
@@ -169,11 +169,11 @@ export default function Photo() {
                 variant="h6"
                 textAlign="center"
                 sx={{
-                  fontFamily: "Italiana, sans-serif",
+                  fontFamily: "Fermentations",
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "35px", sm: "40px", lg: "50px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
                 }}
               >
                 I'm not a wine snob, I'm a wine enthusiast.

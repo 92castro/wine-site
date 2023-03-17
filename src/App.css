@@ -5,6 +5,12 @@
   --transparent: #ffffff00, 0;
 }
 
+@font-face {
+  font-family: "Fermentations";
+  src: local("NuevaStdBoldCond"),
+    url("./Assets/fonts/NuevaStdBoldCond.ttf") format("truetype");
+}
+
 a.desktop {
   text-decoration: none;
   color: #602827;
@@ -41,7 +47,7 @@ body::-webkit-scrollbar {
   left: 3%;
   color: white;
   font-size: 3rem;
-  font-family: "Italiana", sans-serif;
+  font-family: "Fermentations";
 }
 
 .socialIcon {
