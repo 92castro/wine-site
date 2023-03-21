@@ -21,7 +21,6 @@ const heroImg: CSSProperties = {
   backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1491924778227-f225b115dd5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
   height: "55vh",
   minHeight:"15em",
-  // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -42,14 +41,12 @@ const title: CSSProperties = {
   color: "var(--maroon-color)",
   fontWeight: "600",
   fontSize: "45px",
-  // marginTop:"50px",
   marginBottom:"10px",
   width:"100%",
   fontFamily: "Fermentations" 
 }
 
 const StyledBox: CSSProperties = {
-  // height: "100px",
   display: "flex",
   flexDirection:"column",
   borderRadius: "8px",

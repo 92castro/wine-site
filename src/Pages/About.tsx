@@ -11,8 +11,6 @@ const heroImg: CSSProperties = {
   flexDirection: "column",  
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${storefront})`,
   height: "40vh",
-  // minHeight:"15em",
-  // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -20,7 +18,6 @@ const heroImg: CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   maxWidth: "100%", 
-  // height: "auto"
 };
 
 const heroText: CSSProperties = {
@@ -47,7 +44,6 @@ const paragraphs: CSSProperties = {
 }
 
 const StyledBox: CSSProperties = {
-  // height: "100px",
   display: "flex",
   flexDirection:"column",
   borderRadius: "8px",
@@ -87,14 +83,8 @@ export default function About() {
           American Wine Society
         </Typography>
               <Typography style={paragraphs}>
-                Fermentations is a proud member and sponsor of the Colorado Springs Chapter of American Wine Society. After 10 years, the Colorado Springs Chapter of American Wine Society has grown to 100+ members! Meetings are held on the 1st Tuesday of each month at various locations around town. Visit the AWS website: <a href="https://www.aws-cos.com/" rel="noopener noreferrer" target="_blank" style={{color:"black"}}>www.aws-cos.com</a> Or you can contact Tim or Brenda for more information. 
+                Fermentations is a proud member and sponsor of the Colorado Springs Chapter of American Wine Society. After 10 years, the Colorado Springs Chapter of American Wine Society has grown to 100+ members! Meetings are held on the 1st Tuesday of each month at various locations around town. Visit the AWS website: <a href="https://www.aws-cos.com/" rel="noopener noreferrer" target="_blank" style={{color:"var(--maroon-color)", fontWeight:"bold"}}>www.aws-cos.com</a> Or you can contact Tim or Brenda for more information. 
               </Typography>
-              {/* <Typography style={title}>
-          Wine Exploration Groups
-        </Typography>
-              <Typography style={paragraphs}>
-                 Join in on the fun! Contact Brenda for more details and future announcements. Winemaking is a great way to meet new friends and get together with existing ones. Visit Tim or Brenda for more details on costs, schedules, and to join the Fermentations Wine Explorations! Let's travel the winemaking world together. 
-              </Typography>  */}
               </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={12}>
@@ -105,24 +95,24 @@ export default function About() {
               </Typography>
               <List >
                 <ListItem>
-                  <FeedIcon/>
+                  <FeedIcon sx={{color: "var(--maroon-color)"}}/>
               <Typography style={paragraphs} sx={{marginLeft: 2, fontSize: { sm: "16px", md: "18px" } }}>
                 Fermentations was featured live on television Sunday morning 2/19/2017 for National Drink Wine Day!  Follow this link to view both segments: 
-                <a href="https://www.fox21news.com/mornings/in-studio-interviews/food-and-wine-pairings-for-national-drink-wine-day/" style={{color:"black"}} rel="noopener noreferrer" target="_blank">Fox 21 News</a> 
+                <a href="https://www.fox21news.com/mornings/in-studio-interviews/food-and-wine-pairings-for-national-drink-wine-day/" style={{color:"var(--maroon-color)", fontWeight:"bold"}} rel="noopener noreferrer" target="_blank">Fox 21 News</a> 
                 </Typography>
                 </ListItem>
                 <ListItem>
-                  <FeedIcon/>
+                  <FeedIcon sx={{color: "var(--maroon-color)"}}/>
               <Typography style={paragraphs} sx={{marginLeft: 2, fontSize: { sm: "16px", md: "18px" } }}>
                 Fermentations was proudly featured in the online Gazette March 31,2016: 
-                <a href="https://gazette.com/news/wine-lover-this-may-be-your-new-favorite-hobby/article_c1cd9e91-6030-56b5-9566-fe66c3dc2f74.html" style={{color:"black"}} rel="noopener noreferrer" target="_blank"> Click Here to see the article.</a>
+                <a href="https://gazette.com/news/wine-lover-this-may-be-your-new-favorite-hobby/article_c1cd9e91-6030-56b5-9566-fe66c3dc2f74.html" style={{color:"var(--maroon-color)", fontWeight:"bold"}} rel="noopener noreferrer" target="_blank"> Click Here to see the article.</a>
                 </Typography>
                 </ListItem>
                 <ListItem>
-                  <FeedIcon/>
+                  <FeedIcon sx={{color: "var(--maroon-color)"}}/>
               <Typography style={paragraphs} sx={{marginLeft: 2, fontSize: { sm: "16px", md: "18px" } }}>
                 On Thursday May 7th, Fermentations was featured during the morning news segment of Fox21 News by John Martin. Click the link below to watch the video clip that's posted on Youtube.
-                <a href="https://www.youtube.com/watch?v=hAvWNWhwN3k" style={{color:"black"}} rel="noopener noreferrer" target="_blank">Fox21 News Clip 5/07/2015</a>
+                <a href="https://www.youtube.com/watch?v=hAvWNWhwN3k" style={{color:"var(--maroon-color)", fontWeight:"bold"}} rel="noopener noreferrer" target="_blank">Fox21 News Clip 5/07/2015</a>
               </Typography>
               </ListItem>
               </List>
