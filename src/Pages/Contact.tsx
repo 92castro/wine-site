@@ -78,7 +78,7 @@ export default function Contact() {
         <Grid item sm={12} md={6}>
           <form ref={form} onSubmit={onSubmit} style={{ height: "100%"}}>
             <div style={formCard} key={"green"}>
-              <h1 style={{ fontFamily: "Fermentations", textShadow: "2px 2px 5px #667", color: "#4a0d0b",fontSize:"40px" }}>Drop Us A Line With Inquiries, Or Questions About Wine And Beer Making!</h1>
+              <h1 style={{ fontFamily: "Fermentations",color: "#74250e" ,fontSize:"40px" }}>Drop Us A Line With Inquiries, Or Questions About Wine And Beer Making!</h1>
               <TextField
                 {...register("firstName", { required: "First name is required *" })}
                 id="firstName"

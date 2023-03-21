@@ -71,7 +71,7 @@ export default function Info() {
               </a>
             </p>
             <p>
-              <a className="info" href="https://www.ttb.gov/wine/wine-faqs#w4" rel="noopener noreferrer" target="_blank">
+              <a className="info" href="https://www.ttb.gov/beer/beer-faqs" rel="noopener noreferrer" target="_blank">
                 Click Here To Access The Federal Guidelines For Brew On Premises:
               </a>
             </p>
@@ -80,7 +80,7 @@ export default function Info() {
             <h3>For more information about homebrewing and winemaking, visit these helpful industry websites:</h3>
             <h4>American Homebrewer's Association:</h4>
             <a className="info" style={{ fontSize: "90%" }} href="http://www.homebrewersassociation.org/pages/government-affairs/talking-points" rel="noopener noreferrer" target="_blank">http://www.homebrewersassociation.org/pages/government-affairs/talking-points</a>
-            <a className="info" style={{ fontSize: "90%" }} href="http://www.homebrewersassociation.org/pages/government-affairs/statutes/colorado" rel="noopener noreferrer" target="_blank">http://www.homebrewersassociation.org/pages/government-affairs/statutes/colorado</a>
+            <a className="info" style={{ fontSize: "90%" }} href="https://www.homebrewersassociation.org/homebrewing-rights/statutes/Colorado/" target="_blank" rel="noopener noreferrer">https://www.homebrewersassociation.org/homebrewing-rights/statutes/Colorado/</a>
             <p>On November 13, 2015 the Colorado Liquor Enforcement Division published a document titled "Homebrew Use and Limitations" to clarify how Homebrewers and Homebrew Supply Stores (i.e. Fermentations Home Winemaking Center) are permitted to handle the production, tasting and use of homebrew by patrons.  The American Homebrewers Association (AHA) has made this document available via its website.  See the following link for the entire document:</p>
             <a className="info" href="http://www.homebrewersassociation.org/wp-content/uploads/2015/11/Colorado-LED-BULLETIN-15-04-Home-Brew.pdf" rel="noopener noreferrer" target="_blank">http://www.homebrewersassociation.org/wp-content/uploads/2015/11/Colorado-LED-BULLETIN-15-04-Home-Brew.pdf</a>
           </div>

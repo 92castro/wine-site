@@ -35,10 +35,6 @@ body {
   box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .contactImage {
   position: relative;
   padding: 0;
@@ -71,9 +67,13 @@ body::-webkit-scrollbar {
     font-size: 2rem;
   }
 
-  .script {
+  body::-webkit-scrollbar {
     display: none;
   }
+
+  /* .script {
+    display: none;
+  } */
 }
 
 @media screen and (max-width: 425px) {

@@ -56,7 +56,7 @@ export default function Photo() {
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px" },
                 }}
               >
                 It's Wine O'Clock Somewhere! 
@@ -78,7 +78,7 @@ export default function Photo() {
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px" },
                 }}
               >
                 Wine a little, laugh a lot.
@@ -169,7 +169,7 @@ export default function Photo() {
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px" },
                 }}
               >
                 I'm not a wine snob, I'm a wine enthusiast.
