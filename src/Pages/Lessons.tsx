@@ -16,6 +16,23 @@ const StyledGridItem: CSSProperties = {
   // minHeight: "400px",
 };
 
+const heroImg: CSSProperties = {
+  display:"flex",
+  flexDirection: "column",  
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage})`,
+  height: "40vh",
+  // minHeight:"15em",
+  // marginTop: "20px",
+  alignSelf: "center",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  alignItems: "center",
+  justifyContent: "center",
+  maxWidth: "100%", 
+  // height: "auto"
+};
+
 const StyledBox: CSSProperties = {
   // height: "100%",
   display: "flex",
@@ -67,9 +84,8 @@ const itemData: { img: string; title: string }[] = [
 export default function Lessons() {
   return (
     <>
-      <div>
-        <img src={HeroImage} alt="beer" style={{ maxWidth: "100%", height: "auto" }} />
-      </div>
+      <div style={heroImg}>
+    </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="xl" minHeight="100vh" rowSpacing={1} columnSpacing={{ xs: 2, sm: 2, md: 3, xl: 6 }}>
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6} sx={{ display: { xs: "none", md: "block" } }}>

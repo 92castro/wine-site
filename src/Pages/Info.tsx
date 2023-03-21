@@ -2,6 +2,30 @@ import { CSSProperties } from "react";
 import Image from "../Assets/resizedImages/info_4500x1800.jpeg";
 import Box from '@mui/material/Box';
 
+const heroImg: CSSProperties = {
+  display:"flex",
+  flexDirection: "column",  
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Image})`,
+  height: "40vh",
+  // minHeight:"15em",
+  // marginTop: "20px",
+  alignSelf: "center",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  alignItems: "center",
+  justifyContent: "center",
+  maxWidth: "100%", 
+  // height: "auto"
+};
+
+const heroText: CSSProperties = {
+  textAlign: "center",
+  color: "white",
+  fontSize: "50px",
+  fontFamily: "Fermentations" 
+};
+
 //Form Card Styling
 const formCard: CSSProperties = {
     display: "flex",
@@ -32,11 +56,10 @@ export default function Info() {
   return (
     <>
       {/* Hero Image */}
-      <div className="contactImage">
-          <img src={Image} alt="sunset" style={{ maxWidth: "100%", height: "auto" }} />
-          <h3 className="contactText">
-            Tips, Tricks, and Legality
-          </h3>
+      <div style={heroImg}>
+        <div style={heroText}>
+          <p>Tips, Tricks, and Legality</p>
+        </div>
       </div>
       {/* Hints and Legal Info */}
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>

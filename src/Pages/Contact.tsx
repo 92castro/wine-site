@@ -9,6 +9,30 @@ import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import Image from "../Assets/resizedImages/sunset_4500x1800.jpg"
 
+const heroImg: CSSProperties = {
+  display:"flex",
+  flexDirection: "column",  
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Image})`,
+  height: "40vh",
+  // minHeight:"15em",
+  // marginTop: "20px",
+  alignSelf: "center",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  alignItems: "center",
+  justifyContent: "center",
+  maxWidth: "100%", 
+  // height: "auto"
+};
+
+const heroText: CSSProperties = {
+  textAlign: "center",
+  color: "white",
+  fontSize: "50px",
+  fontFamily: "Fermentations" 
+};
+
 //Form Card Styling
 const formCard: CSSProperties = {
     display: "flex",
@@ -66,11 +90,10 @@ export default function Contact() {
   return (
     <>
       {/* Hero Image */}
-      <div className="contactImage">
-          <img src={Image} alt="field" style={{ maxWidth: "100%", height: "auto" }}/>
-          <h3 className="contactText">
-            Let's Talk Wine and Beer!
-          </h3>
+      <div style={heroImg}>
+        <div style={heroText}>
+          <p>Let's Talk Wine and Beer!</p>
+        </div>
       </div>
       {/* Form and Business Info */}
       <Grid container sx={{ display: "flex", alignItems: "center" }}>
