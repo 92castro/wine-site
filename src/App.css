@@ -16,6 +16,10 @@ a.desktop {
   color: #602827;
 }
 
+a.mobile {
+  text-decoration: none;
+}
+
 a.info {
   color: #602827;
 }
@@ -29,10 +33,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 .contactImage {
@@ -67,9 +67,13 @@ body::-webkit-scrollbar {
     font-size: 2rem;
   }
 
-  .script {
+  body::-webkit-scrollbar {
     display: none;
   }
+
+  /* .script {
+    display: none;
+  } */
 }
 
 @media screen and (max-width: 425px) {

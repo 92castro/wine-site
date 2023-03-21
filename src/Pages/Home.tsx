@@ -91,7 +91,7 @@ export default function Home() {
               <Typography style={paragraphs}>
                 In order to serve our clients better, we have created a new Classroom/Education Center within Fermentations Home Winemaking Center. We have always valued the educational aspects of making wine and beer, so now we have a room dedicated to the learning environment. In the near future, we'll feature wine and beer education events.
               </Typography>
-              <Link style={{fontWeight:"550", color:"black"}} to="/contact">Contact us for arrangements to use this presentation space for your special event. </Link>
+              <Link style={{fontWeight:"550", color:"var(--maroon-color)"}} to="/contact">Contact us for arrangements to use this presentation space for your special event. </Link>
           </Box>
       </Grid>
       <Grid item xs={12} md={6} lg={5}>

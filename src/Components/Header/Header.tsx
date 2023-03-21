@@ -10,6 +10,7 @@ import PhotoOutlinedIcon from '@mui/icons-material/PhotoOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 
 import { Link } from "react-router-dom";
 
@@ -37,7 +38,7 @@ const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
 const StyledDesktopMenuItem = styled(MenuItem)(({ theme }) => ({
   color: "var(--maroon-color)",
   minHeight: "65px",
-  fontSize: "160%",
+  fontSize: "150%",
   textAlign: "center",
   position: "relative",
   fontFamily: "Fermentations",
@@ -86,6 +87,9 @@ function Header() {
           </Typography>
         <DesktopMenu>
           <StyledDesktopMenuItem>
+          <Link className="desktop" to="/"><HomeOutlinedIcon sx={{fontSize:"33px"}}/></Link>
+          </StyledDesktopMenuItem>
+          <StyledDesktopMenuItem>
             <Link className="desktop" to="/about">About Us</Link>
           </StyledDesktopMenuItem>
           <StyledDesktopMenuItem>
@@ -127,28 +131,31 @@ function Header() {
         }}
       >
         {/* <Link to=""  */}
-        <Typography style={{textAlign:"center", color:"white",fontFamily: "Fermentations", marginBottom:"15px", fontWeight:"bold", fontSize:"30px"}} >
+        {/* <Typography style={{textAlign:"center", color:"white",fontFamily: "Fermentations", marginBottom:"15px", fontWeight:"bold", fontSize:"30px"}} >
               Inspiring Home Winemakers & Homebrewers since 2011  
-          </Typography>
+          </Typography> */}
           <StyledMenuItem onClick={exitMenu}>
             <IconContext.Provider value={{ size: "2rem" }}>
               <CloseIcon sx={{fontSize:"45px"}} />
             </IconContext.Provider>
           </StyledMenuItem>
         {/* </Link> */}
-        <Link onClick={exitMenu} to="/about">
-          <StyledMenuItem><FaGlassCheers style={{padding:"10px"}} />About</StyledMenuItem>
+        <Link className="mobile" onClick={exitMenu} to="/">
+          <StyledMenuItem><HomeOutlinedIcon style={{padding:"8px"}} />Home</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/lessons">
-          <StyledMenuItem><GiBarrel style={{padding:"10px"}}/>Lessons</StyledMenuItem>
+        <Link className="mobile" onClick={exitMenu} to="/about">
+          <StyledMenuItem><FaGlassCheers style={{padding:"5px"}} />About</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/photos">
+        <Link className="mobile" onClick={exitMenu} to="/lessons">
+          <StyledMenuItem><GiBarrel style={{padding:"5px"}}/>Lessons</StyledMenuItem>
+        </Link>
+        <Link className="mobile" onClick={exitMenu} to="/photos">
           <StyledMenuItem><PhotoOutlinedIcon style={{padding:"10px"}}/>Photos</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/info">
+        <Link className="mobile" onClick={exitMenu} to="/info">
           <StyledMenuItem><InfoOutlinedIcon style={{padding:"10px"}}/>Info</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/contact">
+        <Link className="mobile" onClick={exitMenu} to="/contact">
           <StyledMenuItem><EmailOutlinedIcon style={{padding:"10px"}}/>Contact</StyledMenuItem>
         </Link>
       </Menu>

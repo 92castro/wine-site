@@ -1,9 +1,26 @@
 import { Grid, ImageList, ImageListItem, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { CSSProperties } from "react";
-import HeroImage from "../Assets/resizedImages/cheers_4500x1800.jpeg";
+import pouring from "../Assets/pouring.png";
 
 import photoGallery from "../Assets/photoGallery";
+
+const heroImg: CSSProperties = {
+  display:"flex",
+  flexDirection: "column",  
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${pouring})`,
+  height: "40vh",
+  // minHeight:"15em",
+  // marginTop: "20px",
+  alignSelf: "center",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  alignItems: "center",
+  justifyContent: "center",
+  maxWidth: "100%", 
+  // height: "auto"
+};
 
 const StyledBox: CSSProperties = {
   // boxShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
@@ -21,9 +38,8 @@ const StyledBox: CSSProperties = {
 export default function Photo() {
   return (
     <>
-      <div>
-        <img src={HeroImage} alt="cheers" style={{ maxWidth: "100%", height: "auto" }} />
-      </div>
+      <div style={heroImg}>
+    </div>
       <div style={{ display: "flex", justifyContent: "center", padding: "1rem" }}>
         <Grid container maxWidth="lg" rowSpacing={2} columnSpacing={2}>
           {/* Photo Gallery #1 Grid item */}
@@ -56,7 +72,7 @@ export default function Photo() {
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px" },
                 }}
               >
                 It's Wine O'Clock Somewhere! 
@@ -78,7 +94,7 @@ export default function Photo() {
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px" },
                 }}
               >
                 Wine a little, laugh a lot.
@@ -169,7 +185,7 @@ export default function Photo() {
                   color: "var(--maroon-color)",
                   fontWeight: "700",
                   mb: "1rem",
-                  fontSize: { xs: "45px", sm: "50px", lg: "60px", textShadow: "2px 2px 5px #667" },
+                  fontSize: { xs: "45px", sm: "50px", lg: "60px" },
                 }}
               >
                 I'm not a wine snob, I'm a wine enthusiast.

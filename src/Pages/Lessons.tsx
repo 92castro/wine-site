@@ -16,6 +16,23 @@ const StyledGridItem: CSSProperties = {
   // minHeight: "400px",
 };
 
+const heroImg: CSSProperties = {
+  display:"flex",
+  flexDirection: "column",  
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage})`,
+  height: "40vh",
+  // minHeight:"15em",
+  // marginTop: "20px",
+  alignSelf: "center",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  alignItems: "center",
+  justifyContent: "center",
+  maxWidth: "100%", 
+  // height: "auto"
+};
+
 const StyledBox: CSSProperties = {
   // height: "100%",
   display: "flex",
@@ -67,9 +84,8 @@ const itemData: { img: string; title: string }[] = [
 export default function Lessons() {
   return (
     <>
-      <div>
-        <img src={HeroImage} alt="beer" style={{ maxWidth: "100%", height: "auto" }} />
-      </div>
+      <div style={heroImg}>
+    </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="xl" minHeight="100vh" rowSpacing={1} columnSpacing={{ xs: 2, sm: 2, md: 3, xl: 6 }}>
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6} sx={{ display: { xs: "none", md: "block" } }}>
@@ -89,12 +105,11 @@ export default function Lessons() {
                     px: { xs: 2, sm: 3, md: 3, lg: 2 },
                     fontFamily: "Fermentations",
                     maxWidth: { xs: "400px", sm: "470px", lg: "600px" },
-                    // textShadow: "2px 2px 5px #667",
                   }}
                 >
                   Personalized winemaking and home brew lessons
                 </Typography>
-                <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px" } }}>
+                <Typography component="p" py={{ xs: 2, lg: 2 }} px={{ xs: 2, sm: 3, md: 3, lg: 2 }} sx={{ fontSize: { sm: "16px", md: "18px",color:"var(--maroon-color)" } }}>
                   Winemaking lessons are available Mondays through Saturdays during regular store hours.
                   <Typography component="span" sx={{ fontWeight: "700", display: "block" }}>
                     Appointments will be scheduled after payment is received for your lesson fees and ingredient kit.
@@ -105,7 +120,7 @@ export default function Lessons() {
                   component="p"
                   py={{ xs: 2, lg: 2 }}
                   px={{ xs: 2, sm: 3, md: 3, lg: 2 }}
-                  sx={{ margin: { sm: "auto" }, fontSize: { sm: "16px", md: "18px" } }}
+                  sx={{ margin: { sm: "auto" }, fontSize: { sm: "16px", md: "18px",color:"var(--maroon-color)" } }}
                 >
                   Winemaking and beer brewing is an adult hobby, &nbsp;
                   <Typography component="span" sx={{ fontWeight: "700" }}>
@@ -119,7 +134,7 @@ export default function Lessons() {
                   component="p"
                   py={{ xs: 2, lg: 2 }}
                   px={{ xs: 2, sm: 3, md: 3, lg: 2 }}
-                  sx={{ margin: { sm: "auto" }, fontSize: { sm: "16px", md: "18px" } }}
+                  sx={{ margin: { sm: "auto" }, fontSize: { sm: "16px", md: "18px",color:"var(--maroon-color)" } }}
                 >
                   Winemaking centers like Fermentations are considered extensions of your home. The wine is your property from start to finish, and
                   you make it yourself. We will help you through each step to make your wine with our equipment in our store, then take home the wine
@@ -152,7 +167,7 @@ export default function Lessons() {
                   Each step is two weeks from the last one.
                 </Typography> */}
               </Typography>
-              <List sx={{ minHeight: "360px" }}>
+              <List sx={{ minHeight: "360px",color:"var(--maroon-color)" }}>
                 {wineMakingSteps.map((step, index) => (
                   <ListItem sx={{ display: "listItem", paddingX: 0 }} key={index}>
                     <Box sx={{ display: "flex", flexDirection: "row" }}>
@@ -164,12 +179,12 @@ export default function Lessons() {
                   </ListItem>
                 ))}
               </List>
-              <Typography component="h3" variant="h6" sx={{ fontSize: { sm: "18px", md: "22px", lg: "24px" } }}>
+              <Typography component="h3" variant="h6" sx={{ fontSize: { sm: "18px", md: "22px", lg: "24px",color:"var(--maroon-color)" } }}>
                 What will this cost?
               </Typography>
-              <Typography component="p">
+              <Typography component="p" sx={{color:"var(--maroon-color)"}}>
                 We currently charge{" "}
-                <Typography component="span" sx={{ fontWeight: "700" }}>
+                <Typography component="span" sx={{ fontWeight: "700",color:"var(--maroon-color)" }}>
                   $115.72 after tax to make wine in our store.
                 </Typography>
                 <br />
@@ -193,7 +208,7 @@ export default function Lessons() {
           </Grid>
           {/* beer brewing steps grid item */}
           <Grid item style={StyledGridItem} xs={12} md={6} lg={6}>
-            <Box p={{ xs: 2, md: 2 }} sx={{ display: "flex", flexDirection: "column", minHeight: { md: "550px", lg: "650px" } }}>
+            <Box p={{ xs: 2, md: 2 }} sx={{ display: "flex", flexDirection: "column", minHeight: { md: "550px", lg: "650px" }, color:"var(--maroon-color)" }}>
               <Typography
                 component="h3"
                 variant="h6"
@@ -272,22 +287,22 @@ export default function Lessons() {
           <Grid item style={StyledGridItem} xs={12} md={12} lg={8}>
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", height: "100%" }}>
               <Box style={StyledBox}>
-                <Typography component="p" sx={{ fontSize: { sm: "16px", md: "18px" }, pt: { xs: 1, lg: 2 }, px: { xs: 2, sm: 2, md: 2, lg: 2 } }}>
+                <Typography component="p" sx={{ fontSize: { sm: "16px", md: "18px" }, pt: { xs: 1, lg: 2 }, px: { xs: 2, sm: 2, md: 2, lg: 2 }, color:"var(--maroon-color)" }}>
                   We can print any label design you create on high-gloss, white self-adhesive labels. Standard with each winemaking class in our
                   store,we will print your custom label creations to showcase your handmade beverages. Stock label sizes are 3"x4", 3"x3",
                   2-1/2"x3-3/4", 2"x3" & 2"x4" rectangles and 2"x3" ovals. We charge 50-cents per label for customers that purchase classes and
                   ingredients in our store.
                 </Typography>
-                <Typography component="p" sx={{ fontSize: { sm: "16px", md: "18px" }, pt: { xs: 1, lg: 2 }, px: { xs: 2, sm: 2, md: 2, lg: 2 } }}>
+                <Typography component="p" sx={{ fontSize: { sm: "16px", md: "18px" }, pt: { xs: 1, lg: 2 }, px: { xs: 2, sm: 2, md: 2, lg: 2 }, color:"var(--maroon-color)" }}>
                   We can accept your label designs in most graphic formats, but .JPG and .PNG are preferred. Resolution at least 200 dpi, and file
                   sizes at least 100K produce best results. Borders are difficult to align perfectly to the edges of our die-cut label stock.
                   Therefore, we prefer borderless label designs so we can print your image edge-to-edge, for best printed quality.
                 </Typography>
-                <Typography component="p" sx={{ fontSize: { sm: "16px", md: "18px" }, pt: { xs: 1, lg: 2 }, px: { xs: 2, sm: 2, md: 2, lg: 2 } }}>
+                <Typography component="p" sx={{ fontSize: { sm: "16px", md: "18px" }, pt: { xs: 1, lg: 2 }, px: { xs: 2, sm: 2, md: 2, lg: 2 }, color:"var(--maroon-color)" }}>
                   If you design your labels in PowerPoint or MS Publisher, for best printing quality please double the dimensions of the finished
                   label size (i.e. 6:x8" for a 3"x4" label) and "Save As" to a .PNG or .JPG image file before submitting your completed design.
                 </Typography>
-                <Typography component="p" sx={{ fontSize: { sm: "16px", md: "18px" }, pt: { xs: 1, lg: 2 }, px: { xs: 2, sm: 2, md: 2, lg: 2 } }}>
+                <Typography component="p" sx={{ fontSize: { sm: "16px", md: "18px" }, pt: { xs: 1, lg: 2 }, px: { xs: 2, sm: 2, md: 2, lg: 2 }, color:"var(--maroon-color)" }}>
                   Free label design templates are available from the following third-party websites: www.beerlabelizer.com www.jamlabelizer.com Some
                   examples of labels we've used on our personal homemade beverages are shown below. Email your label design(s) to:
                   labels@fermentations.biz Call Tim at (719) 598-1164 with any questions you may have!
