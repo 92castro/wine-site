@@ -21,8 +21,6 @@ const heroImg: CSSProperties = {
   flexDirection: "column",  
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage})`,
   height: "40vh",
-  // minHeight:"15em",
-  // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -30,7 +28,6 @@ const heroImg: CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   maxWidth: "100%", 
-  // height: "auto"
 };
 
 const StyledBox: CSSProperties = {
@@ -193,7 +190,7 @@ export default function Lessons() {
                 <Typography component="span" sx={{ fontWeight: "700" }}>
                   make approximately 30 bottles
                 </Typography>
-                , and range from $75 for Island Mist (fruit-flavored wine-based beverages) to about $211 for our highest end Cabernet Sauvignon
+                , and range from $80 for Island Mist (fruit-flavored wine-based beverages) to about $225 for our highest end Cabernet Sauvignon
                 ingredient kits. Typical{" "}
                 <Typography component="span" sx={{ fontWeight: "700" }}>
                   total cost is around $250 to $300 for 30 bottles of great quality wine
@@ -243,7 +240,7 @@ export default function Lessons() {
               <Typography component="p">
                 We currently charge{" "}
                 <Typography component="span" sx={{ fontWeight: "700" }}>
-                  $56.50 plus ingredients to make beer in our store.
+                  $61.25 after tax, and beer ingredients range from $35.00 - $65.00, to make beer in our store.
                 </Typography>{" "}
                 Includes 3 hour brewing session, 48 to 52 bottles, use of our equipment & lesson fee, plus the beer ingredient kit of your choice.
                 Beer ingredient kits{" "}
@@ -321,7 +318,7 @@ export default function Lessons() {
                       srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                       alt={item.title}
                       loading="lazy"
-                      style={{ background: "cover", height: 200 }}
+                      style={{ background: "cover" }}
                     />
                   </ImageListItem>
                 ))}

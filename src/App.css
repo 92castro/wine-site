@@ -35,6 +35,12 @@ body {
   box-sizing: border-box;
 }
 
+.pdf {
+  color: #602827;
+  font-family: Fermentations;
+  font-size: 20px;
+}
+
 .contactImage {
   position: relative;
   padding: 0;
@@ -70,10 +76,6 @@ body {
   body::-webkit-scrollbar {
     display: none;
   }
-
-  /* .script {
-    display: none;
-  } */
 }
 
 @media screen and (max-width: 425px) {
@@ -83,7 +85,7 @@ body {
     left: 2%;
   }
 
-  /* .map {
-    display: none;
-  } */
+  .logo {
+    height: 50px;
+  }
 }

@@ -10,8 +10,6 @@ const heroImg: CSSProperties = {
   flexDirection: "column",  
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${pouring})`,
   height: "40vh",
-  // minHeight:"15em",
-  // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -19,7 +17,6 @@ const heroImg: CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   maxWidth: "100%", 
-  // height: "auto"
 };
 
 const StyledBox: CSSProperties = {

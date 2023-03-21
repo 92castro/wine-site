@@ -14,8 +14,6 @@ const heroImg: CSSProperties = {
   flexDirection: "column",  
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Image})`,
   height: "40vh",
-  // minHeight:"15em",
-  // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -23,7 +21,6 @@ const heroImg: CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   maxWidth: "100%", 
-  // height: "auto"
 };
 
 const heroText: CSSProperties = {
@@ -182,7 +179,7 @@ export default function Contact() {
               <span>5765 North Academy Blvd.</span>
               <span>Colorado Springs, CO 80918</span>
               <span><b style={{ color: "#74250e"}}>Phone: </b><a href="tel:+17195981164" style={{color:"black"}}>(719) 598-1164</a></span>
-              <span><b style={{ color: "#74250e"}}>Email: </b>sales@fermentations.biz</span>
+              <span><b style={{ color: "#74250e"}}>Email: </b> <a href="mailto:sales@fermentations.biz" style={{color:"black"}}>sales@fermentations.biz</a></span>
             </p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.428126182952!2d-104.78811748483716!3d38.914190979568055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87134ef4c367b6b3%3A0xcd184256fb212d0!2sFermentations%20Home%20Winemaking%20and%20Homebrew%20Center!5e0!3m2!1sen!2sjp!4v1677554341746!5m2!1sen!2sjp" title="map" className="map" loading="lazy">
             </iframe>

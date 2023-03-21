@@ -1,14 +1,14 @@
 import { CSSProperties } from "react";
 import Image from "../Assets/resizedImages/info_4500x1800.jpeg";
 import Box from '@mui/material/Box';
+import { Typography } from "@mui/material";
+import { GiBarrel } from 'react-icons/gi';
 
 const heroImg: CSSProperties = {
   display:"flex",
   flexDirection: "column",  
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Image})`,
   height: "40vh",
-  // minHeight:"15em",
-  // marginTop: "20px",
   alignSelf: "center",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -16,7 +16,6 @@ const heroImg: CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   maxWidth: "100%", 
-  // height: "auto"
 };
 
 const heroText: CSSProperties = {
@@ -42,9 +41,7 @@ const formCard: CSSProperties = {
 const headerText: CSSProperties = {
   fontFamily: "Fermentations", 
   color: "#74250e", 
-  margin: "0", 
   fontSize:"40px"
-  // textShadow: "2px 2px 5px #667",
 }
 
 //Text Info Styling
@@ -67,7 +64,22 @@ export default function Info() {
           <div style={formCard}>
             <h1 style={headerText}>Tips & Tricks</h1>
             <span style={infoText}>At Fermentations, we offer premium quality wine kits from Winexpert and RJ Spagnols, and beer ingredient kits from Brewers Best & True Brew. The links provided below will take you to helpful hints from our manufacturers to make sure your winemaking & brewing experience is successful.</span>
-            <p style={infoText}>Want to know more about Winemaking?  Visit these helpful industry links:</p>
+            <br />
+            <Typography>
+              Check out these step-by-step flyers you can download by Fermentations:
+            </Typography>
+            <p>
+              <a className="pdf" href="TrifoldWinemakingFlyer2020.pdf"
+              download="TrifoldWinemakingFlyer2020.pdf">
+                Wine Flyer
+              </a>
+               - <GiBarrel style={{fontSize:"20px"}}/> -
+               <a className="pdf" href="TrifoldBeermakingFlyer2019.pdf"
+              download="TrifoldBeermakingFlyer2019.pdf">
+                Beer Flyer
+              </a>
+            </p>
+            <p style={infoText}>Want to know more about Winemaking & Beermaking?  Visit these helpful industry links:</p>
             <p style={infoText}>
               <a className="info" href="https://www.brewersbestkits.com/faqs.html" rel="noopener noreferrer" target="_blank">Brewer's Best Beermaking Tips</a>
             </p>

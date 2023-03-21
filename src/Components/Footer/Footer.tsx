@@ -39,7 +39,7 @@ export default function Footer() {
       <br />
       <p style={store}>
         <span><b style={{ color: "#74250e"}}>Phone: </b><a href="tel:+17195981164" style={{color:"black"}}>(719) 598-1164</a></span>
-        <span><b style={{ color: "#74250e"}}>Email: </b>sales@fermentations.biz</span>
+        <span><b style={{ color: "#74250e"}}>Email: </b><a href="mailto:sales@fermentations.biz" style={{color:"black"}}>sales@fermentations.biz</a></span>
       </p>
       </Grid>
       <Grid item sm={4} md={4} >

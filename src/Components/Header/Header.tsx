@@ -80,7 +80,7 @@ function Header() {
   return (
     <AppBar position="relative" sx={{ background:"linear-gradient(180deg, rgba(191,166,162,0.19931722689075626) 75%, rgba(184,148,148,0.3029586834733894) 100%)", padding:"5px" }}>
       <StyledToolbar>
-        <Link to="/"><img className="logo" src={logo} alt="logo" style={{borderRadius:"20px",height:"70px", marginRight:"8px", mixBlendMode:"multiply"}} /></Link>
+        <Link to="/"><img className="logo" src={logo} alt="logo" style={{borderRadius:"20px",maxHeight:"70px", marginRight:"8px", mixBlendMode:"multiply"}} /></Link>
         <Typography className="script" sx={{fontSize:{xs:"12px", sm:"20px"},color:"var(--maroon-color)",fontFamily: "Fermentations",
   fontWeight:"bold",}}>
           Inspiring Home Winemakers & Homebrewers since 2011     
@@ -131,9 +131,6 @@ function Header() {
         }}
       >
         {/* <Link to=""  */}
-        {/* <Typography style={{textAlign:"center", color:"white",fontFamily: "Fermentations", marginBottom:"15px", fontWeight:"bold", fontSize:"30px"}} >
-              Inspiring Home Winemakers & Homebrewers since 2011  
-          </Typography> */}
           <StyledMenuItem onClick={exitMenu}>
             <IconContext.Provider value={{ size: "2rem" }}>
               <CloseIcon sx={{fontSize:"45px"}} />
