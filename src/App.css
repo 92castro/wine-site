@@ -16,6 +16,10 @@ a.desktop {
   color: #602827;
 }
 
+a.mobile {
+  text-decoration: none;
+}
+
 a.info {
   color: #602827;
 }

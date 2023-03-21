@@ -136,19 +136,19 @@ function Header() {
             </IconContext.Provider>
           </StyledMenuItem>
         {/* </Link> */}
-        <Link onClick={exitMenu} to="/about">
-          <StyledMenuItem><FaGlassCheers style={{padding:"10px"}} />About</StyledMenuItem>
+        <Link className="mobile" onClick={exitMenu} to="/about">
+          <StyledMenuItem><FaGlassCheers style={{padding:"5px"}} />About</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/lessons">
-          <StyledMenuItem><GiBarrel style={{padding:"10px"}}/>Lessons</StyledMenuItem>
+        <Link className="mobile" onClick={exitMenu} to="/lessons">
+          <StyledMenuItem><GiBarrel style={{padding:"5px"}}/>Lessons</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/photos">
+        <Link className="mobile" onClick={exitMenu} to="/photos">
           <StyledMenuItem><PhotoOutlinedIcon style={{padding:"10px"}}/>Photos</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/info">
+        <Link className="mobile" onClick={exitMenu} to="/info">
           <StyledMenuItem><InfoOutlinedIcon style={{padding:"10px"}}/>Info</StyledMenuItem>
         </Link>
-        <Link onClick={exitMenu} to="/contact">
+        <Link className="mobile" onClick={exitMenu} to="/contact">
           <StyledMenuItem><EmailOutlinedIcon style={{padding:"10px"}}/>Contact</StyledMenuItem>
         </Link>
       </Menu>

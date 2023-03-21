@@ -47,8 +47,11 @@ export default function Footer() {
         </Box>
       </Grid>
       <Grid item xs={12} sm={12} md={12} sx={{display:"flex",justifyContent:"center"}}>
-        <Button style={{transform:"scale(1)"}} startIcon={<FacebookIcon/>} href="https://www.facebook.com/Fermentations" target="_blank"/>
-              <Button startIcon={<TwitterIcon/>} href="https://twitter.com/fermentationsco" target="_blank"/>
+        <Button style={{transform:"scale(1.5)"}} startIcon={<FacebookIcon/>} href="https://www.facebook.com/Fermentations" target="_blank"/>
+              <Button style={{transform:"scale(1.5)"}} startIcon={<TwitterIcon/>} href="https://twitter.com/fermentationsco" target="_blank"/>
+      </Grid>
+      <Grid item xs={12} sm={12} md={12} sx={{display:"flex",justifyContent:"center"}}>
+        <p>© 2023 Fermentations</p>
       </Grid>
     </Grid>
     </>
